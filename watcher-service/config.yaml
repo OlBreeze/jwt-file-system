@@ -1,0 +1,41 @@
+service:
+  name: watcher-service
+
+watcher:
+  watch_directory: ../watched
+  processed_directory: ../processed
+  check_interval: 1  # секунды (не используется с watchdog, но оставлено для совместимости)
+
+logger_service:
+  url: http://localhost:5000/log
+  timeout: 10  # секунды
+  retry_attempts: 3
+  retry_delay: 5  # секунды
+
+jwt:
+  secret: sasa-Software2015
+  algorithm: HS256
+  issuer: watcher-service
+  expiration_minutes: 5
+
+logging:
+  level: INFO  # DEBUG | INFO | WARN | ERROR | FATAL
+  file: logs/watcher-service.log
+  max_size_mb: 10
+  backup_count: 5
+
+notifications:
+  email:
+    enabled: false
+    smtp_host: smtp.gmail.com
+    smtp_port: 587
+    use_tls: true
+    from: watcher@example.com
+    to: admin@example.com
+    password: ""  # Используйте переменную окружения EMAIL_PASSWORD
+
+  syslog:
+    enabled: false
+    host: localhost
+    port: 514
+    facility: local0

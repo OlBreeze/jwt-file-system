@@ -1,0 +1,5 @@
+Filename: test.txt
+Size: 30B
+Created At: 2025-09-30T11:45:02.161144Z
+Hash: ea7f9326a0c8843f883e4c6990f7627faafa8d08ec05ccd52142d539c3da6f37
+Processed At: 2025-09-30T11:45:04.198721Z

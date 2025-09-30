@@ -1,0 +1,39 @@
+2025-09-30 14:41:59 - root - INFO - ============================================================
+2025-09-30 14:41:59 - root - INFO - 🚀 Starting watcher-service
+2025-09-30 14:41:59 - root - INFO - 📁 Watching directory: ../watched
+2025-09-30 14:41:59 - root - INFO - 📦 Processed directory: ../processed
+2025-09-30 14:41:59 - root - INFO - 🌐 Logger Service URL: http://localhost:5000/log
+2025-09-30 14:41:59 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-09-30 14:41:59 - root - INFO - ⏱️  JWT expiration: 5 minutes
+2025-09-30 14:41:59 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 14:41:59 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 14:41:59 - root - INFO - ============================================================
+2025-09-30 14:41:59 - root - INFO - ✅ Directories ready
+2025-09-30 14:41:59 - root - INFO - 🔍 Checking Logger Service availability...
+2025-09-30 14:42:04 - root - WARNING - ⚠️ Cannot connect to Logger Service - will retry on file events
+2025-09-30 14:42:04 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-09-30 14:43:31 - root - INFO - 🛑 Stopping watcher service...
+2025-09-30 14:43:31 - root - INFO - 👋 Watcher service stopped
+2025-09-30 14:43:45 - root - INFO - ============================================================
+2025-09-30 14:43:45 - root - INFO - 🚀 Starting watcher-service
+2025-09-30 14:43:45 - root - INFO - 📁 Watching directory: ../watched
+2025-09-30 14:43:45 - root - INFO - 📦 Processed directory: ../processed
+2025-09-30 14:43:45 - root - INFO - 🌐 Logger Service URL: http://localhost:5000/log
+2025-09-30 14:43:45 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-09-30 14:43:45 - root - INFO - ⏱️  JWT expiration: 5 minutes
+2025-09-30 14:43:45 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 14:43:45 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 14:43:45 - root - INFO - ============================================================
+2025-09-30 14:43:45 - root - INFO - ✅ Directories ready
+2025-09-30 14:43:45 - root - INFO - 🔍 Checking Logger Service availability...
+2025-09-30 14:43:47 - root - INFO - ✅ Logger Service is available
+2025-09-30 14:43:47 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-09-30 14:45:01 - root - INFO - 📁 New file detected: ..\watched\test.txt
+2025-09-30 14:45:04 - root - INFO - ✅ Metadata sent successfully for: test.txt
+2025-09-30 14:45:04 - root - INFO - ✅ Moved file to: ..\processed\test.txt
+2025-09-30 14:45:04 - root - INFO - ✅ Successfully processed: test.txt
+2025-09-30 14:45:04 - root - INFO -    Size: 30 bytes
+2025-09-30 14:45:04 - root - INFO -    Hash: ea7f9326a0c8843f...
+2025-09-30 14:45:04 - root - INFO -    Moved to: ..\processed\test.txt
+2025-09-30 14:45:45 - root - INFO - 🛑 Stopping watcher service...
+2025-09-30 14:45:45 - root - INFO - 👋 Watcher service stopped

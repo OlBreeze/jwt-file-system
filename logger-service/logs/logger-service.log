@@ -1,0 +1,39 @@
+2025-09-30 13:26:51 - root - INFO - ============================================================
+2025-09-30 13:26:51 - root - INFO - 🚀 Starting logger-service
+2025-09-30 13:26:51 - root - INFO - 📍 Host: 0.0.0.0
+2025-09-30 13:26:51 - root - INFO - 📍 Port: 5000
+2025-09-30 13:26:51 - root - INFO - 📁 Logs directory: ../logs
+2025-09-30 13:26:51 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-09-30 13:26:51 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 13:26:51 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 13:26:51 - root - INFO - ============================================================
+2025-09-30 13:34:41 - root - INFO - ============================================================
+2025-09-30 13:34:41 - root - INFO - 🚀 Starting logger-service
+2025-09-30 13:34:41 - root - INFO - 📍 Host: 0.0.0.0
+2025-09-30 13:34:41 - root - INFO - 📍 Port: 5000
+2025-09-30 13:34:41 - root - INFO - 📁 Logs directory: ../logs
+2025-09-30 13:34:41 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-09-30 13:34:41 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 13:34:41 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 13:34:41 - root - INFO - ============================================================
+2025-09-30 13:36:33 - root - INFO - ============================================================
+2025-09-30 13:36:33 - root - INFO - 🚀 Starting logger-service
+2025-09-30 13:36:33 - root - INFO - 📍 Host: 0.0.0.0
+2025-09-30 13:36:33 - root - INFO - 📍 Port: 5000
+2025-09-30 13:36:33 - root - INFO - 📁 Logs directory: ../logs
+2025-09-30 13:36:33 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-09-30 13:36:33 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 13:36:33 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 13:36:33 - root - INFO - ============================================================
+2025-09-30 14:43:40 - root - INFO - ============================================================
+2025-09-30 14:43:40 - root - INFO - 🚀 Starting logger-service
+2025-09-30 14:43:40 - root - INFO - 📍 Host: 0.0.0.0
+2025-09-30 14:43:40 - root - INFO - 📍 Port: 5000
+2025-09-30 14:43:40 - root - INFO - 📁 Logs directory: ../logs
+2025-09-30 14:43:40 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-09-30 14:43:40 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 14:43:40 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 14:43:40 - root - INFO - ============================================================
+2025-09-30 14:45:04 - root - INFO - 📝 Received metadata for file: test.txt (30B)
+2025-09-30 14:45:04 - root - INFO - ✅ Created log file: test-20250930T114502Z.txt
+2025-09-30 14:45:04 - root - INFO - ✅ Successfully processed file: test.txt
