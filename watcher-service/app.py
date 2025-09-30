@@ -497,7 +497,10 @@ def main():
     event_handler = FileWatcherHandler(config, logger)
 
     # Создаем observer
-    observer = Observer()
+    # - observer = Observer() !!! because Windows
+    from watchdog.observers.polling import PollingObserver
+    observer = PollingObserver()
+    # -
     observer.schedule(event_handler, str(watch_dir), recursive=False)
 
     # Запускаем мониторинг

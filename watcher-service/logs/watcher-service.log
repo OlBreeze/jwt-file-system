@@ -37,3 +37,73 @@
 2025-09-30 14:45:04 - root - INFO -    Moved to: ..\processed\test.txt
 2025-09-30 14:45:45 - root - INFO - 🛑 Stopping watcher service...
 2025-09-30 14:45:45 - root - INFO - 👋 Watcher service stopped
+2025-09-30 12:22:23 - root - INFO - ============================================================
+2025-09-30 12:22:23 - root - INFO - 🚀 Starting watcher-service
+2025-09-30 12:22:23 - root - INFO - 📁 Watching directory: /app/watched
+2025-09-30 12:22:23 - root - INFO - 📦 Processed directory: /app/processed
+2025-09-30 12:22:23 - root - INFO - 🌐 Logger Service URL: http://logger-service:5000/log
+2025-09-30 12:22:23 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-09-30 12:22:23 - root - INFO - ⏱️  JWT expiration: 5 minutes
+2025-09-30 12:22:23 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 12:22:23 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 12:22:23 - root - INFO - ============================================================
+2025-09-30 12:22:23 - root - INFO - ✅ Directories ready
+2025-09-30 12:22:23 - root - INFO - 🔍 Checking Logger Service availability...
+2025-09-30 12:22:26 - root - WARNING - ⚠️ Cannot connect to Logger Service - will retry on file events
+2025-09-30 12:22:26 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-09-30 12:35:15 - root - INFO - ============================================================
+2025-09-30 12:35:15 - root - INFO - 🚀 Starting watcher-service
+2025-09-30 12:35:15 - root - INFO - 📁 Watching directory: /app/watched
+2025-09-30 12:35:15 - root - INFO - 📦 Processed directory: /app/processed
+2025-09-30 12:35:15 - root - INFO - 🌐 Logger Service URL: http://logger-service:5000/log
+2025-09-30 12:35:15 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-09-30 12:35:15 - root - INFO - ⏱️  JWT expiration: 5 minutes
+2025-09-30 12:35:15 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 12:35:15 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 12:35:15 - root - INFO - ============================================================
+2025-09-30 12:35:15 - root - INFO - ✅ Directories ready
+2025-09-30 12:35:15 - root - INFO - 🔍 Checking Logger Service availability...
+2025-09-30 12:35:18 - root - WARNING - ⚠️ Cannot connect to Logger Service - will retry on file events
+2025-09-30 12:35:18 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-09-30 12:37:34 - root - INFO - ============================================================
+2025-09-30 12:37:34 - root - INFO - 🚀 Starting watcher-service
+2025-09-30 12:37:34 - root - INFO - 📁 Watching directory: /app/watched
+2025-09-30 12:37:34 - root - INFO - 📦 Processed directory: /app/processed
+2025-09-30 12:37:34 - root - INFO - 🌐 Logger Service URL: http://logger-service:5000/log
+2025-09-30 12:37:34 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-09-30 12:37:34 - root - INFO - ⏱️  JWT expiration: 5 minutes
+2025-09-30 12:37:34 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 12:37:34 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 12:37:34 - root - INFO - ============================================================
+2025-09-30 12:37:34 - root - INFO - ✅ Directories ready
+2025-09-30 12:37:34 - root - INFO - 🔍 Checking Logger Service availability...
+2025-09-30 12:37:36 - root - WARNING - ⚠️ Cannot connect to Logger Service - will retry on file events
+2025-09-30 12:37:36 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-09-30 12:38:28 - root - INFO - 📁 New file detected: /app/watched/test-docker.txt
+2025-09-30 12:38:29 - root - INFO - ✅ Metadata sent successfully for: test-docker.txt
+2025-09-30 12:38:29 - root - INFO - ✅ Moved file to: /app/processed/test-docker.txt
+2025-09-30 12:38:29 - root - INFO - ✅ Successfully processed: test-docker.txt
+2025-09-30 12:38:29 - root - INFO -    Size: 23 bytes
+2025-09-30 12:38:29 - root - INFO -    Hash: d56128f96f07a897...
+2025-09-30 12:38:29 - root - INFO -    Moved to: /app/processed/test-docker.txt
+2025-09-30 12:39:53 - root - INFO - 📁 New file detected: /app/watched/mytest.txt
+2025-09-30 12:39:53 - root - INFO - ✅ Metadata sent successfully for: mytest.txt
+2025-09-30 12:39:53 - root - INFO - ✅ Moved file to: /app/processed/mytest.txt
+2025-09-30 12:39:53 - root - INFO - ✅ Successfully processed: mytest.txt
+2025-09-30 12:39:53 - root - INFO -    Size: 18 bytes
+2025-09-30 12:39:53 - root - INFO -    Hash: 6904494de1f3a6e3...
+2025-09-30 12:39:53 - root - INFO -    Moved to: /app/processed/mytest.txt
+2025-09-30 12:40:10 - root - INFO - 📁 New file detected: /app/watched/CV_OLGA_GOLOVASH_DBA.pdf
+2025-09-30 12:40:10 - root - INFO - ✅ Metadata sent successfully for: CV_OLGA_GOLOVASH_DBA.pdf
+2025-09-30 12:40:11 - root - INFO - ✅ Moved file to: /app/processed/CV_OLGA_GOLOVASH_DBA.pdf
+2025-09-30 12:40:11 - root - INFO - ✅ Successfully processed: CV_OLGA_GOLOVASH_DBA.pdf
+2025-09-30 12:40:11 - root - INFO -    Size: 226297 bytes
+2025-09-30 12:40:11 - root - INFO -    Hash: 9f134805e033ffe8...
+2025-09-30 12:40:11 - root - INFO -    Moved to: /app/processed/CV_OLGA_GOLOVASH_DBA.pdf
+2025-09-30 13:10:46 - root - INFO - 📁 New file detected: /app/watched/.gitkeep
+2025-09-30 13:10:46 - root - INFO - ✅ Metadata sent successfully for: .gitkeep
+2025-09-30 13:10:46 - root - INFO - ✅ Moved file to: /app/processed/.gitkeep
+2025-09-30 13:10:46 - root - INFO - ✅ Successfully processed: .gitkeep
+2025-09-30 13:10:46 - root - INFO -    Size: 0 bytes
+2025-09-30 13:10:46 - root - INFO -    Hash: e3b0c44298fc1c14...
+2025-09-30 13:10:46 - root - INFO -    Moved to: /app/processed/.gitkeep

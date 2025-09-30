@@ -37,3 +37,51 @@
 2025-09-30 14:45:04 - root - INFO - 📝 Received metadata for file: test.txt (30B)
 2025-09-30 14:45:04 - root - INFO - ✅ Created log file: test-20250930T114502Z.txt
 2025-09-30 14:45:04 - root - INFO - ✅ Successfully processed file: test.txt
+2025-09-30 12:12:30 - root - INFO - ============================================================
+2025-09-30 12:12:30 - root - INFO - 🚀 Starting logger-service
+2025-09-30 12:12:30 - root - INFO - 📍 Host: 0.0.0.0
+2025-09-30 12:12:30 - root - INFO - 📍 Port: 5000
+2025-09-30 12:12:30 - root - INFO - 📁 Logs directory: ../logs
+2025-09-30 12:12:30 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-09-30 12:12:30 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 12:12:30 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 12:12:30 - root - INFO - ============================================================
+2025-09-30 12:25:17 - root - INFO - ============================================================
+2025-09-30 12:25:17 - root - INFO - 🚀 Starting logger-service
+2025-09-30 12:25:17 - root - INFO - 📍 Host: 0.0.0.0
+2025-09-30 12:25:17 - root - INFO - 📍 Port: 5000
+2025-09-30 12:25:17 - root - INFO - 📁 Logs directory: ../logs
+2025-09-30 12:25:17 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-09-30 12:25:17 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 12:25:17 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 12:25:17 - root - INFO - ============================================================
+2025-09-30 12:33:07 - root - INFO - ============================================================
+2025-09-30 12:33:07 - root - INFO - 🚀 Starting logger-service
+2025-09-30 12:33:07 - root - INFO - 📍 Host: 0.0.0.0
+2025-09-30 12:33:07 - root - INFO - 📍 Port: 5000
+2025-09-30 12:33:07 - root - INFO - 📁 Logs directory: ../logs
+2025-09-30 12:33:07 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-09-30 12:33:07 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 12:33:07 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 12:33:07 - root - INFO - ============================================================
+2025-09-30 12:36:16 - root - INFO - ============================================================
+2025-09-30 12:36:16 - root - INFO - 🚀 Starting logger-service
+2025-09-30 12:36:16 - root - INFO - 📍 Host: 0.0.0.0
+2025-09-30 12:36:16 - root - INFO - 📍 Port: 5000
+2025-09-30 12:36:16 - root - INFO - 📁 Logs directory: ../logs
+2025-09-30 12:36:16 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-09-30 12:36:16 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 12:36:16 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 12:36:16 - root - INFO - ============================================================
+2025-09-30 12:38:29 - root - INFO - 📝 Received metadata for file: test-docker.txt (23B)
+2025-09-30 12:38:29 - root - INFO - ✅ Created log file: test-docker-20250930T123829Z.txt
+2025-09-30 12:38:29 - root - INFO - ✅ Successfully processed file: test-docker.txt
+2025-09-30 12:39:53 - root - INFO - 📝 Received metadata for file: mytest.txt (18B)
+2025-09-30 12:39:53 - root - INFO - ✅ Created log file: mytest-20250930T123953Z.txt
+2025-09-30 12:39:53 - root - INFO - ✅ Successfully processed file: mytest.txt
+2025-09-30 12:40:10 - root - INFO - 📝 Received metadata for file: CV_OLGA_GOLOVASH_DBA.pdf (220.99KB)
+2025-09-30 12:40:10 - root - INFO - ✅ Created log file: CV_OLGA_GOLOVASH_DBA-20250930T124010Z.txt
+2025-09-30 12:40:10 - root - INFO - ✅ Successfully processed file: CV_OLGA_GOLOVASH_DBA.pdf
+2025-09-30 13:10:46 - root - INFO - 📝 Received metadata for file: .gitkeep (0B)
+2025-09-30 13:10:46 - root - INFO - ✅ Created log file: unnamed-20250930T131046Z.txt
+2025-09-30 13:10:46 - root - INFO - ✅ Successfully processed file: .gitkeep

@@ -1,0 +1,73 @@
+services:
+  # ============================================
+  # Logger Service - Принимает метаданные
+  # ============================================
+  logger-service:
+    build:
+      context: ./logger-service
+      dockerfile: Dockerfile
+    container_name: logger-service
+    ports:
+      - "5000:5000"
+    volumes:
+      # Логи метаданных файлов (общая папка)
+      - ./logs:/app/../logs
+      # Логи самого сервиса
+      - ./logger-service/logs:/app/logs
+    environment:
+      - JWT_SECRET=sasa-Software2015
+      - LOGGER_HOST=0.0.0.0
+      - LOGGER_PORT=5000
+      - LOG_LEVEL=INFO
+    networks:
+      - jwt-file-system-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # ============================================
+  # Watcher Service - Мониторит файлы
+  # ============================================
+  watcher-service:
+    build:
+      context: ./watcher-service
+      dockerfile: Dockerfile
+    container_name: watcher-service
+    depends_on:
+      logger-service:
+        condition: service_healthy
+    volumes:
+      # Входящие файлы
+      - ./watched:/app/watched
+      # Обработанные файлы
+      - ./processed:/app/processed
+      # Логи самого сервиса
+      - ./watcher-service/logs:/app/logs
+    environment:
+      - JWT_SECRET=sasa-Software2015
+      - LOGGER_URL=http://logger-service:5000/log
+      - WATCH_DIR=/app/watched
+      - PROCESSED_DIR=/app/processed
+      - LOG_LEVEL=INFO
+    networks:
+      - jwt-file-system-network
+    restart: unless-stopped
+
+# ============================================
+# Network для связи между сервисами
+# ============================================
+networks:
+  jwt-file-system-network:
+    driver: bridge
+
+# ============================================
+# Volumes (опционально, если нужна персистентность)
+# ============================================
+volumes:
+  logs:
+  watched:
+  processed:

@@ -46,3 +46,14 @@ venv.bak/
 # =========================
 .DS_Store
 Thumbs.db
+
+#============================
+# My project
+#============================
+watched/*
+!watched/.gitkeep
+processed/*
+!processed/.gitkeep
+logs/*
+!logs/.gitkeep
+*.log
