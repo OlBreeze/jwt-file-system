@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watcher Service - Configuration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #fc466b 0%, #3f5efb 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #fc466b;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .header p {
+            color: #666;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #fc466b;
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #fc466b;
+        }
+
+        .form-group small {
+            display: block;
+            margin-top: 5px;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .toggle {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toggle input[type="checkbox"] {
+            width: 50px;
+            height: 25px;
+            appearance: none;
+            background: #ccc;
+            border-radius: 25px;
+            position: relative;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .toggle input[type="checkbox"]:checked {
+            background: #fc466b;
+        }
+
+        .toggle input[type="checkbox"]::before {
+            content: '';
+            position: absolute;
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            background: white;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .toggle input[type="checkbox"]:checked::before {
+            transform: translateX(25px);
+        }
+
+        .btn {
+            background: #fc466b;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #e63958;
+        }
+
+        .btn-secondary {
+            background: #3f5efb;
+        }
+
+        .btn-secondary:hover {
+            background: #2f4ed7;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .status.active {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status.watching {
+            background: #cce5ff;
+            color: #004085;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-box .value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #fc466b;
+        }
+
+        .stat-box .label {
+            color: #666;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .alert.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .file-list {
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 15px;
+        }
+
+        .file-item {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .file-item .name {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .file-item .size {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .file-item .time {
+            color: #999;
+            font-size: 11px;
+        }
+
+        .logs-preview {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 15px;
+        }
+
+        .logs-preview .log-line {
+            margin-bottom: 5px;
+            padding: 5px;
+            border-left: 3px solid transparent;
+        }
+
+        .logs-preview .log-line.info {
+            border-left-color: #4ec9b0;
+        }
+
+        .logs-preview .log-line.error {
+            border-left-color: #f48771;
+        }
+
+        .logs-preview .log-line.warning {
+            border-left-color: #dcdcaa;
+        }
+
+        .connection-status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .connection-status .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #28a745;
+            animation: pulse 2s infinite;
+        }
+
+        .connection-status .indicator.disconnected {
+            background: #dc3545;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            background: #fc466b;
+            color: white;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👁️ Watcher Service Configuration</h1>
+            <p>Monitor directories, manage file processing, and configure notifications</p>
+            <div style="margin-top: 15px;">
+                <span class="status watching" id="service-status">● Watching</span>
+                <span style="margin-left: 15px; color: #666;">Files Processed: <strong id="processed-count">0</strong></span>
+            </div>
+            <div class="connection-status">
+                <div class="indicator" id="logger-indicator"></div>
+                <span id="logger-status">Connecting to Logger Service...</span>
+            </div>
+        </div>
+
+        <div id="alert" class="alert"></div>
+
+        <div class="grid">
+            <!-- Directory Settings -->
+            <div class="card">
+                <h2>📁 Directory Settings</h2>
+                <form id="directory-form">
+                    <div class="form-group">
+                        <label for="watch_directory">Watch Directory</label>
+                        <input type="text" id="watch_directory" name="watch_directory" value="../watched">
+                        <small>Directory to monitor for new files</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="processed_directory">Processed Directory</label>
+                        <input type="text" id="processed_directory" name="processed_directory" value="../processed">
+                        <small>Where to move processed files</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="check_interval">Check Interval (seconds)</label>
+                        <input type="number" id="check_interval" name="check_interval" value="1" min="1" max="60">
+                        <small>How often to check for new files</small>
+                    </div>
+
+                    <button type="submit" class="btn">💾 Save Directory Settings</button>
+                </form>
+            </div>
+
+            <!-- Logger Connection -->
+            <div class="card">
+                <h2>🔗 Logger Service Connection</h2>
+                <form id="logger-form">
+                    <div class="form-group">
+                        <label for="logger_url">Logger Service URL</label>
+                        <input type="text" id="logger_url" name="logger_url" value="http://localhost:5000/log">
+                        <small>Endpoint for sending metadata</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeout">Request Timeout (seconds)</label>
+                        <input type="number" id="timeout" name="timeout" value="10" min="1" max="60">
+                        <small>HTTP request timeout</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="retry_attempts">Retry Attempts</label>
+                        <input type="number" id="retry_attempts" name="retry_attempts" value="3" min="1" max="10">
+                        <small>Number of retry attempts on failure</small>
+                    </div>
+
+                    <button type="submit" class="btn">🔌 Save Connection Settings</button>
+                    <button type="button" class="btn btn-secondary" onclick="testConnection()">🧪 Test Connection</button>
+                </form>
+            </div>
+
+            <!-- JWT Settings -->
+            <div class="card">
+                <h2>🔐 JWT Settings</h2>
+                <form id="jwt-form">
+                    <div class="form-group">
+                        <label for="jwt_issuer">JWT Issuer</label>
+                        <input type="text" id="jwt_issuer" name="jwt_issuer" value="watcher-service">
+                        <small>Token issuer identifier</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expiration_minutes">Token Expiration (minutes)</label>
+                        <input type="number" id="expiration_minutes" name="expiration_minutes" value="5" min="1" max="60">
+                        <small>JWT token validity period</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jwt_algorithm">Algorithm</label>
+                        <select id="jwt_algorithm" name="jwt_algorithm">
+                            <option value="HS256" selected>HS256</option>
+                            <option value="HS384">HS384</option>
+                            <option value="HS512">HS512</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn">🔑 Save JWT Settings</button>
+                </form>
+            </div>
+
+            <!-- Logging Settings -->
+            <div class="card">
+                <h2>📊 Logging Settings</h2>
+                <form id="logging-form">
+                    <div class="form-group">
+                        <label for="log_level">Log Level</label>
+                        <select id="log_level" name="log_level">
+                            <option value="DEBUG">DEBUG</option>
+                            <option value="INFO" selected>INFO</option>
+                            <option value="WARN">WARN</option>
+                            <option value="ERROR">ERROR</option>
+                            <option value="FATAL">FATAL</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="max_size_mb">Log File Size (MB)</label>
+                        <input type="number" id="max_size_mb" name="max_size_mb" value="10" min="1" max="100">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="backup_count">Backup Count</label>
+                        <input type="number" id="backup_count" name="backup_count" value="5" min="1" max="20">
+                    </div>
+
+                    <button type="submit" class="btn">📝 Save Logging Settings</button>
+                </form>
+            </div>
+
+            <!-- Notifications -->
+            <div class="card">
+                <h2>📧 Notifications</h2>
+                <form id="notifications-form">
+                    <div class="form-group toggle">
+                        <input type="checkbox" id="email_enabled" name="email_enabled">
+                        <label for="email_enabled">Enable Email Notifications</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email_to">Email To</label>
+                        <input type="email" id="email_to" name="email_to" placeholder="admin@example.com">
+                    </div>
+
+                    <div class="form-group toggle">
+                        <input type="checkbox" id="syslog_enabled" name="syslog_enabled">
+                        <label for="syslog_enabled">Enable Syslog</label>
+                    </div>
+
+                    <button type="submit" class="btn">📬 Save Notifications</button>
+                </form>
+            </div>
+
+            <!-- Statistics -->
+            <div class="card">
+                <h2>📈 Statistics</h2>
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="value" id="total-processed">0</div>
+                        <div class="label">Total Processed</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="value" id="today-processed">0</div>
+                        <div class="label">Today</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="value" id="pending-files">0</div>
+                        <div class="label">Pending</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="value" id="success-rate">100%</div>
+                        <div class="label">Success Rate</div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary" onclick="refreshStats()">🔄 Refresh Stats</button>
+            </div>
+        </div>
+
+        <!-- Pending Files -->
+        <div class="card">
+            <h2>📂 Pending Files <span class="badge" id="pending-badge">0</span></h2>
+            <div class="file-list" id="pending-files-list">
+                <div style="text-align: center; color: #999;">No pending files</div>
+            </div>
+            <button class="btn btn-secondary" onclick="refreshFiles()">🔄 Refresh Files</button>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="card">
+            <h2>📜 Recent Activity</h2>
+            <div class="logs-preview" id="logs-preview">
+                <div class="log-line info">Loading logs...</div>
+            </div>
+            <button class="btn btn-secondary" onclick="refreshLogs()">🔄 Refresh Logs</button>
+        </div>
+    </div>
+
+    <script>
+        // Load current config
+        async function loadConfig() {
+            try {
+                const response = await fetch('/api/config');
+                const config = await response.json();
+
+                // Directory settings
+                document.getElementById('watch_directory').value = config.watcher.watch_directory;
+                document.getElementById('processed_directory').value = config.watcher.processed_directory;
+                document.getElementById('check_interval').value = config.watcher.check_interval;
+
+                // Logger connection
+                document.getElementById('logger_url').value = config.logger_service.url;
+                document.getElementById('timeout').value = config.logger_service.timeout;
+                document.getElementById('retry_attempts').value = config.logger_service.retry_attempts || 3;
+
+                // JWT settings
+                document.getElementById('jwt_issuer').value = config.jwt.issuer;
+                document.getElementById('expiration_minutes').value = config.jwt.expiration_minutes;
+                document.getElementById('jwt_algorithm').value = config.jwt.algorithm;
+
+                // Logging settings
+                document.getElementById('log_level').value = config.logging.level;
+                document.getElementById('max_size_mb').value = config.logging.max_size_mb;
+                document.getElementById('backup_count').value = config.logging.backup_count;
+
+                // Notifications
+                document.getElementById('email_enabled').checked = config.notifications.email.enabled;
+                document.getElementById('email_to').value = config.notifications.email.to;
+                document.getElementById('syslog_enabled').checked = config.notifications.syslog.enabled;
+            } catch (error) {
+                showAlert('Failed to load configuration: ' + error.message, 'error');
+            }
+        }
+
+        // Save directory settings
+        document.getElementById('directory-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = {
+                watch_directory: formData.get('watch_directory'),
+                processed_directory: formData.get('processed_directory'),
+                check_interval: parseInt(formData.get('check_interval'))
+            };
+            await saveConfig('watcher', data);
+        });
+
+        // Save logger connection
+        document.getElementById('logger-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = {
+                url: formData.get('logger_url'),
+                timeout: parseInt(formData.get('timeout')),
+                retry_attempts: parseInt(formData.get('retry_attempts'))
+            };
+            await saveConfig('logger_service', data);
+        });
+
+        // Save JWT settings
+        document.getElementById('jwt-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = {
+                issuer: formData.get('jwt_issuer'),
+                expiration_minutes: parseInt(formData.get('expiration_minutes')),
+                algorithm: formData.get('jwt_algorithm')
+            };
+            await saveConfig('jwt', data);
+        });
+
+        // Save logging settings
+        document.getElementById('logging-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = {
+                level: formData.get('log_level'),
+                max_size_mb: parseInt(formData.get('max_size_mb')),
+                backup_count: parseInt(formData.get('backup_count'))
+            };
+            await saveConfig('logging', data);
+        });
+
+        // Save notifications
+        document.getElementById('notifications-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const data = {
+                email: {
+                    enabled: document.getElementById('email_enabled').checked,
+                    to: document.getElementById('email_to').value
+                },
+                syslog: {
+                    enabled: document.getElementById('syslog_enabled').checked
+                }
+            };
+            await saveConfig('notifications', data);
+        });
+
+        // Save config API
+        async function saveConfig(section, data) {
+            try {
+                const response = await fetch(`/api/config/${section}`, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    showAlert(`${section} settings saved! Restart may be required.`, 'success');
+                } else {
+                    const error = await response.json();
+                    showAlert('Failed to save: ' + error.error, 'error');
+                }
+            } catch (error) {
+                showAlert('Error: ' + error.message, 'error');
+            }
+        }
+
+        // Test connection to Logger Service
+        async function testConnection() {
+            try {
+                const response = await fetch('/api/test-connection');
+                const result = await response.json();
+
+                if (result.success) {
+                    showAlert('✅ Connection successful!', 'success');
+                    document.getElementById('logger-indicator').classList.remove('disconnected');
+                    document.getElementById('logger-status').textContent = 'Connected to Logger Service';
+                } else {
+                    showAlert('❌ Connection failed: ' + result.error, 'error');
+                    document.getElementById('logger-indicator').classList.add('disconnected');
+                    document.getElementById('logger-status').textContent = 'Disconnected from Logger Service';
+                }
+            } catch (error) {
+                showAlert('Connection test failed: ' + error.message, 'error');
+            }
+        }
+
+        // Refresh stats
+        async function refreshStats() {
+            try {
+                const response = await fetch('/api/stats');
+                const stats = await response.json();
+
+                document.getElementById('total-processed').textContent = stats.total_processed;
+                document.getElementById('today-processed').textContent = stats.today_processed;
+                document.getElementById('pending-files').textContent = stats.pending_files;
+                document.getElementById('success-rate').textContent = stats.success_rate + '%';
+                document.getElementById('processed-count').textContent = stats.total_processed;
+            } catch (error) {
+                showAlert('Failed to refresh stats', 'error');
+            }
+        }
+
+        // Refresh pending files
+        async function refreshFiles() {
+            try {
+                const response = await fetch('/api/files/pending');
+                const files = await response.json();
+
+                const filesList = document.getElementById('pending-files-list');
+                document.getElementById('pending-badge').textContent = files.length;
+
+                if (files.length === 0) {
+                    filesList.innerHTML = '<div style="text-align: center; color: #999;">No pending files</div>';
+                } else {
+                    filesList.innerHTML = files.map(file => `
+                        <div class="file-item">
+                            <div>
+                                <div class="name">📄 ${file.name}</div>
+                                <div class="size">${file.size}</div>
+                            </div>
+                            <div class="time">${file.created}</div>
+                        </div>
+                    `).join('');
+                }
+            } catch (error) {
+                showAlert('Failed to refresh files', 'error');
+            }
+        }
+
+        // Refresh logs
+        async function refreshLogs() {
+            try {
+                const response = await fetch('/api/logs/recent');
+                const logs = await response.json();
+
+                const logsPreview = document.getElementById('logs-preview');
+                logsPreview.innerHTML = logs.map(log =>
+                    `<div class="log-line ${log.level.toLowerCase()}">${log.timestamp} - ${log.level} - ${log.message}</div>`
+                ).join('');
+            } catch (error) {
+                showAlert('Failed to refresh logs', 'error');
+            }
+        }
+
+        // Show alert
+        function showAlert(message, type) {
+            const alert = document.getElementById('alert');
+            alert.className = `alert ${type}`;
+            alert.textContent = message;
+            alert.style.display = 'block';
+
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 5000);
+        }
+
+        // Initialize
+        loadConfig();
+        refreshStats();
+        refreshFiles();
+        refreshLogs();
+        testConnection();
+
+        // Auto-refresh
+        setInterval(refreshStats, 30000);
+        setInterval(refreshFiles, 10000);
+        setInterval(refreshLogs, 30000);
+        setInterval(testConnection, 60000);
+    </script>
+</body>
+</html>

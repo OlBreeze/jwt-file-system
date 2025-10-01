@@ -12,6 +12,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 COPY config.yaml .
 
+COPY templates/ templates/
+
 # Создаем директорию для логов сервиса
 RUN mkdir -p logs
 

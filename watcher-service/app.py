@@ -1,6 +1,7 @@
 """
 Watcher Service - JWT File System
 Мониторит папку на новые файлы и отправляет метаданные в Logger Service
+Включает Web UI для управления конфигурацией
 """
 
 import os
@@ -11,14 +12,27 @@ import shutil
 import hashlib
 import logging
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from logging.handlers import RotatingFileHandler
-from watchdog.observers import Observer
+from watchdog.observers.polling import PollingObserver
 from watchdog.events import FileSystemEventHandler
+from flask import Flask, request, jsonify, render_template
+from threading import Thread
 import smtplib
 from email.mime.text import MIMEText
 import socket
+
+# Глобальные переменные
+config = None
+logger = None
+
+# Статистика
+stats = {
+    'total_processed': 0,
+    'today_processed': 0,
+    'failed': 0
+}
 
 
 # ============================================
@@ -116,8 +130,8 @@ def generate_jwt_token(config):
     try:
         payload = {
             'iss': config['jwt']['issuer'],
-            'exp': datetime.utcnow() + timedelta(minutes=config['jwt']['expiration_minutes']),
-            'iat': datetime.utcnow()
+            'exp': datetime.now(timezone.utc) + timedelta(minutes=config['jwt']['expiration_minutes']),
+            'iat': datetime.now(timezone.utc)
         }
 
         token = jwt.encode(
@@ -170,7 +184,7 @@ def extract_metadata(filepath):
 
         metadata = {
             'filename': file_path.name,
-            'created_at': datetime.utcnow().isoformat() + 'Z',
+            'created_at': datetime.now(timezone.utc).isoformat(),
             'file_size': file_stat.st_size,
             'hash': calculate_file_hash(filepath)
         }
@@ -390,6 +404,7 @@ class FileWatcherHandler(FileSystemEventHandler):
 
             if not metadata:
                 self.logger.error(f"Failed to extract metadata from: {filepath}")
+                stats['failed'] += 1
                 send_email_notification(
                     self.config,
                     "Metadata Extraction Failed",
@@ -404,6 +419,7 @@ class FileWatcherHandler(FileSystemEventHandler):
 
             if not success:
                 self.logger.error(f"Failed to send metadata: {response}")
+                stats['failed'] += 1
                 send_email_notification(
                     self.config,
                     "Failed to Send Metadata",
@@ -420,6 +436,7 @@ class FileWatcherHandler(FileSystemEventHandler):
 
             if not moved:
                 self.logger.error(f"Failed to move file: {filepath}")
+                stats['failed'] += 1
                 send_email_notification(
                     self.config,
                     "Failed to Move File",
@@ -429,12 +446,15 @@ class FileWatcherHandler(FileSystemEventHandler):
                 return
 
             # ✅ Успех!
+            stats['total_processed'] += 1
+            stats['today_processed'] += 1
             self.logger.info(f"✅ Successfully processed: {metadata['filename']}")
             self.logger.info(f"   Size: {metadata['file_size']} bytes")
             self.logger.info(f"   Hash: {metadata['hash'][:16]}...")
             self.logger.info(f"   Moved to: {new_path}")
 
         except Exception as e:
+            stats['failed'] += 1
             self.logger.error(f"Error processing file {filepath}: {e}")
             send_email_notification(
                 self.config,
@@ -445,7 +465,199 @@ class FileWatcherHandler(FileSystemEventHandler):
 
 
 # ============================================
-# 8. MAIN
+# 8. FLASK API FOR WEB UI
+# ============================================
+
+# Создаем Flask приложение для Web UI
+web_app = Flask(__name__)
+web_app.config['JSON_AS_ASCII'] = False
+
+
+@web_app.route('/')
+def index():
+    """Web UI homepage"""
+    try:
+        return render_template('config.html')
+    except:
+        return jsonify({
+            'service': 'watcher-service',
+            'message': 'Web UI not available. Create templates/config.html to enable.',
+            'endpoints': {
+                'config': '/api/config (GET)',
+                'update_config': '/api/config/<section> (PUT)',
+                'stats': '/api/stats (GET)',
+                'pending_files': '/api/files/pending (GET)',
+                'recent_logs': '/api/logs/recent (GET)',
+                'test_connection': '/api/test-connection (GET)'
+            }
+        }), 200
+
+
+@web_app.route('/api/config', methods=['GET'])
+def get_config():
+    """Get current configuration"""
+    return jsonify(config), 200
+
+
+@web_app.route('/api/config/<section>', methods=['PUT'])
+def update_config_endpoint(section):
+    """Update configuration section"""
+    try:
+        data = request.get_json()
+
+        if section in config:
+            if isinstance(config[section], dict) and isinstance(data, dict):
+                config[section].update(data)
+            else:
+                config[section] = data
+
+            # Save to file
+            config_path = Path(__file__).parent / 'config.yaml'
+            with open(config_path, 'w', encoding='utf-8') as f:
+                yaml.dump(config, f, default_flow_style=False)
+
+            logger.info(f"Configuration section '{section}' updated")
+            return jsonify({'status': 'success', 'message': f'{section} updated'}), 200
+        else:
+            return jsonify({'error': f'Unknown section: {section}'}), 400
+
+    except Exception as e:
+        logger.error(f"Failed to update config: {e}")
+        return jsonify({'error': str(e)}), 500
+
+
+@web_app.route('/api/stats', methods=['GET'])
+def get_stats():
+    """Get service statistics"""
+    try:
+        watched_dir = Path(config['watcher']['watch_directory'])
+        processed_dir = Path(config['watcher']['processed_directory'])
+
+        pending_files = len(list(watched_dir.glob('*'))) if watched_dir.exists() else 0
+
+        # Calculate success rate
+        total = stats['total_processed'] + stats['failed']
+        success_rate = round((stats['total_processed'] / total * 100) if total > 0 else 100, 1)
+
+        return jsonify({
+            'total_processed': stats['total_processed'],
+            'today_processed': stats['today_processed'],
+            'pending_files': pending_files,
+            'success_rate': success_rate
+        }), 200
+
+    except Exception as e:
+        logger.error(f"Failed to get stats: {e}")
+        return jsonify({'error': str(e)}), 500
+
+
+@web_app.route('/api/files/pending', methods=['GET'])
+def get_pending_files():
+    """Get list of pending files in watched directory"""
+    try:
+        watched_dir = Path(config['watcher']['watch_directory'])
+
+        if not watched_dir.exists():
+            return jsonify([]), 200
+
+        files = []
+        for file_path in watched_dir.glob('*'):
+            if file_path.is_file():
+                stat = file_path.stat()
+                files.append({
+                    'name': file_path.name,
+                    'size': format_file_size(stat.st_size),
+                    'created': datetime.fromtimestamp(stat.st_mtime, tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
+                })
+
+        return jsonify(files), 200
+
+    except Exception as e:
+        logger.error(f"Failed to get pending files: {e}")
+        return jsonify({'error': str(e)}), 500
+
+
+@web_app.route('/api/logs/recent', methods=['GET'])
+def get_recent_logs():
+    """Get recent service logs"""
+    try:
+        log_file = Path(config['logging']['file'])
+
+        if not log_file.exists():
+            return jsonify([]), 200
+
+        with open(log_file, 'r', encoding='utf-8') as f:
+            lines = f.readlines()[-50:]
+
+        logs = []
+        for line in lines:
+            parts = line.split(' - ')
+            if len(parts) >= 3:
+                logs.append({
+                    'timestamp': parts[0],
+                    'level': parts[2].strip(),
+                    'message': ' - '.join(parts[3:]).strip()
+                })
+
+        return jsonify(logs), 200
+
+    except Exception as e:
+        logger.error(f"Failed to get recent logs: {e}")
+        return jsonify({'error': str(e)}), 500
+
+
+@web_app.route('/api/test-connection', methods=['GET'])
+def test_connection():
+    """Test connection to Logger Service"""
+    try:
+        logger_url = config['logger_service']['url'].replace('/log', '/health')
+        response = requests.get(logger_url, timeout=5)
+
+        if response.status_code == 200:
+            return jsonify({
+                'success': True,
+                'message': 'Logger Service is reachable',
+                'response': response.json()
+            }), 200
+        else:
+            return jsonify({
+                'success': False,
+                'error': f'Logger returned status {response.status_code}'
+            }), 200
+
+    except requests.exceptions.Timeout:
+        return jsonify({
+            'success': False,
+            'error': 'Connection timeout'
+        }), 200
+
+    except requests.exceptions.ConnectionError:
+        return jsonify({
+            'success': False,
+            'error': 'Cannot connect to Logger Service'
+        }), 200
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 200
+
+
+def format_file_size(size_bytes):
+    """Format file size for display"""
+    if size_bytes < 1024:
+        return f"{size_bytes}B"
+    elif size_bytes < 1024 * 1024:
+        return f"{size_bytes / 1024:.2f}KB"
+    elif size_bytes < 1024 * 1024 * 1024:
+        return f"{size_bytes / (1024 * 1024):.2f}MB"
+    else:
+        return f"{size_bytes / (1024 * 1024 * 1024):.2f}GB"
+
+
+# ============================================
+# 9. MAIN
 # ============================================
 
 def main():
@@ -468,6 +680,7 @@ def main():
     logger.info(f"⏱️  JWT expiration: {config['jwt']['expiration_minutes']} minutes")
     logger.info(f"📧 Email notifications: {'enabled' if config['notifications']['email']['enabled'] else 'disabled'}")
     logger.info(f"📡 Syslog notifications: {'enabled' if config['notifications']['syslog']['enabled'] else 'disabled'}")
+    logger.info(f"🌐 Web UI: http://0.0.0.0:8080/")
     logger.info("=" * 60)
 
     # Создаем необходимые директории
@@ -496,16 +709,21 @@ def main():
     # Создаем обработчик событий
     event_handler = FileWatcherHandler(config, logger)
 
-    # Создаем observer
-    # - observer = Observer() !!! because Windows
-    from watchdog.observers.polling import PollingObserver
+    # Создаем observer (используем PollingObserver для Windows/Docker)
     observer = PollingObserver()
-    # -
     observer.schedule(event_handler, str(watch_dir), recursive=False)
 
-    # Запускаем мониторинг
+    # Запускаем мониторинг в отдельном потоке
     observer.start()
     logger.info("👀 Watching for new files... (Press Ctrl+C to stop)")
+
+    # Запускаем Flask API в отдельном потоке
+    def run_web_app():
+        web_app.run(host='0.0.0.0', port=8080, debug=False, use_reloader=False)
+
+    web_thread = Thread(target=run_web_app, daemon=True)
+    web_thread.start()
+    logger.info("🌐 Web UI started on http://0.0.0.0:8080")
 
     try:
         while True:

@@ -85,3 +85,210 @@
 2025-09-30 13:10:46 - root - INFO - 📝 Received metadata for file: .gitkeep (0B)
 2025-09-30 13:10:46 - root - INFO - ✅ Created log file: unnamed-20250930T131046Z.txt
 2025-09-30 13:10:46 - root - INFO - ✅ Successfully processed file: .gitkeep
+2025-09-30 16:29:04 - root - INFO - 📝 Received metadata for file: Visual HOT keys (112B)
+2025-09-30 16:29:04 - root - INFO - ✅ Created log file: Visual_HOT_keys-20250930T162904Z.txt
+2025-09-30 16:29:04 - root - INFO - ✅ Successfully processed file: Visual HOT keys
+2025-09-30 23:55:50 - root - INFO - ============================================================
+2025-09-30 23:55:50 - root - INFO - 🚀 Starting logger-service
+2025-09-30 23:55:50 - root - INFO - 📍 Host: 0.0.0.0
+2025-09-30 23:55:50 - root - INFO - 📍 Port: 5000
+2025-09-30 23:55:50 - root - INFO - 📁 Logs directory: ../logs
+2025-09-30 23:55:50 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-09-30 23:55:50 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 23:55:50 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 23:55:50 - root - INFO - ============================================================
+2025-09-30 23:56:07 - app - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\WorkspacePython\jwt-file-system\logger-service\app.py", line 340, in health_check
+    'timestamp': format_timestamp_for_filename.isoformat()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'isoformat'
+2025-09-30 23:56:07 - root - ERROR - Internal server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-09-30 23:56:19 - root - INFO - 📝 Received metadata for file: mytest.txt (18B)
+2025-09-30 23:56:19 - root - ERROR - Failed to create log file: 'function' object has no attribute 'isoformat'
+2025-09-30 23:56:19 - root - ERROR - ❌ Failed to create log file: Failed to create log file: 'function' object has no attribute 'isoformat'
+2025-09-30 23:56:37 - app - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\WorkspacePython\jwt-file-system\logger-service\app.py", line 340, in health_check
+    'timestamp': format_timestamp_for_filename.isoformat()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'isoformat'
+2025-09-30 23:56:37 - root - ERROR - Internal server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-09-30 23:58:56 - root - INFO - ============================================================
+2025-09-30 23:58:56 - root - INFO - 🚀 Starting logger-service
+2025-09-30 23:58:56 - root - INFO - 📍 Host: 0.0.0.0
+2025-09-30 23:58:56 - root - INFO - 📍 Port: 5000
+2025-09-30 23:58:56 - root - INFO - 📁 Logs directory: ../logs
+2025-09-30 23:58:56 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-09-30 23:58:56 - root - INFO - 📧 Email notifications: disabled
+2025-09-30 23:58:56 - root - INFO - 📡 Syslog notifications: disabled
+2025-09-30 23:58:56 - root - INFO - ============================================================
+2025-09-30 23:59:05 - app - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\WorkspacePython\jwt-file-system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\WorkspacePython\jwt-file-system\logger-service\app.py", line 349, in health_check
+    'timestamp': format_timestamp_for_filename.isoformat()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'isoformat'
+2025-09-30 23:59:05 - root - ERROR - Internal server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-10-01 00:04:20 - root - INFO - ============================================================
+2025-10-01 00:04:20 - root - INFO - 🚀 Starting logger-service
+2025-10-01 00:04:20 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-01 00:04:20 - root - INFO - 📍 Port: 5000
+2025-10-01 00:04:20 - root - INFO - 📁 Logs directory: ../logs
+2025-10-01 00:04:20 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-10-01 00:04:20 - root - INFO - 📧 Email notifications: disabled
+2025-10-01 00:04:20 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-01 00:04:20 - root - INFO - ============================================================
+2025-10-01 00:04:45 - root - INFO - 📝 Received metadata for file: mytest.txt (18B)
+2025-10-01 00:04:45 - root - INFO - ✅ Created log file: mytest-20250930T210443Z.txt
+2025-10-01 00:04:45 - root - INFO - ✅ Successfully processed file: mytest.txt
+2025-10-01 12:25:25 - root - INFO - ============================================================
+2025-10-01 12:25:25 - root - INFO - 🚀 Starting logger-service
+2025-10-01 12:25:25 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-01 12:25:25 - root - INFO - 📍 Port: 5000
+2025-10-01 12:25:25 - root - INFO - 📁 Logs directory: ../logs
+2025-10-01 12:25:25 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-10-01 12:25:25 - root - INFO - 📧 Email notifications: disabled
+2025-10-01 12:25:25 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-01 12:25:25 - root - INFO - ============================================================
+2025-10-01 12:26:53 - root - INFO - 📝 Received metadata for file: Overview.docx (80.63KB)
+2025-10-01 12:26:53 - root - INFO - ✅ Created log file: Overview-20251001T092651Z.txt
+2025-10-01 12:26:53 - root - INFO - ✅ Successfully processed file: Overview.docx
+2025-10-01 12:33:37 - root - INFO - ============================================================
+2025-10-01 12:33:37 - root - INFO - 🚀 Starting logger-service
+2025-10-01 12:33:37 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-01 12:33:37 - root - INFO - 📍 Port: 5000
+2025-10-01 12:33:37 - root - INFO - 📁 Logs directory: ../logs
+2025-10-01 12:33:37 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-10-01 12:33:37 - root - INFO - 📧 Email notifications: disabled
+2025-10-01 12:33:37 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-01 12:33:37 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-01 12:33:37 - root - INFO - ============================================================
+2025-10-01 12:34:49 - root - INFO - Configuration section 'storage' updated
+2025-10-01 12:34:54 - root - INFO - Configuration section 'logging' updated
+2025-10-01 12:35:23 - root - INFO - 📝 Received metadata for file: test-docker.txt (23B)
+2025-10-01 12:35:23 - root - INFO - ✅ Created log file: test-docker-20251001T093521Z.txt
+2025-10-01 12:35:23 - root - INFO - ✅ Successfully processed file: test-docker.txt
+2025-10-01 13:11:22 - root - WARNING - Removed oldest log file: mytest-20250930T210443Z.txt (max files limit reached)
+2025-10-01 13:12:33 - root - WARNING - Removed oldest log file: Overview-20251001T092651Z.txt (max files limit reached)
+2025-10-01 10:16:24 - root - INFO - ============================================================
+2025-10-01 10:16:24 - root - INFO - 🚀 Starting logger-service
+2025-10-01 10:16:24 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-01 10:16:24 - root - INFO - 📍 Port: 5000
+2025-10-01 10:16:24 - root - INFO - 📁 Logs directory: ../logs
+2025-10-01 10:16:24 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-10-01 10:16:24 - root - INFO - 📧 Email notifications: disabled
+2025-10-01 10:16:24 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-01 10:16:24 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-01 10:16:24 - root - INFO - ============================================================
+2025-10-01 10:29:47 - root - INFO - 📝 Received metadata for file: final-ui-test.txt (18B)
+2025-10-01 10:29:47 - root - WARNING - Removed oldest log file: test-docker-20251001T093521Z.txt (max files limit reached)
+2025-10-01 10:29:47 - root - INFO - ✅ Created log file: final-ui-test-20251001T102947Z.txt
+2025-10-01 10:29:47 - root - INFO - ✅ Successfully processed file: final-ui-test.txt
+2025-10-01 10:30:48 - root - INFO - 📝 Received metadata for file: final-ui-test.txt (18B)
+2025-10-01 10:30:48 - root - WARNING - Removed oldest log file: test-docker-20251001T101120Z.txt (max files limit reached)
+2025-10-01 10:30:48 - root - INFO - ✅ Created log file: final-ui-test-20251001T103048Z.txt
+2025-10-01 10:30:48 - root - INFO - ✅ Successfully processed file: final-ui-test.txt
+2025-10-01 10:45:34 - root - INFO - ============================================================
+2025-10-01 10:45:34 - root - INFO - 🚀 Starting logger-service
+2025-10-01 10:45:34 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-01 10:45:34 - root - INFO - 📍 Port: 5000
+2025-10-01 10:45:34 - root - INFO - 📁 Logs directory: ../logs
+2025-10-01 10:45:34 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-10-01 10:45:34 - root - INFO - 📧 Email notifications: disabled
+2025-10-01 10:45:34 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-01 10:45:34 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-01 10:45:34 - root - INFO - ============================================================
+2025-10-01 10:47:49 - root - INFO - ============================================================
+2025-10-01 10:47:49 - root - INFO - 🚀 Starting logger-service
+2025-10-01 10:47:49 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-01 10:47:49 - root - INFO - 📍 Port: 5000
+2025-10-01 10:47:49 - root - INFO - 📁 Logs directory: ../logs
+2025-10-01 10:47:49 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-10-01 10:47:49 - root - INFO - 📧 Email notifications: disabled
+2025-10-01 10:47:49 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-01 10:47:49 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-01 10:47:49 - root - INFO - ============================================================
+2025-10-01 10:54:55 - root - INFO - ============================================================
+2025-10-01 10:54:55 - root - INFO - 🚀 Starting logger-service
+2025-10-01 10:54:55 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-01 10:54:55 - root - INFO - 📍 Port: 5000
+2025-10-01 10:54:55 - root - INFO - 📁 Logs directory: ../logs
+2025-10-01 10:54:55 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-10-01 10:54:55 - root - INFO - 📧 Email notifications: disabled
+2025-10-01 10:54:55 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-01 10:54:55 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-01 10:54:55 - root - INFO - ============================================================
+2025-10-01 10:59:48 - root - INFO - 📝 Received metadata for file: test-docker.txt (23B)
+2025-10-01 10:59:48 - root - WARNING - Removed oldest log file: Силлабус-uk-20251001T101231Z.txt (max files limit reached)
+2025-10-01 10:59:48 - root - INFO - ✅ Created log file: test-docker-20251001T105948Z.txt
+2025-10-01 10:59:48 - root - INFO - ✅ Successfully processed file: test-docker.txt
+2025-10-01 11:02:53 - root - INFO - ============================================================
+2025-10-01 11:02:53 - root - INFO - 🚀 Starting logger-service
+2025-10-01 11:02:53 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-01 11:02:53 - root - INFO - 📍 Port: 5000
+2025-10-01 11:02:53 - root - INFO - 📁 Logs directory: ../logs
+2025-10-01 11:02:53 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-10-01 11:02:53 - root - INFO - 📧 Email notifications: disabled
+2025-10-01 11:02:53 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-01 11:02:53 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-01 11:02:53 - root - INFO - ============================================================
+2025-10-01 11:04:03 - root - INFO - 📝 Received metadata for file: mytest.txt (18B)
+2025-10-01 11:04:03 - root - WARNING - Removed oldest log file: final-ui-test-20251001T102947Z.txt (max files limit reached)
+2025-10-01 11:04:03 - root - INFO - ✅ Created log file: mytest-20251001T110403Z.txt
+2025-10-01 11:04:03 - root - INFO - ✅ Successfully processed file: mytest.txt
+2025-10-01 11:05:29 - root - INFO - 📝 Received metadata for file: test-docker.txt (23B)
+2025-10-01 11:05:29 - root - WARNING - Removed oldest log file: final-ui-test-20251001T103048Z.txt (max files limit reached)
+2025-10-01 11:05:29 - root - INFO - ✅ Created log file: test-docker-20251001T110529Z.txt
+2025-10-01 11:05:29 - root - INFO - ✅ Successfully processed file: test-docker.txt
+2025-10-01 11:08:13 - root - INFO - 📝 Received metadata for file: logger-stats-test.txt (22B)
+2025-10-01 11:08:13 - root - WARNING - Removed oldest log file: test-docker-20251001T105948Z.txt (max files limit reached)
+2025-10-01 11:08:13 - root - INFO - ✅ Created log file: logger-stats-test-20251001T110813Z.txt
+2025-10-01 11:08:13 - root - INFO - ✅ Successfully processed file: logger-stats-test.txt
+2025-10-01 11:08:49 - root - INFO - 📝 Received metadata for file: test-docker.txt (23B)
+2025-10-01 11:08:49 - root - WARNING - Removed oldest log file: mytest-20251001T110403Z.txt (max files limit reached)
+2025-10-01 11:08:49 - root - INFO - ✅ Created log file: test-docker-20251001T110849Z.txt
+2025-10-01 11:08:49 - root - INFO - ✅ Successfully processed file: test-docker.txt
+2025-10-01 11:17:48 - root - INFO - ============================================================
+2025-10-01 11:17:48 - root - INFO - 🚀 Starting logger-service
+2025-10-01 11:17:48 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-01 11:17:48 - root - INFO - 📍 Port: 5000
+2025-10-01 11:17:48 - root - INFO - 📁 Logs directory: ../logs
+2025-10-01 11:17:48 - root - INFO - 🔐 JWT issuer expected: watcher-service
+2025-10-01 11:17:48 - root - INFO - 📧 Email notifications: disabled
+2025-10-01 11:17:48 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-01 11:17:48 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-01 11:17:48 - root - INFO - ============================================================
+2025-10-01 11:19:00 - root - INFO - 📝 Received metadata for file: test-docker.txt (23B)
+2025-10-01 11:19:00 - root - INFO - ✅ Created log file: test-docker-20251001T111900Z.txt
+2025-10-01 11:19:00 - root - INFO - ✅ Successfully processed file: test-docker.txt
+2025-10-01 11:19:33 - root - INFO - 📝 Received metadata for file: Силлабус-uk.pdf (196.50KB)
+2025-10-01 11:19:33 - root - INFO - ✅ Created log file: Силлабус-uk-20251001T111933Z.txt
+2025-10-01 11:19:33 - root - INFO - ✅ Successfully processed file: Силлабус-uk.pdf
