@@ -12,19 +12,13 @@ services:
       - ./logs:/app/../logs
       - ./logger-service/logs:/app/logs
     environment:
-      - JWT_SECRET=sasa-Software2015
+      - JWT_SECRET=${JWT_SECRET:-dev-default-secret}
       - LOGGER_HOST=0.0.0.0
       - LOGGER_PORT=5000
       - LOG_LEVEL=INFO
     networks:
       - jwt-file-system-network
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost:5000/health || exit 1"]
-      interval: 15s
-      timeout: 5s
-      retries: 5
-      start_period: 20s
 
   watcher-service:
     build:
@@ -32,8 +26,7 @@ services:
       dockerfile: Dockerfile
     container_name: watcher-service
     depends_on:
-      logger-service:
-        condition: service_healthy
+      - logger-service
     ports:
       - "8080:8080"
     volumes:
@@ -41,8 +34,8 @@ services:
       - ./processed:/app/processed
       - ./watcher-service/logs:/app/logs
     environment:
-      - JWT_SECRET=sasa-Software2015
-      - LOGGER_URL=http://logger-service:5000/log
+      - JWT_SECRET=${JWT_SECRET:-dev-default-secret}
+      - LOGGER_URL=${LOGGER_URL:-http://logger-service:5000/log}
       - WATCH_DIR=/app/watched
       - PROCESSED_DIR=/app/processed
       - LOG_LEVEL=INFO

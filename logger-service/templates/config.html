@@ -4,519 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logger Service - Configuration</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .header {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .header h1 {
-            color: #667eea;
-            margin-bottom: 10px;
-            font-size: 2em;
-        }
-
-        .header p {
-            color: #666;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .card h2 {
-            color: #333;
-            margin-bottom: 20px;
-            font-size: 1.5em;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: #555;
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #e0e0e0;
-            border-radius: 5px;
-            font-size: 14px;
-            transition: border-color 0.3s;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        .form-group small {
-            display: block;
-            margin-top: 5px;
-            color: #999;
-            font-size: 12px;
-        }
-
-        .toggle {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .toggle input[type="checkbox"] {
-            width: 50px;
-            height: 25px;
-            appearance: none;
-            background: #ccc;
-            border-radius: 25px;
-            position: relative;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .toggle input[type="checkbox"]:checked {
-            background: #667eea;
-        }
-
-        .toggle input[type="checkbox"]::before {
-            content: '';
-            position: absolute;
-            width: 21px;
-            height: 21px;
-            border-radius: 50%;
-            background: white;
-            top: 2px;
-            left: 2px;
-            transition: transform 0.3s;
-        }
-
-        .toggle input[type="checkbox"]:checked::before {
-            transform: translateX(25px);
-        }
-
-        .btn {
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
-            width: 100%;
-            margin-top: 10px;
-        }
-
-        .btn:hover {
-            background: #5568d3;
-        }
-
-        .btn-secondary {
-            background: #764ba2;
-        }
-
-        .btn-secondary:hover {
-            background: #653a8a;
-        }
-
-        .status {
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        .status.healthy {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .status.warning {
-            background: #fff3cd;
-            color: #856404;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .stat-box {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .stat-box .value {
-            font-size: 2em;
-            font-weight: bold;
-            color: #667eea;
-        }
-
-        .stat-box .label {
-            color: #666;
-            font-size: 12px;
-            margin-top: 5px;
-        }
-
-        .alert {
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            display: none;
-        }
-
-        .alert.success {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-
-        .alert.error {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-
-        .logs-preview {
-            background: #1e1e1e;
-            color: #d4d4d4;
-            padding: 15px;
-            border-radius: 5px;
-            font-family: 'Courier New', monospace;
-            font-size: 12px;
-            max-height: 300px;
-            overflow-y: auto;
-            margin-top: 15px;
-        }
-
-        .logs-preview .log-line {
-            margin-bottom: 5px;
-            padding: 5px;
-            border-left: 3px solid transparent;
-        }
-
-        .logs-preview .log-line.info {
-            border-left-color: #4ec9b0;
-        }
-
-        .logs-preview .log-line.error {
-            border-left-color: #f48771;
-        }
-
-        .logs-preview .log-line.warning {
-            border-left-color: #dcdcaa;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/easter_egg.js') }}"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🔐 Logger Service Configuration</h1>
-            <p>Manage service settings, storage, and monitoring</p>
-            <div style="margin-top: 15px;">
-                <span class="status healthy" id="service-status">● Healthy</span>
-                <span style="margin-left: 15px; color: #666;">Port: <strong id="service-port">5000</strong></span>
-            </div>
-        </div>
-
-        <div id="alert" class="alert"></div>
-
-        <div class="grid">
-            <!-- Storage Settings -->
-            <div class="card">
-                <h2>📁 Storage Settings</h2>
-                <form id="storage-form">
-                    <div class="form-group">
-                        <label for="logs_directory">Logs Directory</label>
-                        <input type="text" id="logs_directory" name="logs_directory" value="../logs">
-                        <small>Directory where log files are stored</small>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="max_files">Maximum Files</label>
-                        <input type="number" id="max_files" name="max_files" value="1000" min="1" max="10000">
-                        <small>Maximum number of log files to keep</small>
-                    </div>
-
-                    <div class="form-group toggle">
-                        <input type="checkbox" id="cleanup_enabled" name="cleanup_enabled" checked>
-                        <label for="cleanup_enabled">Auto-cleanup old files</label>
-                    </div>
-
-                    <button type="submit" class="btn">💾 Save Storage Settings</button>
-                </form>
-            </div>
-
-            <!-- Logging Settings -->
-            <div class="card">
-                <h2>📊 Logging Settings</h2>
-                <form id="logging-form">
-                    <div class="form-group">
-                        <label for="log_level">Log Level</label>
-                        <select id="log_level" name="log_level">
-                            <option value="DEBUG">DEBUG</option>
-                            <option value="INFO" selected>INFO</option>
-                            <option value="WARN">WARN</option>
-                            <option value="ERROR">ERROR</option>
-                            <option value="FATAL">FATAL</option>
-                        </select>
-                        <small>Verbosity level for service logs</small>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="max_size_mb">Log File Size (MB)</label>
-                        <input type="number" id="max_size_mb" name="max_size_mb" value="10" min="1" max="100">
-                        <small>Maximum size before rotation</small>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="backup_count">Backup Count</label>
-                        <input type="number" id="backup_count" name="backup_count" value="5" min="1" max="20">
-                        <small>Number of backup files to keep</small>
-                    </div>
-
-                    <button type="submit" class="btn">📝 Save Logging Settings</button>
-                </form>
-            </div>
-
-            <!-- Notifications -->
-            <div class="card">
-                <h2>📧 Notifications</h2>
-                <form id="notifications-form">
-                    <div class="form-group toggle">
-                        <input type="checkbox" id="email_enabled" name="email_enabled">
-                        <label for="email_enabled">Enable Email Notifications</label>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email_to">Email To</label>
-                        <input type="email" id="email_to" name="email_to" placeholder="admin@example.com">
-                    </div>
-
-                    <div class="form-group toggle">
-                        <input type="checkbox" id="syslog_enabled" name="syslog_enabled">
-                        <label for="syslog_enabled">Enable Syslog</label>
-                    </div>
-
-                    <button type="submit" class="btn">📬 Save Notifications</button>
-                </form>
-            </div>
-
-            <!-- Statistics -->
-            <div class="card">
-                <h2>📈 Statistics</h2>
-                <div class="stats">
-                    <div class="stat-box">
-                        <div class="value" id="total-logs">0</div>
-                        <div class="label">Total Logs</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="value" id="today-logs">0</div>
-                        <div class="label">Today</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="value" id="storage-used">0 MB</div>
-                        <div class="label">Storage Used</div>
-                    </div>
-                </div>
-                <button class="btn btn-secondary" onclick="refreshStats()">🔄 Refresh Stats</button>
-            </div>
-        </div>
-
-        <!-- Recent Logs -->
-        <div class="card">
-            <h2>📜 Recent Activity</h2>
-            <div class="logs-preview" id="logs-preview">
-                <div class="log-line info">Loading logs...</div>
-            </div>
-            <button class="btn btn-secondary" onclick="refreshLogs()">🔄 Refresh Logs</button>
+<div class="container">
+    <div class="header">
+        <h1>🔐 Logger Service Configuration</h1>
+        <p>Manage service settings, storage, and monitoring</p>
+        <div style="margin-top: 15px;">
+            <span class="status healthy" id="service-status">● Healthy</span>
+            <span style="margin-left: 15px; color: #666;">Port: <strong id="service-port">5000</strong></span>
         </div>
     </div>
 
-    <script>
-        // Load current config
-        async function loadConfig() {
-            try {
-                const response = await fetch('/api/config');
-                const config = await response.json();
-                
-                // Storage settings
-                document.getElementById('logs_directory').value = config.storage.logs_directory;
-                document.getElementById('max_files').value = config.storage.max_files;
-                document.getElementById('cleanup_enabled').checked = config.storage.cleanup_enabled;
-                
-                // Logging settings
-                document.getElementById('log_level').value = config.logging.level;
-                document.getElementById('max_size_mb').value = config.logging.max_size_mb;
-                document.getElementById('backup_count').value = config.logging.backup_count;
-                
-                // Notifications
-                document.getElementById('email_enabled').checked = config.notifications.email.enabled;
-                document.getElementById('email_to').value = config.notifications.email.to;
-                document.getElementById('syslog_enabled').checked = config.notifications.syslog.enabled;
-                
-                document.getElementById('service-port').textContent = config.service.port;
-            } catch (error) {
-                showAlert('Failed to load configuration: ' + error.message, 'error');
-            }
-        }
+    <div id="alert" class="alert"></div>
 
-        // Save storage settings
-        document.getElementById('storage-form').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const formData = new FormData(e.target);
-            const data = {
-                logs_directory: formData.get('logs_directory'),
-                max_files: parseInt(formData.get('max_files')),
-                cleanup_enabled: document.getElementById('cleanup_enabled').checked
-            };
-            
-            await saveConfig('storage', data);
-        });
+    <div class="grid">
+        <!-- Storage Settings -->
+        <div class="card">
+            <h2>📁 Storage Settings</h2>
+            <form id="storage-form">
+                <div class="form-group">
+                    <label for="logs_directory">Logs Directory</label>
+                    <input type="text" id="logs_directory" name="logs_directory" value="../logs">
+                    <small>Directory where log files are stored</small>
+                </div>
 
-        // Save logging settings
-        document.getElementById('logging-form').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const formData = new FormData(e.target);
-            const data = {
-                level: formData.get('log_level'),
-                max_size_mb: parseInt(formData.get('max_size_mb')),
-                backup_count: parseInt(formData.get('backup_count'))
-            };
-            
-            await saveConfig('logging', data);
-        });
+                <div class="form-group">
+                    <label for="max_files">Maximum Files</label>
+                    <input type="number" id="max_files" name="max_files" value="1000" min="1" max="10000">
+                    <small>Maximum number of log files to keep</small>
+                </div>
 
-        // Save notifications
-        document.getElementById('notifications-form').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const data = {
-                email: {
-                    enabled: document.getElementById('email_enabled').checked,
-                    to: document.getElementById('email_to').value
-                },
-                syslog: {
-                    enabled: document.getElementById('syslog_enabled').checked
-                }
-            };
-            
-            await saveConfig('notifications', data);
-        });
+                <div class="form-group toggle">
+                    <input type="checkbox" id="cleanup_enabled" name="cleanup_enabled" checked>
+                    <label for="cleanup_enabled">Auto-cleanup old files</label>
+                </div>
 
-        // Save config API
-        async function saveConfig(section, data) {
-            try {
-                const response = await fetch(`/api/config/${section}`, {
-                    method: 'PUT',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(data)
-                });
-                
-                if (response.ok) {
-                    showAlert(`${section} settings saved successfully! Restart may be required.`, 'success');
-                } else {
-                    const error = await response.json();
-                    showAlert('Failed to save: ' + error.error, 'error');
-                }
-            } catch (error) {
-                showAlert('Error: ' + error.message, 'error');
-            }
-        }
+                <button type="submit" class="btn">💾 Save Storage Settings</button>
+            </form>
+        </div>
 
-        // Refresh stats
-        async function refreshStats() {
-            try {
-                const response = await fetch('/api/stats');
-                const stats = await response.json();
-                
-                document.getElementById('total-logs').textContent = stats.total_logs;
-                document.getElementById('today-logs').textContent = stats.today_logs;
-                document.getElementById('storage-used').textContent = stats.storage_mb.toFixed(2) + ' MB';
-            } catch (error) {
-                showAlert('Failed to refresh stats', 'error');
-            }
-        }
+        <!-- Logging Settings -->
+        <div class="card">
+            <h2>📊 Logging Settings</h2>
+            <form id="logging-form">
+                <div class="form-group">
+                    <label for="log_level">Log Level</label>
+                    <select id="log_level" name="log_level">
+                        <option value="DEBUG">DEBUG</option>
+                        <option value="INFO" selected>INFO</option>
+                        <option value="WARN">WARN</option>
+                        <option value="ERROR">ERROR</option>
+                        <option value="FATAL">FATAL</option>
+                    </select>
+                    <small>Verbosity level for service logs</small>
+                </div>
 
-        // Refresh logs
-        async function refreshLogs() {
-            try {
-                const response = await fetch('/api/logs/recent');
-                const logs = await response.json();
-                
-                const logsPreview = document.getElementById('logs-preview');
-                logsPreview.innerHTML = logs.map(log => 
-                    `<div class="log-line ${log.level.toLowerCase()}">${log.timestamp} - ${log.level} - ${log.message}</div>`
-                ).join('');
-            } catch (error) {
-                showAlert('Failed to refresh logs', 'error');
-            }
-        }
+                <div class="form-group">
+                    <label for="max_size_mb">Log File Size (MB)</label>
+                    <input type="number" id="max_size_mb" name="max_size_mb" value="10" min="1" max="100">
+                    <small>Maximum size before rotation</small>
+                </div>
 
-        // Show alert
-        function showAlert(message, type) {
-            const alert = document.getElementById('alert');
-            alert.className = `alert ${type}`;
-            alert.textContent = message;
-            alert.style.display = 'block';
-            
-            setTimeout(() => {
-                alert.style.display = 'none';
-            }, 5000);
-        }
+                <div class="form-group">
+                    <label for="backup_count">Backup Count</label>
+                    <input type="number" id="backup_count" name="backup_count" value="5" min="1" max="20">
+                    <small>Number of backup files to keep</small>
+                </div>
 
-        // Initialize
-        loadConfig();
-        refreshStats();
-        refreshLogs();
-        
-        // Auto-refresh every 30 seconds
-        setInterval(refreshStats, 30000);
-        setInterval(refreshLogs, 30000);
-    </script>
+                <button type="submit" class="btn">📝 Save Logging Settings</button>
+            </form>
+        </div>
+
+        <!-- Notifications -->
+        <div class="card">
+            <h2>📧 Notifications</h2>
+            <form id="notifications-form">
+                <div class="form-group toggle">
+                    <input type="checkbox" id="email_enabled" name="email_enabled">
+                    <label for="email_enabled">Enable Email Notifications</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="email_to">Email To</label>
+                    <input type="email" id="email_to" name="email_to" placeholder="admin@example.com">
+                </div>
+
+                <div class="form-group toggle">
+                    <input type="checkbox" id="syslog_enabled" name="syslog_enabled">
+                    <label for="syslog_enabled">Enable Syslog</label>
+                </div>
+
+                <button type="submit" class="btn">📬 Save Notifications</button>
+            </form>
+        </div>
+
+        <!-- Statistics -->
+        <div class="card">
+            <h2>📈 Statistics</h2>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="value" id="total-logs">0</div>
+                    <div class="label">Total Logs</div>
+                </div>
+                <div class="stat-box">
+                    <div class="value" id="today-logs">0</div>
+                    <div class="label">Today</div>
+                </div>
+                <div class="stat-box">
+                    <div class="value" id="storage-used">0 MB</div>
+                    <div class="label">Storage Used</div>
+                </div>
+            </div>
+            <button class="btn btn-secondary" onclick="refreshStats()">🔄 Refresh Stats</button>
+        </div>
+    </div>
+
+    <!-- Recent Logs -->
+    <div class="card">
+        <h2>📜 Recent Activity</h2>
+        <div class="logs-preview" id="logs-preview">
+            <div class="log-line info">Loading logs...</div>
+        </div>
+        <button class="btn btn-secondary" onclick="refreshLogs()">🔄 Refresh Logs</button>
+    </div>
+</div>
+<!-- MY SIGNATURE -->
+<div class="creator-signature" onclick="activateEasterEgg()" title="Click me! 🎉">
+    <div class="signature-content">
+        <span class="signature-icon">✨</span>
+        <span class="signature-text">Created with passion by OLGA GOLOVASH</span>
+        <span class="signature-icon">✨</span>
+    </div>
+</div>
 </body>
 </html>

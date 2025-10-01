@@ -15,6 +15,7 @@ import requests
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from logging.handlers import RotatingFileHandler
+from dotenv import load_dotenv
 from watchdog.observers.polling import PollingObserver
 from watchdog.events import FileSystemEventHandler
 from flask import Flask, request, jsonify, render_template
@@ -22,6 +23,9 @@ from threading import Thread
 import smtplib
 from email.mime.text import MIMEText
 import socket
+
+# Загружаем переменные окружения из .env файла (если есть)
+load_dotenv()
 
 # Глобальные переменные
 config = None
@@ -47,12 +51,32 @@ def load_config():
         with open(config_path, 'r', encoding='utf-8') as f:
             config = yaml.safe_load(f)
 
-        # Переопределение из переменных окружения
-        if os.getenv('JWT_SECRET'):
-            config['jwt']['secret'] = os.getenv('JWT_SECRET')
+        # Переопределение из переменных окружения (ОБЯЗАТЕЛЬНО)
+        jwt_secret = os.getenv('JWT_SECRET')
+        if jwt_secret:
+            config['jwt']['secret'] = jwt_secret
+        elif not config['jwt'].get('secret'):
+            print("❌ ERROR: JWT_SECRET not set! Set it via environment variable.")
+            print("   Example: export JWT_SECRET=your-secret-key")
+            exit(1)
 
+        # if os.getenv('LOGGER_URL'):
+        #     config['logger_service']['url'] = os.getenv('LOGGER_URL')
+        # LOGGER_URL: приоритет переменной окружения, иначе автоопределение
+        # Определяем окружение СНАЧАЛА
+        is_docker = os.path.exists('/.dockerenv') or os.getenv('DOCKER_ENV') == 'true'
+
+        # LOGGER_URL: приоритет переменной окружения, иначе автоопределение
         if os.getenv('LOGGER_URL'):
             config['logger_service']['url'] = os.getenv('LOGGER_URL')
+        # Автоопределение по окружению
+        url_key = 'url_docker' if is_docker else 'url_local'
+        config['logger_service']['url'] = config['logger_service'].get(url_key,
+                                                                           config['logger_service'].get('url'))
+
+        # Отладочный вывод
+        print(f"🔍 Using LOGGER_URL: {config['logger_service']['url']}")
+        print(f"🐳 Docker mode: {is_docker}")
 
         if os.getenv('LOG_LEVEL'):
             config['logging']['level'] = os.getenv('LOG_LEVEL')
@@ -62,6 +86,10 @@ def load_config():
 
         if os.getenv('PROCESSED_DIR'):
             config['watcher']['processed_directory'] = os.getenv('PROCESSED_DIR')
+
+        # Email password из переменной окружения
+        if os.getenv('EMAIL_PASSWORD'):
+            config['notifications']['email']['password'] = os.getenv('EMAIL_PASSWORD')
 
         return config
 
@@ -248,6 +276,9 @@ def send_metadata_to_logger(metadata, config, logger):
 
         # Подготавливаем запрос
         url = config['logger_service']['url']
+        # ОТЛАДКА
+        # logger.info(f"DEBUG: Trying to connect to: {url}")
+
         headers = {
             'Authorization': f'Bearer {token}',
             'Content-Type': 'application/json'
@@ -361,6 +392,21 @@ class FileWatcherHandler(FileSystemEventHandler):
         self.logger = logger
         self.processing_files = set()  # Для предотвращения дублирования
 
+    # def on_created(self, event):
+    #     """Вызывается при создании нового файла"""
+    #
+    #     # Игнорируем директории
+    #     if event.is_directory:
+    #         return
+    #
+    #     filepath = event.src_path
+    #     filename = Path(filepath).name
+    #
+    #     # Игнорируем файлы из конфигурации
+    #     ignored = self.config['watcher'].get('ignored_files', [])
+    #     if filename in ignored:
+    #         self.logger.debug(f"Ignoring configured file: {filename}")
+    #         return
     def on_created(self, event):
         """Вызывается при создании нового файла"""
 
@@ -369,6 +415,13 @@ class FileWatcherHandler(FileSystemEventHandler):
             return
 
         filepath = event.src_path
+        filename = Path(filepath).name
+
+        # Игнорируем служебные файлы
+        ignored_patterns = self.config['watcher'].get('ignored_files', [])
+        if any(pattern in filename for pattern in ignored_patterns):
+            self.logger.debug(f"Ignoring configured file: {filename}")
+            return
 
         # Проверяем что файл не обрабатывается
         if filepath in self.processing_files:

@@ -2,17 +2,18 @@ jwt:
   algorithm: HS256
   expiration_minutes: 5
   issuer: watcher-service
-  secret: sasa-Software2015
+  secret: ''
 logger_service:
   retry_attempts: 3
   retry_delay: 5
   timeout: 10
-  url: http://localhost:5000/log
+  url_local: "http://localhost:5000/log"
+  url_docker: "http://logger-service:5000/log"
 logging:
-  backup_count: 5
+  backup_count: 3
   file: logs/watcher-service.log
-  level: DEBUG
-  max_size_mb: 10
+  level: INFO
+  max_size_mb: 5
 notifications:
   email:
     enabled: false
@@ -33,3 +34,9 @@ watcher:
   check_interval: 1
   processed_directory: ../processed
   watch_directory: ../watched
+  ignored_files:
+    - .gitkeep
+    - .gitignore
+    - .DS_Store
+    - Thumbs.db
+    - desktop.ini

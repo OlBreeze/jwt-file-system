@@ -1,12 +1,12 @@
 jwt:
   algorithm: HS256
   expected_issuer: watcher-service
-  secret: sasa-Software2015
+  secret: ''
 logging:
-  backup_count: 5
+  backup_count: 3
   file: logs/logger-service.log
-  level: WARN
-  max_size_mb: 10
+  level: INFO
+  max_size_mb: 5
 notifications:
   email:
     enabled: false
