@@ -675,3 +675,12 @@
 2025-10-02 16:31:35 - root - INFO - 📝 Received metadata for file: Overview.docx (88.83KB) from watcher-service
 2025-10-02 16:31:35 - root - INFO - ✅ Created: Overview-20251002T163135Z.txt
 2025-10-02 16:31:35 - root - INFO - ✅ Successfully processed file: Overview.docx
+2025-10-02 17:04:19 - root - INFO - 📝 Received metadata for file: Overview.docx (88.83KB) from watcher-service
+2025-10-02 17:04:19 - root - INFO - ✅ Created: Overview-20251002T170419Z.txt
+2025-10-02 17:04:19 - root - INFO - ✅ Successfully processed file: Overview.docx
+2025-10-02 17:05:51 - root - INFO - 📝 Received metadata for file: Overview.docx (88.83KB) from watcher-service
+2025-10-02 17:05:51 - root - INFO - ✅ Created: Overview-20251002T170551Z.txt
+2025-10-02 17:05:51 - root - INFO - ✅ Successfully processed file: Overview.docx
+2025-10-02 17:17:13 - root - INFO - 📝 Received metadata for file: новый 1.md (28.83KB) from watcher-service
+2025-10-02 17:17:13 - root - INFO - ✅ Created: новый_1-20251002T171713Z.txt
+2025-10-02 17:17:13 - root - INFO - ✅ Successfully processed file: новый 1.md

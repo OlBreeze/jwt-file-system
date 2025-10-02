@@ -4537,3 +4537,159 @@ socket.gaierror: [Errno 11001] getaddrinfo failed
 2025-10-02 16:43:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:43:33] "GET /api/stats HTTP/1.1" 200 -
 2025-10-02 16:43:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:43:33] "GET /api/logs/recent HTTP/1.1" 200 -
 2025-10-02 16:43:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:43:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:44:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:44:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:44:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:44:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:44:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:44:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:45:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:45:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:45:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:45:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:45:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:45:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:46:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:46:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:46:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:46:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:46:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:46:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:47:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:47:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:47:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:47:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:47:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:47:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:48:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:48:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:48:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:48:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:48:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:48:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:49:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:49:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:49:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:49:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:49:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:49:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:50:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:50:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:50:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:50:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:50:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:50:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:51:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:51:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:51:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:51:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:51:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:51:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:52:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:52:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:52:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:52:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:52:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:52:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:53:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:53:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:53:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:53:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:53:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:53:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:54:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:54:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:54:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:54:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:54:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:54:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:55:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:55:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:55:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:55:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:55:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:55:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:56:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:56:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:56:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:56:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:56:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:56:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:57:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:57:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:57:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:57:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:57:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:57:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:58:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:58:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:58:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:58:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:58:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:58:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 16:59:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:59:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 16:59:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:59:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 16:59:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 16:59:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:00:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:00:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:00:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:00:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:00:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:00:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:01:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:01:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:01:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:01:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:01:35 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:01:35] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:02:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:02:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:02:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:02:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:02:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:02:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:03:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:03:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:03:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:03:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:03:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:03:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:04:19 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/Overview.docx
+2025-10-02 17:04:19 - integration.logger_client - INFO - ✅ Metadata sent successfully for: Overview.docx
+2025-10-02 17:04:19 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/Overview.docx
+2025-10-02 17:04:19 - watcher.file_watcher - INFO - ✅ Successfully processed: Overview.docx
+2025-10-02 17:04:19 - watcher.file_watcher - INFO -    Size: 90959 bytes
+2025-10-02 17:04:19 - watcher.file_watcher - INFO -    Hash: 488d2e83f2a80357...
+2025-10-02 17:04:19 - watcher.file_watcher - INFO -    Moved to: /app/processed/Overview.docx
+2025-10-02 17:04:21 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-02 17:04:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:04:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:04:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:04:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:04:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:04:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:04:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:04:55] "GET /?email_enabled=on&email_to= HTTP/1.1" 200 -
+2025-10-02 17:04:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:04:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-02 17:04:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:04:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-10-02 17:04:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:04:55] "[36mGET /static/js/easter_egg.js HTTP/1.1[0m" 304 -
+2025-10-02 17:04:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:04:55] "GET /api/config HTTP/1.1" 200 -
+2025-10-02 17:04:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:04:55] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:04:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:04:55] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:04:57 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:04:57] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:05:25 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:05:25] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:05:25 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:05:25] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:05:50 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/Overview.docx
+2025-10-02 17:05:51 - integration.logger_client - INFO - ✅ Metadata sent successfully for: Overview.docx
+2025-10-02 17:05:51 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/Overview_20251002_170551.docx
+2025-10-02 17:05:51 - watcher.file_watcher - INFO - ✅ Successfully processed: Overview.docx
+2025-10-02 17:05:51 - watcher.file_watcher - INFO -    Size: 90959 bytes
+2025-10-02 17:05:51 - watcher.file_watcher - INFO -    Hash: 488d2e83f2a80357...
+2025-10-02 17:05:51 - watcher.file_watcher - INFO -    Moved to: /app/processed/Overview_20251002_170551.docx
+2025-10-02 17:05:53 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-02 17:05:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:05:55] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:05:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:05:55] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:05:57 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:05:57] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:06:25 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:06:25] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:06:25 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:06:25] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:06:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:06:55] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:06:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:06:55] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:06:58 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:06:58] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:07:25 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:07:25] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:07:25 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:07:25] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:07:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:07:55] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:07:55 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:07:55] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:07:57 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:07:57] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:08:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:08:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:08:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:08:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:08:57 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:08:57] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:09:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:09:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:09:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:09:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:09:58 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:09:58] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:10:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:10:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:10:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:10:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:10:58 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:10:58] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:11:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:11:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:11:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:11:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:12:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:12:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:12:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:12:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:12:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:12:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:13:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:13:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:13:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:13:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:13:35 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:13:35] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:14:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:14:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:14:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:14:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:14:36 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:14:36] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:15:20 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:20] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:15:20 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:20] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:15:21 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:21] "GET /?email_enabled=on&email_to= HTTP/1.1" 200 -
+2025-10-02 17:15:21 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-02 17:15:21 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-10-02 17:15:21 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:21] "[36mGET /static/js/easter_egg.js HTTP/1.1[0m" 304 -
+2025-10-02 17:15:21 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:21] "GET /api/config HTTP/1.1" 200 -
+2025-10-02 17:15:21 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:21] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:15:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:22] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:15:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:22] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:15:24 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:24] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:15:52 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:52] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:15:52 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:15:52] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:16:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:16:22] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:16:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:16:22] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:16:24 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:16:24] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:16:52 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:16:52] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:16:52 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:16:52] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:17:13 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/новый 1.md
+2025-10-02 17:17:13 - integration.logger_client - INFO - ✅ Metadata sent successfully for: новый 1.md
+2025-10-02 17:17:13 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/новый 1.md
+2025-10-02 17:17:13 - watcher.file_watcher - INFO - ✅ Successfully processed: новый 1.md
+2025-10-02 17:17:13 - watcher.file_watcher - INFO -    Size: 29523 bytes
+2025-10-02 17:17:13 - watcher.file_watcher - INFO -    Hash: edd3665a6988618d...
+2025-10-02 17:17:13 - watcher.file_watcher - INFO -    Moved to: /app/processed/новый 1.md
+2025-10-02 17:17:15 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-02 17:17:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:17:22] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:17:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:17:22] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:17:25 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:17:25] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 17:17:52 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:17:52] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:17:52 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:17:52] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:18:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:18:22] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 17:18:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:18:22] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 17:18:25 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:18:25] "GET /api/test-connection HTTP/1.1" 200 -
