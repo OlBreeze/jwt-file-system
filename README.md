@@ -1,7 +1,9 @@
 # File Watcher & Logger System
 
 A distributed file monitoring and logging system consisting of two microservices: **Watcher Service** and **Logger Service**.  
+
 The system monitors a local directory for new files, extracts metadata, securely sends it to another service, and processes each file end-to-end.
+
 ---
 
 ## 🌟 Features
@@ -52,45 +54,23 @@ The system monitors a local directory for new files, extracts metadata, securely
 
 **Services will be available at:**
 - 🌐 **Logger Service:** http://localhost:5000
-  - Web UI: http://localhost:5000/
-  - Health Check: http://localhost:5000/health
-  - API Endpoint: http://localhost:5000/log (POST)
+    
+  - Health Check:  http://localhost:5000/health
+  - API Endpoint:  http://localhost:5000/log (POST)
   - Configuration: http://localhost:5000/api/config (GET)
-  - Recent Logs: http://localhost:5000/api/logs/recent (GET)
-  - Stats: http://localhost:5000/api/stats (GET)
+  - Recent Logs:   http://localhost:5000/api/logs/recent (GET)
+  - Stats:         http://localhost:5000/api/stats (GET)
   
 - 🌐 **Watcher Service:** http://localhost:8080
-  - Web UI: http://localhost:8080/
-  - Health Check: http://localhost:8080/health
-  - Configuration: http://localhost:8080/config (GET)
-  - Files Count: http://localhost:8080/files/count (GET)
-  - Processed Files: http://localhost:8080/files/processed (GET)
-  - Pending Files: http://localhost:8080/files/pending (GET)
-  - Recent Logs: http://localhost:8080/logs/recent (GET)
-  - Statistics: http://localhost:8080/stats (GET)
-  - Test Connection: http://localhost:8080/test-connection (GET)
-
-
-### Web Interface & API Endpoints
-
-Both services provide web interfaces and REST API endpoints:
-
-**Logger Service (Port 5000):**
-- **Web UI:** http://localhost:5000/
-- **Health Check:** `GET` http://localhost:5000/health
-- **Get Configuration:** `GET` http://localhost:5000/api/config
-- **Update Configuration:** `PUT` http://localhost:5000/api/config/<section>
-- **Recent Logs:** `GET` http://localhost:5000/api/logs/recent
-- **Statistics:** `GET` http://localhost:5000/api/stats
-- **Log Endpoint:** `POST` http://localhost:5000/log
-
-**Watcher Service (Port 8080):**
-- **Web UI:** http://localhost:8080/
-- **Health Check:** `GET` http://localhost:8080/health
-- **Get Configuration:** `GET` http://localhost:8080/api/config
-- **Update Configuration:** `PUT` http://localhost:8080/api/config/<section>
-ПРОВЕРИТЬ
----
+    
+  - Health Check:  http://localhost:8080/health
+  - Configuration: http://localhost:8080/api/config (GET)
+  - Files Count:   http://localhost:8080/api/files/count (GET)
+  - Processed Files: http://localhost:8080/api/files/processed (GET)
+  - Pending Files:   http://localhost:8080/api/files/pending (GET)
+  - Recent Logs:     http://localhost:8080/api/logs/recent (GET)
+  - Statistics:      http://localhost:8080/api/stats (GET)
+  - Test Connection: http://localhost:8080/api/test-connection (GET)
 ---
 
 ## 🚀 Quick Start
@@ -166,17 +146,6 @@ Created At: 2025-09-28T14:33:22Z
 ```
 ---
 
-## 📊 Logging Levels
-
-Both services support configurable logging:
-
----
-
-## 🔔 Notifications
-
-### Email Notifications
-
----
 
 ## 🐳 Docker Deployment
 
@@ -197,8 +166,8 @@ docker-compose logs -f logger-service
 docker-compose up -d --build
 ```
 ---
+## Example Log Files
 
-### Example Log File
 
 **File:** `logs/test_txt-20250928T143322Z.txt`
 
@@ -208,5 +177,5 @@ Size: 13B
 Hash: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
 Created At: 2025-09-28T14:33:22Z
 ```
-
 ---
+### Email Notifications
