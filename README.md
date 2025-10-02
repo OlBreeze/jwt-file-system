@@ -135,12 +135,14 @@ python watcher_service.py
 }
 ```
 ### Decode
- 
-![https://drive.google.com/file/d/12_oYejy_jZCtTdQfEWIRqHAOMgO7cC43/view?usp=sharing](img.png)
 
-### Encode:
+![Decode](https://drive.google.com/drive/u/0/folders/19vzf3m2Lj-YCrHAZPFsQYM39hnV8JWxK)
 
-![https://drive.google.com/file/d/12_oYejy_jZCtTdQfEWIRqHAOMgO7cC43/view?usp=sharing](img.png)
+### Encode
+
+![Encode](https://drive.google.com/file/d/1avpbBm6dd6-4UbD_mjyP_9z6F0NT2xpU/view?usp=drive_link)
+
+
 ---
 ## Log File Naming Convention
 
