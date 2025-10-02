@@ -10,8 +10,8 @@ from watchdog.events import FileSystemEventHandler
 from file_processing.metadata import extract_metadata, validate_metadata
 from file_processing.file_mover import move_file_to_processed
 from integration.logger_client import send_metadata_to_logger
-from notifications.email_sender import send_error_notification
-from notifications.syslog_sender import send_syslog_error
+from notifications.email_sender import send_success_notification, send_error_notification
+from notifications.syslog_sender import send_syslog_success, send_syslog_error
 from core.stats import stats
 
 logger = logging.getLogger(__name__)
@@ -135,6 +135,8 @@ class FileWatcherHandler(FileSystemEventHandler):
             logger.info(f"   Size: {metadata['file_size']} bytes")
             logger.info(f"   Hash: {metadata['hash'][:16]}...")
             logger.info(f"   Moved to: {new_path}")
+
+            send_success_notification(self.config, metadata['filename'], metadata)
 
         except Exception as e:
             stats.increment_failed()

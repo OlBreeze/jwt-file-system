@@ -1,10 +1,11 @@
 """
 Logger Service - JWT File System
 """
+
 from pathlib import Path
 from core.config import load_config
 from core.logger import setup_logging
-from api.routes import create_app
+from api.app import create_app
 
 if __name__ == '__main__':
     # Loading the configuration

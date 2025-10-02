@@ -2,13 +2,14 @@ jwt:
   algorithm: HS256
   expiration_minutes: 5
   issuer: watcher-service
-  secret: ''
+  secret: '***hidden***'
 logger_service:
   retry_attempts: 3
   retry_delay: 5
   timeout: 10
-  url_local: "http://localhost:5000/log"
-  url_docker: "http://logger-service:5000/log"
+  url: http://localhost:5000/log
+  url_docker: http://logger-service:5000/log
+  url_local: http://localhost:5000/log
 logging:
   backup_count: 3
   file: logs/watcher-service.log
@@ -16,27 +17,19 @@ logging:
   max_size_mb: 5
 notifications:
   email:
-    enabled: false
-    from: watcher@example.com
-    password: ''
-    smtp_host: smtp.gmail.com
-    smtp_port: 587
-    to: admin@example.com
-    use_tls: true
+    enabled: true
+    to: default@example.com
   syslog:
     enabled: false
-    facility: local0
-    host: localhost
-    port: 514
 service:
   name: watcher-service
 watcher:
   check_interval: 1
+  ignored_files:
+  - .gitkeep
+  - .gitignore
+  - .DS_Store
+  - Thumbs.db
+  - desktop.ini
   processed_directory: ../processed
   watch_directory: ../watched
-  ignored_files:
-    - .gitkeep
-    - .gitignore
-    - .DS_Store
-    - Thumbs.db
-    - desktop.ini

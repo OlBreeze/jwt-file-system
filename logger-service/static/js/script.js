@@ -4,39 +4,27 @@ async function loadConfig() {
         const response = await fetch('/api/config');
         const config = await response.json();
 
-        // Storage settings
-        document.getElementById('logs_directory').value = config.storage.logs_directory;
-        document.getElementById('max_files').value = config.storage.max_files;
-        document.getElementById('cleanup_enabled').checked = config.storage.cleanup_enabled;
+        console.log('Loaded config:', config); // Debug
 
         // Logging settings
         document.getElementById('log_level').value = config.logging.level;
         document.getElementById('max_size_mb').value = config.logging.max_size_mb;
         document.getElementById('backup_count').value = config.logging.backup_count;
 
-        // Notifications
-        document.getElementById('email_enabled').checked = config.notifications.email.enabled;
-        document.getElementById('email_to').value = config.notifications.email.to;
-        document.getElementById('syslog_enabled').checked = config.notifications.syslog.enabled;
+        // Notifications - ИСПРАВЛЕНО
+        document.getElementById('email_enabled').checked = config.notifications?.email?.enabled || false;
+        document.getElementById('email_to').value = config.notifications?.email?.to || '';
+        document.getElementById('syslog_enabled').checked = config.notifications?.syslog?.enabled || false;
 
         document.getElementById('service-port').textContent = config.service.port;
+
+        console.log('Email enabled:', config.notifications?.email?.enabled); // Debug
+        console.log('Email to:', config.notifications?.email?.to); // Debug
     } catch (error) {
         showAlert('Failed to load configuration: ' + error.message, 'error');
+        console.error('Load config error:', error); // Debug
     }
 }
-
-// Save storage settings
-document.getElementById('storage-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = {
-        logs_directory: formData.get('logs_directory'),
-        max_files: parseInt(formData.get('max_files')),
-        cleanup_enabled: document.getElementById('cleanup_enabled').checked
-    };
-
-    await saveConfig('storage', data);
-});
 
 // Save logging settings
 document.getElementById('logging-form').addEventListener('submit', async (e) => {
@@ -64,12 +52,15 @@ document.getElementById('notifications-form').addEventListener('submit', async (
         }
     };
 
+    console.log('Saving notifications:', data); // Debug
     await saveConfig('notifications', data);
 });
 
-// Save config API
+// Save config API - ИСПРАВЛЕНО
 async function saveConfig(section, data) {
     try {
+        console.log(`Saving ${section}:`, data); // Debug
+
         const response = await fetch(`/api/config/${section}`, {
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
@@ -78,12 +69,19 @@ async function saveConfig(section, data) {
 
         if (response.ok) {
             showAlert(`${section} settings saved successfully! Restart may be required.`, 'success');
+            // ВАЖНО: Перезагружаем конфиг через 500мс чтобы увидеть изменения
+            setTimeout(() => {
+                console.log('Reloading config after save...'); // Debug
+                loadConfig();
+            }, 500);
         } else {
             const error = await response.json();
             showAlert('Failed to save: ' + error.error, 'error');
+            console.error('Save error:', error); // Debug
         }
     } catch (error) {
         showAlert('Error: ' + error.message, 'error');
+        console.error('Save exception:', error); // Debug
     }
 }
 
@@ -98,6 +96,7 @@ async function refreshStats() {
         document.getElementById('storage-used').textContent = stats.storage_mb.toFixed(2) + ' MB';
     } catch (error) {
         showAlert('Failed to refresh stats', 'error');
+        console.error('Refresh stats error:', error); // Debug
     }
 }
 
@@ -113,6 +112,7 @@ async function refreshLogs() {
         ).join('');
     } catch (error) {
         showAlert('Failed to refresh logs', 'error');
+        console.error('Refresh logs error:', error); // Debug
     }
 }
 

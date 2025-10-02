@@ -9,8 +9,6 @@ def validate_jwt_token(token, config):
             config['jwt']['secret'],
             algorithms=[config['jwt']['algorithm']]
         )
-        print(payload.get('iss'))
-        print(payload.get('iss'))
 
         if payload.get('iss') != config['jwt']['expected_issuer']:
             return False, f"Invalid issuer"

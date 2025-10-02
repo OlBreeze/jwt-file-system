@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watcher Service - Configuration</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='js/easter_egg.js') }}"></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>👁️ Watcher Service Configuration</h1>
+            <h1>👁️ Watcher Service Configuration from Olga</h1>
             <p>Monitor directories, manage file processing, and configure notifications</p>
             <div style="margin-top: 15px;">
                 <span class="status watching" id="service-status">● Watching</span>
@@ -25,87 +26,87 @@
         <div id="alert" class="alert"></div>
 
         <div class="grid">
-            <!-- Directory Settings -->
-            <div class="card">
-                <h2>📁 Directory Settings</h2>
-                <form id="directory-form">
-                    <div class="form-group">
-                        <label for="watch_directory">Watch Directory</label>
-                        <input type="text" id="watch_directory" name="watch_directory" value="../watched">
-                        <small>Directory to monitor for new files</small>
-                    </div>
+<!--            &lt;!&ndash; Directory Settings &ndash;&gt;-->
+<!--            <div class="card">-->
+<!--                <h2>📁 Directory Settings</h2>-->
+<!--                <form id="directory-form">-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="watch_directory">Watch Directory</label>-->
+<!--                        <input type="text" id="watch_directory" name="watch_directory" value="../watched">-->
+<!--                        <small>Directory to monitor for new files</small>-->
+<!--                    </div>-->
 
-                    <div class="form-group">
-                        <label for="processed_directory">Processed Directory</label>
-                        <input type="text" id="processed_directory" name="processed_directory" value="../processed">
-                        <small>Where to move processed files</small>
-                    </div>
+<!--                    <div class="form-group">-->
+<!--                        <label for="processed_directory">Processed Directory</label>-->
+<!--                        <input type="text" id="processed_directory" name="processed_directory" value="../processed">-->
+<!--                        <small>Where to move processed files</small>-->
+<!--                    </div>-->
 
-                    <div class="form-group">
-                        <label for="check_interval">Check Interval (seconds)</label>
-                        <input type="number" id="check_interval" name="check_interval" value="1" min="1" max="60">
-                        <small>How often to check for new files</small>
-                    </div>
+<!--                    <div class="form-group">-->
+<!--                        <label for="check_interval">Check Interval (seconds)</label>-->
+<!--                        <input type="number" id="check_interval" name="check_interval" value="1" min="1" max="60">-->
+<!--                        <small>How often to check for new files</small>-->
+<!--                    </div>-->
 
-                    <button type="submit" class="btn">💾 Save Directory Settings</button>
-                </form>
-            </div>
+<!--                    <button type="submit" class="btn">💾 Save Directory Settings</button>-->
+<!--                </form>-->
+<!--            </div>-->
 
-            <!-- Logger Connection -->
-            <div class="card">
-                <h2>🔗 Logger Service Connection</h2>
-                <form id="logger-form">
-                    <div class="form-group">
-                        <label for="logger_url">Logger Service URL</label>
-                        <input type="text" id="logger_url" name="logger_url" value="http://localhost:5000/log">
-                        <small>Endpoint for sending metadata</small>
-                    </div>
+<!--            &lt;!&ndash; Logger Connection &ndash;&gt;-->
+<!--            <div class="card">-->
+<!--                <h2>🔗 Logger Service Connection</h2>-->
+<!--                <form id="logger-form">-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="logger_url">Logger Service URL</label>-->
+<!--                        <input type="text" id="logger_url" name="logger_url" value="http://localhost:5000/log">-->
+<!--                        <small>Endpoint for sending metadata</small>-->
+<!--                    </div>-->
 
-                    <div class="form-group">
-                        <label for="timeout">Request Timeout (seconds)</label>
-                        <input type="number" id="timeout" name="timeout" value="10" min="1" max="60">
-                        <small>HTTP request timeout</small>
-                    </div>
+<!--                    <div class="form-group">-->
+<!--                        <label for="timeout">Request Timeout (seconds)</label>-->
+<!--                        <input type="number" id="timeout" name="timeout" value="10" min="1" max="60">-->
+<!--                        <small>HTTP request timeout</small>-->
+<!--                    </div>-->
 
-                    <div class="form-group">
-                        <label for="retry_attempts">Retry Attempts</label>
-                        <input type="number" id="retry_attempts" name="retry_attempts" value="3" min="1" max="10">
-                        <small>Number of retry attempts on failure</small>
-                    </div>
+<!--                    <div class="form-group">-->
+<!--                        <label for="retry_attempts">Retry Attempts</label>-->
+<!--                        <input type="number" id="retry_attempts" name="retry_attempts" value="3" min="1" max="10">-->
+<!--                        <small>Number of retry attempts on failure</small>-->
+<!--                    </div>-->
 
-                    <button type="submit" class="btn">🔌 Save Connection Settings</button>
-                    <button type="button" class="btn btn-secondary" onclick="testConnection()">🧪 Test Connection</button>
-                </form>
-            </div>
+<!--                    <button type="submit" class="btn">🔌 Save Connection Settings</button>-->
+<!--                    <button type="button" class="btn btn-secondary" onclick="testConnection()">🧪 Test Connection</button>-->
+<!--                </form>-->
+<!--            </div>-->
 
-            <!-- JWT Settings -->
-            <div class="card">
-                <h2>🔐 JWT Settings</h2>
-                <form id="jwt-form">
-                    <div class="form-group">
-                        <label for="jwt_issuer">JWT Issuer</label>
-                        <input type="text" id="jwt_issuer" name="jwt_issuer" value="watcher-service">
-                        <small>Token issuer identifier</small>
-                    </div>
+<!--            &lt;!&ndash; JWT Settings &ndash;&gt;-->
+<!--            <div class="card">-->
+<!--                <h2>🔐 JWT Settings</h2>-->
+<!--                <form id="jwt-form">-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="jwt_issuer">JWT Issuer</label>-->
+<!--                        <input type="text" id="jwt_issuer" name="jwt_issuer" value="watcher-service">-->
+<!--                        <small>Token issuer identifier</small>-->
+<!--                    </div>-->
 
-                    <div class="form-group">
-                        <label for="expiration_minutes">Token Expiration (minutes)</label>
-                        <input type="number" id="expiration_minutes" name="expiration_minutes" value="5" min="1" max="60">
-                        <small>JWT token validity period</small>
-                    </div>
+<!--                    <div class="form-group">-->
+<!--                        <label for="expiration_minutes">Token Expiration (minutes)</label>-->
+<!--                        <input type="number" id="expiration_minutes" name="expiration_minutes" value="5" min="1" max="60">-->
+<!--                        <small>JWT token validity period</small>-->
+<!--                    </div>-->
 
-                    <div class="form-group">
-                        <label for="jwt_algorithm">Algorithm</label>
-                        <select id="jwt_algorithm" name="jwt_algorithm">
-                            <option value="HS256" selected>HS256</option>
-                            <option value="HS384">HS384</option>
-                            <option value="HS512">HS512</option>
-                        </select>
-                    </div>
+<!--                    <div class="form-group">-->
+<!--                        <label for="jwt_algorithm">Algorithm</label>-->
+<!--                        <select id="jwt_algorithm" name="jwt_algorithm">-->
+<!--                            <option value="HS256" selected>HS256</option>-->
+<!--                            <option value="HS384">HS384</option>-->
+<!--                            <option value="HS512">HS512</option>-->
+<!--                        </select>-->
+<!--                    </div>-->
 
-                    <button type="submit" class="btn">🔑 Save JWT Settings</button>
-                </form>
-            </div>
+<!--                    <button type="submit" class="btn">🔑 Save JWT Settings</button>-->
+<!--                </form>-->
+<!--            </div>-->
 
             <!-- Logging Settings -->
             <div class="card">
@@ -145,7 +146,7 @@
                         <label for="email_enabled">Enable Email Notifications</label>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" hidden>
                         <label for="email_to">Email To</label>
                         <input type="email" id="email_to" name="email_to" placeholder="admin@example.com">
                     </div>
@@ -184,14 +185,14 @@
             </div>
         </div>
 
-        <!-- Pending Files -->
-        <div class="card">
-            <h2>📂 Pending Files <span class="badge" id="pending-badge">0</span></h2>
-            <div class="file-list" id="pending-files-list">
-                <div style="text-align: center; color: #999;">No pending files</div>
-            </div>
-            <button class="btn btn-secondary" onclick="refreshFiles()">🔄 Refresh Files</button>
-        </div>
+<!--        &lt;!&ndash; Pending Files &ndash;&gt;-->
+<!--        <div class="card">-->
+<!--            <h2>📂 Pending Files <span class="badge" id="pending-badge">0</span></h2>-->
+<!--            <div class="file-list" id="pending-files-list">-->
+<!--                <div style="text-align: center; color: #999;">No pending files</div>-->
+<!--            </div>-->
+<!--            <button class="btn btn-secondary" onclick="refreshFiles()">🔄 Refresh Files</button>-->
+<!--        </div>-->
 
         <!-- Recent Activity -->
         <div class="card">
@@ -202,5 +203,13 @@
             <button class="btn btn-secondary" onclick="refreshLogs()">🔄 Refresh Logs</button>
         </div>
     </div>
+<!-- MY SIGNATURE -->
+<div class="creator-signature" onclick="activateEasterEgg()" title="Click me! 🎉">
+    <div class="signature-content">
+        <span class="signature-icon">✨</span>
+        <span class="signature-text">Created with passion by OLGA GOLOVASH</span>
+        <span class="signature-icon">✨</span>
+    </div>
+</div>
 </body>
 </html>

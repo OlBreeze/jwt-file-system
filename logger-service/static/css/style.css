@@ -309,9 +309,7 @@ body {
     transform: scale(0.95) translateY(0px);
 }
 
-/* Кнопка закрытия */
-/* Аккуратная кнопка закрытия */
-/* Аккуратная кнопка закрытия */
+/* кнопка закрытия */
 .close-button {
     position: absolute;
     top: 15px;

@@ -24,6 +24,8 @@ services:
     build:
       context: ./watcher-service
       dockerfile: Dockerfile
+    env_file:
+      - .env
     container_name: watcher-service
     depends_on:
       - logger-service

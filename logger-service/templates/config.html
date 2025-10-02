@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logger Service - Configuration</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/easter_egg.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='js/easter_egg.js') }}"></script>
 </head>
 <body>
 <div class="container">
     <div class="header">
-        <h1>🔐 Logger Service Configuration</h1>
+        <h1>🔐 Logger Service Configuration from Olga</h1>
         <p>Manage service settings, storage, and monitoring</p>
         <div style="margin-top: 15px;">
             <span class="status healthy" id="service-status">● Healthy</span>
@@ -22,30 +22,6 @@
     <div id="alert" class="alert"></div>
 
     <div class="grid">
-        <!-- Storage Settings -->
-        <div class="card">
-            <h2>📁 Storage Settings</h2>
-            <form id="storage-form">
-                <div class="form-group">
-                    <label for="logs_directory">Logs Directory</label>
-                    <input type="text" id="logs_directory" name="logs_directory" value="../logs">
-                    <small>Directory where log files are stored</small>
-                </div>
-
-                <div class="form-group">
-                    <label for="max_files">Maximum Files</label>
-                    <input type="number" id="max_files" name="max_files" value="1000" min="1" max="10000">
-                    <small>Maximum number of log files to keep</small>
-                </div>
-
-                <div class="form-group toggle">
-                    <input type="checkbox" id="cleanup_enabled" name="cleanup_enabled" checked>
-                    <label for="cleanup_enabled">Auto-cleanup old files</label>
-                </div>
-
-                <button type="submit" class="btn">💾 Save Storage Settings</button>
-            </form>
-        </div>
 
         <!-- Logging Settings -->
         <div class="card">
@@ -88,7 +64,7 @@
                     <label for="email_enabled">Enable Email Notifications</label>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" hidden>
                     <label for="email_to">Email To</label>
                     <input type="email" id="email_to" name="email_to" placeholder="admin@example.com">
                 </div>

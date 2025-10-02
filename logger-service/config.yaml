@@ -1,26 +1,22 @@
 jwt:
   algorithm: HS256
   expected_issuer: watcher-service
-  secret: ''
+  secret: '***hidden***'
 logging:
   backup_count: 3
   file: logs/logger-service.log
-  level: INFO
+  level: DEBUG
   max_size_mb: 5
 notifications:
   email:
-    enabled: false
-    from: logger@example.com
-    password: ''
+    enabled: true
+    password: '***hidden***'
     smtp_host: smtp.gmail.com
     smtp_port: 587
-    to: admin@example.com
+    to: default@example.com
     use_tls: true
   syslog:
     enabled: false
-    facility: local0
-    host: localhost
-    port: 514
 service:
   debug: false
   host: 0.0.0.0

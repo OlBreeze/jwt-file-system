@@ -349,3 +349,293 @@
 2025-10-02 14:05:03 - root - INFO - 📝 Received metadata for file: Overview.docx (96.21KB) from watcher-service
 2025-10-02 14:05:03 - root - INFO - ✅ Created: Overview-20251002T110501Z.txt
 2025-10-02 14:05:03 - root - INFO - ✅ Successfully processed file: Overview.docx
+2025-10-02 14:59:38 - root - INFO - Flask app created successfully
+2025-10-02 14:59:38 - root - INFO - ============================================================
+2025-10-02 14:59:38 - root - INFO - 🚀 Starting logger-service
+2025-10-02 14:59:38 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 14:59:38 - root - INFO - 📍 Port: 5000
+2025-10-02 14:59:38 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 14:59:38 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 14:59:38 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 14:59:38 - root - INFO - ============================================================
+2025-10-02 15:00:08 - root - INFO - 📝 Received metadata for file: Overview.docx (96.21KB) from watcher-service
+2025-10-02 15:00:08 - root - INFO - ✅ Created: Overview-20251002T120006Z.txt
+2025-10-02 15:00:08 - root - INFO - ✅ Successfully processed file: Overview.docx
+2025-10-02 16:14:36 - root - INFO - Flask app created successfully
+2025-10-02 16:14:36 - root - INFO - ============================================================
+2025-10-02 16:14:36 - root - INFO - 🚀 Starting logger-service
+2025-10-02 16:14:36 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 16:14:36 - root - INFO - 📍 Port: 5000
+2025-10-02 16:14:36 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 16:14:36 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 16:14:36 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 16:14:36 - root - INFO - ============================================================
+2025-10-02 16:22:19 - root - INFO - Flask app created successfully
+2025-10-02 16:22:19 - root - INFO - ============================================================
+2025-10-02 16:22:19 - root - INFO - 🚀 Starting logger-service
+2025-10-02 16:22:19 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 16:22:19 - root - INFO - 📍 Port: 5000
+2025-10-02 16:22:19 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 16:22:19 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 16:22:19 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 16:22:19 - root - INFO - ============================================================
+2025-10-02 16:23:34 - root - INFO - Flask app created successfully
+2025-10-02 16:23:34 - root - INFO - ============================================================
+2025-10-02 16:23:34 - root - INFO - 🚀 Starting logger-service
+2025-10-02 16:23:34 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 16:23:34 - root - INFO - 📍 Port: 5000
+2025-10-02 16:23:34 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 16:23:34 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 16:23:34 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 16:23:34 - root - INFO - ============================================================
+2025-10-02 16:25:44 - root - INFO - Flask app created successfully
+2025-10-02 16:25:44 - root - INFO - ============================================================
+2025-10-02 16:25:44 - root - INFO - 🚀 Starting logger-service
+2025-10-02 16:25:44 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 16:25:44 - root - INFO - 📍 Port: 5000
+2025-10-02 16:25:44 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 16:25:44 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 16:25:44 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 16:25:44 - root - INFO - ============================================================
+2025-10-02 16:28:01 - root - INFO - Flask app created successfully
+2025-10-02 16:28:01 - root - INFO - ============================================================
+2025-10-02 16:28:01 - root - INFO - 🚀 Starting logger-service
+2025-10-02 16:28:01 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 16:28:01 - root - INFO - 📍 Port: 5000
+2025-10-02 16:28:01 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 16:28:01 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 16:28:01 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 16:28:01 - root - INFO - ============================================================
+2025-10-02 16:40:07 - root - INFO - Flask app created successfully
+2025-10-02 16:40:07 - root - INFO - ============================================================
+2025-10-02 16:40:07 - root - INFO - 🚀 Starting logger-service
+2025-10-02 16:40:07 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 16:40:07 - root - INFO - 📍 Port: 5000
+2025-10-02 16:40:07 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 16:40:07 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 16:40:07 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 16:40:07 - root - INFO - ============================================================
+2025-10-02 16:42:10 - root - INFO - Configuration section 'notifications' updated
+2025-10-02 16:42:22 - root - INFO - 📝 Received metadata for file: Overview.docx (88.83KB) from watcher-service
+2025-10-02 16:42:22 - root - INFO - ✅ Created: Overview-20251002T134219Z.txt
+2025-10-02 16:42:22 - root - INFO - ✅ Successfully processed file: Overview.docx
+2025-10-02 16:46:01 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-02 16:46:01 - root - INFO - ✅ Created: Код-20251002T134559Z.txt
+2025-10-02 16:46:01 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-02 17:00:24 - root - INFO - Flask app created successfully
+2025-10-02 17:00:24 - root - INFO - ============================================================
+2025-10-02 17:00:24 - root - INFO - 🚀 Starting logger-service
+2025-10-02 17:00:24 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 17:00:24 - root - INFO - 📍 Port: 5000
+2025-10-02 17:00:24 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 17:00:24 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 17:00:24 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 17:00:24 - root - INFO - ============================================================
+2025-10-02 17:00:45 - root - INFO - 📝 Received metadata for file: тесто.docx (19.70KB) from watcher-service
+2025-10-02 17:00:45 - root - INFO - ✅ Created: тесто-20251002T140043Z.txt
+2025-10-02 17:00:45 - root - INFO - ✅ Successfully processed file: тесто.docx
+2025-10-02 17:03:28 - root - INFO - 📝 Received metadata for file: ocp-oracle-certified-professional-java-se-11.pdf (6.69MB) from watcher-service
+2025-10-02 17:03:28 - root - WARNING - Removed: Overview-20251002T134219Z.txt
+2025-10-02 17:03:28 - root - INFO - ✅ Created: ocp-oracle-certified-professional-java-se-11-20251002T140326Z.txt
+2025-10-02 17:03:28 - root - INFO - ✅ Successfully processed file: ocp-oracle-certified-professional-java-se-11.pdf
+2025-10-02 17:03:41 - root - INFO - 📝 Received metadata for file: 7z2501-x64.exe (1.57MB) from watcher-service
+2025-10-02 17:03:41 - root - WARNING - Removed: Код-20251002T134559Z.txt
+2025-10-02 17:03:41 - root - INFO - ✅ Created: 7z2501-x64-20251002T140339Z.txt
+2025-10-02 17:03:41 - root - INFO - ✅ Successfully processed file: 7z2501-x64.exe
+2025-10-02 17:03:58 - root - INFO - 📝 Received metadata for file: новый 11.md (28.83KB) from watcher-service
+2025-10-02 17:03:58 - root - WARNING - Removed: тесто-20251002T140043Z.txt
+2025-10-02 17:03:58 - root - INFO - ✅ Created: новый_11-20251002T140356Z.txt
+2025-10-02 17:03:58 - root - INFO - ✅ Successfully processed file: новый 11.md
+2025-10-02 17:04:10 - root - INFO - 📝 Received metadata for file: לוח יציאות תשפ״ו.pdf (190.10KB) from watcher-service
+2025-10-02 17:04:10 - root - WARNING - Removed: ocp-oracle-certified-professional-java-se-11-20251002T140326Z.txt
+2025-10-02 17:04:10 - root - INFO - ✅ Created: לוח_יציאות_תשפ_ו-20251002T140408Z.txt
+2025-10-02 17:04:10 - root - INFO - ✅ Successfully processed file: לוח יציאות תשפ״ו.pdf
+2025-10-02 17:08:33 - root - INFO - Flask app created successfully
+2025-10-02 17:08:33 - root - INFO - ============================================================
+2025-10-02 17:08:33 - root - INFO - 🚀 Starting logger-service
+2025-10-02 17:08:33 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 17:08:33 - root - INFO - 📍 Port: 5000
+2025-10-02 17:08:33 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 17:08:33 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 17:08:33 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 17:08:33 - root - INFO - ============================================================
+2025-10-02 17:08:49 - root - INFO - 📝 Received metadata for file: מכתב לההורים- פתיחת שנת תשפו .docx (19.70KB) from watcher-service
+2025-10-02 17:08:49 - root - WARNING - Removed: 7z2501-x64-20251002T140339Z.txt
+2025-10-02 17:08:49 - root - INFO - ✅ Created: מכתב_לההורים-_פתיחת_שנת_תשפו-20251002T140847Z.txt
+2025-10-02 17:08:49 - root - INFO - ✅ Successfully processed file: מכתב לההורים- פתיחת שנת תשפו .docx
+2025-10-02 17:09:52 - root - INFO - Flask app created successfully
+2025-10-02 17:09:52 - root - INFO - ============================================================
+2025-10-02 17:09:52 - root - INFO - 🚀 Starting logger-service
+2025-10-02 17:09:52 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 17:09:52 - root - INFO - 📍 Port: 5000
+2025-10-02 17:09:52 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 17:09:52 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 17:09:52 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 17:09:52 - root - INFO - ============================================================
+2025-10-02 17:10:12 - root - INFO - 📝 Received metadata for file: מכתב לההורים- פתיחת שנת תשפו .docx (19.70KB) from watcher-service
+2025-10-02 17:10:12 - root - WARNING - Removed: новый_11-20251002T140356Z.txt
+2025-10-02 17:10:12 - root - INFO - ✅ Created: מכתב_לההורים-_פתיחת_שנת_תשפו-20251002T141010Z.txt
+2025-10-02 17:10:12 - root - INFO - ✅ Successfully processed file: מכתב לההורים- פתיחת שנת תשפו .docx
+2025-10-02 17:11:36 - root - INFO - Flask app created successfully
+2025-10-02 17:11:36 - root - INFO - ============================================================
+2025-10-02 17:11:36 - root - INFO - 🚀 Starting logger-service
+2025-10-02 17:11:36 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 17:11:36 - root - INFO - 📍 Port: 5000
+2025-10-02 17:11:36 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 17:11:36 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 17:11:36 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 17:11:36 - root - INFO - ============================================================
+2025-10-02 17:23:53 - root - INFO - Flask app created successfully
+2025-10-02 17:23:53 - root - INFO - ============================================================
+2025-10-02 17:23:53 - root - INFO - 🚀 Starting logger-service
+2025-10-02 17:23:53 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 17:23:53 - root - INFO - 📍 Port: 5000
+2025-10-02 17:23:53 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 17:23:53 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 17:23:53 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 17:23:53 - root - INFO - ============================================================
+2025-10-02 17:29:00 - root - INFO - Flask app created successfully
+2025-10-02 17:29:00 - root - INFO - ============================================================
+2025-10-02 17:29:00 - root - INFO - 🚀 Starting logger-service
+2025-10-02 17:29:00 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 17:29:00 - root - INFO - 📍 Port: 5000
+2025-10-02 17:29:00 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 17:29:00 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 17:29:00 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 17:29:00 - root - INFO - ============================================================
+2025-10-02 17:29:16 - root - INFO - 📝 Received metadata for file: מכתב לההורים- פתיחת שנת תשפו .docx (19.70KB) from watcher-service
+2025-10-02 17:29:16 - root - WARNING - Removed: לוח_יציאות_תשפ_ו-20251002T140408Z.txt
+2025-10-02 17:29:16 - root - INFO - ✅ Created: מכתב_לההורים-_פתיחת_שנת_תשפו-20251002T142914Z.txt
+2025-10-02 17:29:16 - root - INFO - ✅ Successfully processed file: מכתב לההורים- פתיחת שנת תשפו .docx
+2025-10-02 17:34:55 - root - INFO - Flask app created successfully
+2025-10-02 17:34:55 - root - INFO - ============================================================
+2025-10-02 17:34:55 - root - INFO - 🚀 Starting logger-service
+2025-10-02 17:34:55 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 17:34:55 - root - INFO - 📍 Port: 5000
+2025-10-02 17:34:55 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 17:34:55 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 17:34:55 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 17:34:55 - root - INFO - ============================================================
+2025-10-02 17:35:17 - root - INFO - 📝 Received metadata for file: מכתב לההורים- פתיחת שנת תשפו .docx (19.70KB) from watcher-service
+2025-10-02 17:35:17 - root - INFO - ✅ Created: מכתב_לההורים-_פתיחת_שנת_תשפו-20251002T143515Z.txt
+2025-10-02 17:35:17 - root - INFO - ✅ Successfully processed file: מכתב לההורים- פתיחת שנת תשפו .docx
+2025-10-02 17:51:42 - root - INFO - Flask app created successfully
+2025-10-02 17:51:42 - root - INFO - ============================================================
+2025-10-02 17:51:42 - root - INFO - 🚀 Starting logger-service
+2025-10-02 17:51:42 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 17:51:42 - root - INFO - 📍 Port: 5000
+2025-10-02 17:51:42 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 17:51:42 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 17:51:42 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 17:51:42 - root - INFO - ============================================================
+2025-10-02 17:51:57 - root - INFO - 📝 Received metadata for file: מכתב להורים לפתיחת שנה (копия).docx (16.98KB) from watcher-service
+2025-10-02 17:51:57 - root - INFO - ✅ Created: מכתב_להורים_לפתיחת_שנה_копия-20251002T145155Z.txt
+2025-10-02 17:51:57 - root - INFO - ✅ Successfully processed file: מכתב להורים לפתיחת שנה (копия).docx
+2025-10-02 17:59:48 - root - INFO - Flask app created successfully
+2025-10-02 17:59:48 - root - INFO - ============================================================
+2025-10-02 17:59:48 - root - INFO - 🚀 Starting logger-service
+2025-10-02 17:59:48 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 17:59:48 - root - INFO - 📍 Port: 5000
+2025-10-02 17:59:48 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 17:59:48 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 17:59:48 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 17:59:48 - root - INFO - ============================================================
+2025-10-02 18:00:10 - root - INFO - 📝 Received metadata for file: Screenshot 2025-08-05 204820.jpg (39.36KB) from watcher-service
+2025-10-02 18:00:10 - root - INFO - ✅ Created: Screenshot_2025-08-05_204820-20251002T150008Z.txt
+2025-10-02 18:00:10 - root - INFO - ✅ Successfully processed file: Screenshot 2025-08-05 204820.jpg
+2025-10-02 18:09:31 - root - INFO - Flask app created successfully
+2025-10-02 18:09:31 - root - INFO - ============================================================
+2025-10-02 18:09:31 - root - INFO - 🚀 Starting logger-service
+2025-10-02 18:09:31 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 18:09:31 - root - INFO - 📍 Port: 5000
+2025-10-02 18:09:31 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 18:09:31 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 18:09:31 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 18:09:31 - root - INFO - ============================================================
+2025-10-02 18:09:44 - root - INFO - 📝 Received metadata for file: Скачать фавикон с любого сайта - Shortcut.lnk (862B) from watcher-service
+2025-10-02 18:09:44 - root - INFO - ✅ Created: Скачать_фавикон_с_любого_сайта_-_Shortcut-20251002T150942Z.txt
+2025-10-02 18:09:44 - root - INFO - ✅ Successfully processed file: Скачать фавикон с любого сайта - Shortcut.lnk
+2025-10-02 18:25:30 - root - INFO - Flask app created successfully
+2025-10-02 18:25:30 - root - INFO - ============================================================
+2025-10-02 18:25:30 - root - INFO - 🚀 Starting logger-service
+2025-10-02 18:25:30 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 18:25:30 - root - INFO - 📍 Port: 5000
+2025-10-02 18:25:30 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 18:25:30 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 18:25:30 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 18:25:30 - root - INFO - ============================================================
+2025-10-02 18:28:25 - root - INFO - Flask app created successfully
+2025-10-02 18:28:25 - root - INFO - ============================================================
+2025-10-02 18:28:25 - root - INFO - 🚀 Starting logger-service
+2025-10-02 18:28:25 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 18:28:25 - root - INFO - 📍 Port: 5000
+2025-10-02 18:28:25 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 18:28:25 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 18:28:25 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 18:28:25 - root - INFO - ============================================================
+2025-10-02 18:31:33 - root - INFO - Flask app created successfully
+2025-10-02 18:31:33 - root - INFO - ============================================================
+2025-10-02 18:31:33 - root - INFO - 🚀 Starting logger-service
+2025-10-02 18:31:33 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 18:31:33 - root - INFO - 📍 Port: 5000
+2025-10-02 18:31:33 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 18:31:33 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 18:31:33 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 18:31:33 - root - INFO - ============================================================
+2025-10-02 18:39:13 - root - INFO - Flask app created successfully
+2025-10-02 18:39:13 - root - INFO - ============================================================
+2025-10-02 18:39:13 - root - INFO - 🚀 Starting logger-service
+2025-10-02 18:39:13 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 18:39:13 - root - INFO - 📍 Port: 5000
+2025-10-02 18:39:13 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 18:39:13 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 18:39:13 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 18:39:13 - root - INFO - ============================================================
+2025-10-02 18:42:04 - root - INFO - Flask app created successfully
+2025-10-02 18:42:04 - root - INFO - ============================================================
+2025-10-02 18:42:04 - root - INFO - 🚀 Starting logger-service
+2025-10-02 18:42:04 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 18:42:04 - root - INFO - 📍 Port: 5000
+2025-10-02 18:42:04 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 18:42:04 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 18:42:04 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 18:42:04 - root - INFO - ============================================================
+2025-10-02 18:42:48 - root - INFO - 📝 Received metadata for file: Dockerfile (512B) from watcher-service
+2025-10-02 18:42:48 - root - INFO - ✅ Created: Dockerfile-20251002T154246Z.txt
+2025-10-02 18:42:48 - root - INFO - ✅ Successfully processed file: Dockerfile
+2025-10-02 18:47:15 - root - INFO - Flask app created successfully
+2025-10-02 18:47:15 - root - INFO - ============================================================
+2025-10-02 18:47:15 - root - INFO - 🚀 Starting logger-service
+2025-10-02 18:47:15 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 18:47:15 - root - INFO - 📍 Port: 5000
+2025-10-02 18:47:15 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 18:47:15 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 18:47:15 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 18:47:15 - root - INFO - ============================================================
+2025-10-02 18:47:30 - root - INFO - Configuration section 'logging' updated
+2025-10-02 18:49:09 - root - INFO - 📝 Received metadata for file: formatters.py (1.46KB) from watcher-service
+2025-10-02 18:49:09 - root - WARNING - Removed: Screenshot_2025-08-05_204820-20251002T150008Z.txt
+2025-10-02 18:49:09 - root - INFO - ✅ Created: formatters-20251002T154907Z.txt
+2025-10-02 18:49:09 - root - INFO - ✅ Successfully processed file: formatters.py
+2025-10-02 18:51:55 - root - INFO - Flask app created successfully
+2025-10-02 18:51:55 - root - INFO - ============================================================
+2025-10-02 18:51:55 - root - INFO - 🚀 Starting logger-service
+2025-10-02 18:51:55 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 18:51:55 - root - INFO - 📍 Port: 5000
+2025-10-02 18:51:55 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 18:51:55 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 18:51:55 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 18:51:55 - root - INFO - ============================================================
+2025-10-02 18:52:14 - root - INFO - Configuration section 'logging' updated
+2025-10-02 18:55:07 - root - INFO - Flask app created successfully
+2025-10-02 18:55:07 - root - INFO - ============================================================
+2025-10-02 18:55:07 - root - INFO - 🚀 Starting logger-service
+2025-10-02 18:55:07 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 18:55:07 - root - INFO - 📍 Port: 5000
+2025-10-02 18:55:07 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 18:55:07 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 18:55:07 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 18:55:07 - root - INFO - ============================================================
+2025-10-02 18:56:36 - root - INFO - 📝 Received metadata for file: __init__.py (158B) from watcher-service
+2025-10-02 18:56:36 - root - INFO - ✅ Created: init-20251002T155634Z.txt
+2025-10-02 18:56:36 - root - INFO - ✅ Successfully processed file: __init__.py

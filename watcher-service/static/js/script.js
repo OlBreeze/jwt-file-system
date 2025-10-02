@@ -4,70 +4,25 @@ async function loadConfig() {
         const response = await fetch('/api/config');
         const config = await response.json();
 
-        // Directory settings
-        document.getElementById('watch_directory').value = config.watcher.watch_directory;
-        document.getElementById('processed_directory').value = config.watcher.processed_directory;
-        document.getElementById('check_interval').value = config.watcher.check_interval;
-
-        // Logger connection
-        document.getElementById('logger_url').value = config.logger_service.url;
-        document.getElementById('timeout').value = config.logger_service.timeout;
-        document.getElementById('retry_attempts').value = config.logger_service.retry_attempts || 3;
-
-        // JWT settings
-        document.getElementById('jwt_issuer').value = config.jwt.issuer;
-        document.getElementById('expiration_minutes').value = config.jwt.expiration_minutes;
-        document.getElementById('jwt_algorithm').value = config.jwt.algorithm;
+        console.log('Loaded config:', config); // Debug
 
         // Logging settings
         document.getElementById('log_level').value = config.logging.level;
         document.getElementById('max_size_mb').value = config.logging.max_size_mb;
         document.getElementById('backup_count').value = config.logging.backup_count;
 
-        // Notifications
-        document.getElementById('email_enabled').checked = config.notifications.email.enabled;
-        document.getElementById('email_to').value = config.notifications.email.to;
-        document.getElementById('syslog_enabled').checked = config.notifications.syslog.enabled;
+        // Notifications - ИСПРАВЛЕНО
+        document.getElementById('email_enabled').checked = config.notifications?.email?.enabled || false;
+        document.getElementById('email_to').value = config.notifications?.email?.to || '';
+        document.getElementById('syslog_enabled').checked = config.notifications?.syslog?.enabled || false;
+
+        console.log('Email enabled:', config.notifications?.email?.enabled); // Debug
+        console.log('Email to:', config.notifications?.email?.to); // Debug
     } catch (error) {
         showAlert('Failed to load configuration: ' + error.message, 'error');
+        console.error('Load config error:', error); // Debug
     }
 }
-
-// Save directory settings
-document.getElementById('directory-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = {
-        watch_directory: formData.get('watch_directory'),
-        processed_directory: formData.get('processed_directory'),
-        check_interval: parseInt(formData.get('check_interval'))
-    };
-    await saveConfig('watcher', data);
-});
-
-// Save logger connection
-document.getElementById('logger-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = {
-        url: formData.get('logger_url'),
-        timeout: parseInt(formData.get('timeout')),
-        retry_attempts: parseInt(formData.get('retry_attempts'))
-    };
-    await saveConfig('logger_service', data);
-});
-
-// Save JWT settings
-document.getElementById('jwt-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = {
-        issuer: formData.get('jwt_issuer'),
-        expiration_minutes: parseInt(formData.get('expiration_minutes')),
-        algorithm: formData.get('jwt_algorithm')
-    };
-    await saveConfig('jwt', data);
-});
 
 // Save logging settings
 document.getElementById('logging-form').addEventListener('submit', async (e) => {
@@ -93,12 +48,15 @@ document.getElementById('notifications-form').addEventListener('submit', async (
             enabled: document.getElementById('syslog_enabled').checked
         }
     };
+    console.log('Saving notifications:', data); // Debug
     await saveConfig('notifications', data);
 });
 
-// Save config API
+// Save config API - ИСПРАВЛЕНО
 async function saveConfig(section, data) {
     try {
+        console.log(`Saving ${section}:`, data); // Debug
+
         const response = await fetch(`/api/config/${section}`, {
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
@@ -107,12 +65,19 @@ async function saveConfig(section, data) {
 
         if (response.ok) {
             showAlert(`${section} settings saved! Restart may be required.`, 'success');
+            // ВАЖНО: Перезагружаем конфиг через 500мс чтобы увидеть изменения
+            setTimeout(() => {
+                console.log('Reloading config after save...'); // Debug
+                loadConfig();
+            }, 500);
         } else {
             const error = await response.json();
             showAlert('Failed to save: ' + error.error, 'error');
+            console.error('Save error:', error); // Debug
         }
     } catch (error) {
         showAlert('Error: ' + error.message, 'error');
+        console.error('Save exception:', error); // Debug
     }
 }
 
@@ -133,6 +98,7 @@ async function testConnection() {
         }
     } catch (error) {
         showAlert('Connection test failed: ' + error.message, 'error');
+        console.error('Test connection error:', error); // Debug
     }
 }
 
@@ -149,33 +115,7 @@ async function refreshStats() {
         document.getElementById('processed-count').textContent = stats.total_processed;
     } catch (error) {
         showAlert('Failed to refresh stats', 'error');
-    }
-}
-
-// Refresh pending files
-async function refreshFiles() {
-    try {
-        const response = await fetch('/api/files/pending');
-        const files = await response.json();
-
-        const filesList = document.getElementById('pending-files-list');
-        document.getElementById('pending-badge').textContent = files.length;
-
-        if (files.length === 0) {
-            filesList.innerHTML = '<div style="text-align: center; color: #999;">No pending files</div>';
-        } else {
-            filesList.innerHTML = files.map(file => `
-                        <div class="file-item">
-                            <div>
-                                <div class="name">📄 ${file.name}</div>
-                                <div class="size">${file.size}</div>
-                            </div>
-                            <div class="time">${file.created}</div>
-                        </div>
-                    `).join('');
-        }
-    } catch (error) {
-        showAlert('Failed to refresh files', 'error');
+        console.error('Refresh stats error:', error); // Debug
     }
 }
 
@@ -191,6 +131,7 @@ async function refreshLogs() {
         ).join('');
     } catch (error) {
         showAlert('Failed to refresh logs', 'error');
+        console.error('Refresh logs error:', error); // Debug
     }
 }
 
@@ -209,12 +150,10 @@ function showAlert(message, type) {
 // Initialize
 loadConfig();
 refreshStats();
-refreshFiles();
 refreshLogs();
 testConnection();
 
 // Auto-refresh
 setInterval(refreshStats, 30000);
-setInterval(refreshFiles, 10000);
 setInterval(refreshLogs, 30000);
 setInterval(testConnection, 60000);

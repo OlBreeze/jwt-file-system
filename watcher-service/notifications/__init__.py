@@ -12,6 +12,7 @@ from .syslog_sender import (
     send_syslog_error,
     send_syslog_info,
     send_syslog_warning,
+    send_syslog_success,
     SYSLOG_ERROR,
     SYSLOG_INFO,
     SYSLOG_WARNING
@@ -25,6 +26,7 @@ __all__ = [
     'send_syslog_error',
     'send_syslog_info',
     'send_syslog_warning',
+    'send_syslog_success',
     'SYSLOG_ERROR',
     'SYSLOG_INFO',
     'SYSLOG_WARNING'

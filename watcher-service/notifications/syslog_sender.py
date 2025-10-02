@@ -89,3 +89,19 @@ def send_syslog_warning(config, warning_message):
         warning_message (str): Warning text
     """
     send_syslog_notification(config, SYSLOG_WARNING, warning_message)
+
+def send_syslog_success(config, filename, metadata):
+    """
+    Sends a syslog notification about successful file processing.
+
+    Args:
+        config (dict): Application configuration
+        filename (str): File name
+        metadata (dict): File metadata
+    """
+    message = (
+        f"File processed successfully: {filename} "
+        f"(size: {metadata.get('file_size', 0)} bytes, "
+        f"hash: {metadata.get('hash', 'N/A')[:8]}...)"
+    )
+    send_syslog_notification(config, SYSLOG_INFO, message)
