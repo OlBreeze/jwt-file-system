@@ -135,40 +135,60 @@ python watcher_service.py
 }
 ```
 ### Decode
-
-![Decode](https://drive.google.com/drive/u/0/folders/19vzf3m2Lj-YCrHAZPFsQYM39hnV8JWxK)
+![Decode](https://github.com/user-attachments/assets/d5349b52-6510-4448-b6d3-d6589791e367)
 
 ### Encode
-
-![Encode](https://drive.google.com/file/d/1avpbBm6dd6-4UbD_mjyP_9z6F0NT2xpU/view?usp=drive_link)
-
+![Encode](https://github.com/user-attachments/assets/abb58071-e770-443b-8efe-98990e0e940e)
 
 ---
 ## Log File Naming Convention
 
 **Pattern:** `<sanitized-filename>-<timestamp>.txt`
 
-**Example:** `report_pdf-20250928T143322Z.txt`
-
-**Content:**
+**Example:**  Arnona-20251002T205912Z.txt  
 ```
-Filename: report.pdf
-Size: 200KB
-Hash: abc123def456...
-Created At: 2025-09-28T14:33:22Z
+Filename: Arnona.pdf  
+Size: 476.83KB  
+Created At: 2025-10-02T20:59:12.171550+00:00  
+Hash: 5e8545a2224f4bd34d7d64f6c8742943c9fbd639416750c5b2faf933db211790  
+Processed At: 2025-10-02T20:59:12.271298+00:00
 ```
 
----
-## Example Log Files
-
-
-**File:** `logs/test_txt-20250928T143322Z.txt`
-
-```
-Filename: test.txt
-Size: 13B
-Hash: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
-Created At: 2025-09-28T14:33:22Z
-```
 ---
 ### Email Notifications
+
+![Encode](https://github.com/user-attachments/assets/c8887952-0b1f-4b70-828f-fe1df77c1c71)
+
+
+---
+
+## 🎨 Web User Interface
+
+Both services feature a fully functional web-based user interface for monitoring and configuration management.
+
+### Features
+
+- 📊 **Real-time Statistics** - Live monitoring of file processing metrics
+- 🔧 **Configuration Management** - Update settings without restarting services
+- 📝 **Log Viewer** - Browse recent logs with search and filtering
+- 🔗 **Service Health** - Check connection status between services
+
+
+### Accessing the UI
+
+- **Logger Service UI:** http://localhost:5000/
+- **Watcher Service UI:** http://localhost:8080/
+
+### Status
+
+⚠️ **Note:** The web interface is currently in beta and requires additional testing. Some features may not work as expected. We welcome feedback and bug reports!
+
+### Surprise 🥚
+
+Good things come to those who click persistently!  
+Try clicking on the author's name multiple times in the footer... You might discover something fun! 🎉
+
+
+![](https://github.com/user-attachments/assets/7d54e791-8e8b-47da-9f20-9a5b706cc7e4)
+
+---
