@@ -18,4 +18,4 @@ COPY . .
 RUN mkdir -p logs
 
 # Launch the application
-CMD ["python", "-u", "app.py"]
+CMD ["python", "-u", "main.py"]

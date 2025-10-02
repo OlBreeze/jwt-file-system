@@ -22,4 +22,4 @@ RUN mkdir -p logs
 EXPOSE 5000
 
 # Launch the application
-CMD ["python", "-u", "app.py"]
+CMD ["python", "-u", "main.py"]

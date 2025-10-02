@@ -37,10 +37,10 @@ def load_config():
         # LOGGER_URL: environment variable priority, otherwise autodetect
         if os.getenv('LOGGER_URL'):
             config['logger_service']['url'] = os.getenv('LOGGER_URL')
-        else:
+        # else:
             # Auto-detection by environment
-            url_key = 'url_docker' if is_docker else 'url_local'
-            config['logger_service']['url'] = config['logger_service'].get(
+        url_key = 'url_docker' if is_docker else 'url_local'
+        config['logger_service']['url'] = config['logger_service'].get(
                 url_key,
                 config['logger_service'].get('url')
             )

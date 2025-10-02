@@ -70,6 +70,12 @@ def send_metadata_to_logger(metadata, config):
         logger.error(f"❌ {error_msg}")
         return False, error_msg
 
+def get_logger_health_url(config):
+    """Получить health URL из logger URL"""
+    logger_url = config['logger_service']['url']
+    # Заменяем /log на /health
+    health_url = logger_url.rsplit('/log', 1)[0] + '/health'
+    return health_url
 
 def test_logger_connection(config, logger):
     """
@@ -82,7 +88,7 @@ def test_logger_connection(config, logger):
     try:
         logger.info("🔍 Checking Logger Service availability...")
 
-        health_url = config['logger_service']['url'].replace('/log', '/health')
+        health_url = get_logger_health_url(config)
         response = requests.get(health_url, timeout=5)
 
         if response.status_code == 200:

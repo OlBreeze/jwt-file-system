@@ -284,3 +284,57 @@
 2025-10-02 13:05:31 - root - INFO - 📝 Received metadata for file: новый 1.md (28.83KB) from watcher-service
 2025-10-02 13:05:31 - root - INFO - ✅ Created: новый_1-20251002T100529Z.txt
 2025-10-02 13:05:31 - root - INFO - ✅ Successfully processed file: новый 1.md
+2025-10-02 10:21:12 - root - INFO - ============================================================
+2025-10-02 10:21:12 - root - INFO - 🚀 Starting logger-service
+2025-10-02 10:21:12 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 10:21:12 - root - INFO - 📍 Port: 5000
+2025-10-02 10:21:12 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 10:21:12 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 10:21:12 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 10:21:12 - root - INFO - ============================================================
+2025-10-02 10:32:28 - root - INFO - ============================================================
+2025-10-02 10:32:28 - root - INFO - 🚀 Starting logger-service
+2025-10-02 10:32:28 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 10:32:28 - root - INFO - 📍 Port: 5000
+2025-10-02 10:32:28 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 10:32:28 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 10:32:28 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 10:32:28 - root - INFO - ============================================================
+2025-10-02 10:39:32 - root - INFO - ============================================================
+2025-10-02 10:39:32 - root - INFO - 🚀 Starting logger-service
+2025-10-02 10:39:32 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 10:39:32 - root - INFO - 📍 Port: 5000
+2025-10-02 10:39:32 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 10:39:32 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 10:39:32 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 10:39:32 - root - INFO - ============================================================
+2025-10-02 10:44:05 - root - INFO - ============================================================
+2025-10-02 10:44:05 - root - INFO - 🚀 Starting logger-service
+2025-10-02 10:44:05 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 10:44:05 - root - INFO - 📍 Port: 5000
+2025-10-02 10:44:05 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 10:44:05 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 10:44:05 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 10:44:05 - root - INFO - ============================================================
+2025-10-02 10:56:05 - root - INFO - ============================================================
+2025-10-02 10:56:05 - root - INFO - 🚀 Starting logger-service
+2025-10-02 10:56:05 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 10:56:05 - root - INFO - 📍 Port: 5000
+2025-10-02 10:56:05 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 10:56:05 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 10:56:05 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 10:56:05 - root - INFO - ============================================================
+2025-10-02 10:56:32 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-02 10:56:32 - root - INFO - ✅ Created: Код-20251002T105632Z.txt
+2025-10-02 10:56:32 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-02 13:57:28 - root - INFO - ============================================================
+2025-10-02 13:57:28 - root - INFO - 🚀 Starting logger-service
+2025-10-02 13:57:28 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 13:57:28 - root - INFO - 📍 Port: 5000
+2025-10-02 13:57:28 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 13:57:28 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 13:57:28 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 13:57:28 - root - INFO - ============================================================
+2025-10-02 13:57:47 - root - INFO - 📝 Received metadata for file: q.txt (0B) from watcher-service
+2025-10-02 13:57:47 - root - INFO - ✅ Created: q-20251002T105745Z.txt
+2025-10-02 13:57:47 - root - INFO - ✅ Successfully processed file: q.txt
