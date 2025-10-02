@@ -41,6 +41,13 @@ services:
       - WATCH_DIR=/app/watched
       - PROCESSED_DIR=/app/processed
       - LOG_LEVEL=INFO
+      - EMAIL_ENABLED=${EMAIL_ENABLED:-true}
+      - EMAIL_SMTP_HOST=${EMAIL_SMTP_HOST:-smtp.gmail.com}
+      - EMAIL_SMTP_PORT=${EMAIL_SMTP_PORT:-587}
+      - EMAIL_FROM=${EMAIL_FROM}
+      - EMAIL_TO=${EMAIL_TO:-default@example.com}
+      - EMAIL_PASSWORD=${EMAIL_PASSWORD}
+      - EMAIL_USE_TLS=${EMAIL_USE_TLS:-true}
     networks:
       - jwt-file-system-network
     restart: unless-stopped
