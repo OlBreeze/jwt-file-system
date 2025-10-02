@@ -1,4 +1,4 @@
-# File Watcher & Logger System
+#    👁️   File Watcher & Logger System
 
 A distributed file monitoring and logging system consisting of two microservices: **Watcher Service** and **Logger Service**.  
 
@@ -94,6 +94,11 @@ docker-compose up -d
 
 # View logs
 docker-compose logs -f
+docker-compose logs -f watcher-service
+docker-compose logs -f logger-service
+
+# Stop services
+docker-compose down
 ```
 
 #### Option 2: Manual Setup
@@ -129,7 +134,13 @@ python watcher_service.py
   "iat": 1727534302
 }
 ```
+### Decode
+ 
+![https://drive.google.com/file/d/12_oYejy_jZCtTdQfEWIRqHAOMgO7cC43/view?usp=sharing](img.png)
 
+### Encode:
+
+![https://drive.google.com/file/d/12_oYejy_jZCtTdQfEWIRqHAOMgO7cC43/view?usp=sharing](img.png)
 ---
 ## Log File Naming Convention
 
@@ -144,27 +155,7 @@ Size: 200KB
 Hash: abc123def456...
 Created At: 2025-09-28T14:33:22Z
 ```
----
 
-
-## 🐳 Docker Deployment
-
-### Commands
-
-```bash
-# Start services
-docker-compose up -d
-
-# Stop services
-docker-compose down
-
-# View logs
-docker-compose logs -f watcher-service
-docker-compose logs -f logger-service
-
-# Rebuild after changes
-docker-compose up -d --build
-```
 ---
 ## Example Log Files
 
