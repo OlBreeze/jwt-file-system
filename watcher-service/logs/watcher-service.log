@@ -2825,3 +2825,55 @@
 2025-10-02 13:58:00 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 13:58:00] "GET /api/stats HTTP/1.1" 200 -
 2025-10-02 13:58:07 - root - INFO - 🛑 Stopping watcher service...
 2025-10-02 13:58:07 - root - INFO - 👋 Watcher service stopped
+2025-10-02 14:03:58 - root - INFO - ============================================================
+2025-10-02 14:03:58 - root - INFO - 🚀 Starting watcher-service
+2025-10-02 14:03:58 - root - INFO - 📁 Watching directory: ../watched
+2025-10-02 14:03:58 - root - INFO - 📦 Processed directory: ../processed
+2025-10-02 14:03:58 - root - INFO - 🌐 Logger Service URL: http://localhost:5000/log
+2025-10-02 14:03:58 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 14:03:58 - root - INFO - ⏱️  JWT expiration: 5 minutes
+2025-10-02 14:03:58 - root - INFO - 📧 Email notifications: disabled
+2025-10-02 14:03:58 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-02 14:03:58 - root - INFO - 🌐 Web UI: http://0.0.0.0:8080/
+2025-10-02 14:03:58 - root - INFO - ============================================================
+2025-10-02 14:03:58 - root - INFO - ✅ Directories ready
+2025-10-02 14:03:58 - root - INFO - 🔍 Checking Logger Service availability...
+2025-10-02 14:04:00 - root - INFO - ✅ Logger Service is available
+2025-10-02 14:04:00 - watcher.observer - INFO - Observer configured for: ..\watched
+2025-10-02 14:04:00 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-10-02 14:04:00 - api.app - INFO - Flask app created successfully
+2025-10-02 14:04:00 - root - INFO - 🌐 Web UI started on http://0.0.0.0:8080
+2025-10-02 14:04:00 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.32.214.179:8080
+2025-10-02 14:04:00 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-02 14:04:00 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:00] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 14:04:00 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:00] "GET /api/files/pending HTTP/1.1" 200 -
+2025-10-02 14:04:00 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:00] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 14:04:02 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:02] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 14:04:10 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:10] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 14:04:10 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:10] "GET /api/files/pending HTTP/1.1" 200 -
+2025-10-02 14:04:10 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:10] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 14:04:20 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:20] "GET /api/files/pending HTTP/1.1" 200 -
+2025-10-02 14:04:30 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:30] "GET /api/files/pending HTTP/1.1" 200 -
+2025-10-02 14:04:40 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:40] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 14:04:40 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:40] "GET /api/files/pending HTTP/1.1" 200 -
+2025-10-02 14:04:40 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:40] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 14:04:42 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:42] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 14:04:49 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:04:49] "GET /api/files/pending HTTP/1.1" 200 -
+2025-10-02 14:05:00 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:05:00] "GET /api/files/pending HTTP/1.1" 200 -
+2025-10-02 14:05:01 - watcher.file_watcher - INFO - 📁 New file detected: ..\watched\Overview.docx
+2025-10-02 14:05:03 - integration.logger_client - INFO - ✅ Metadata sent successfully for: Overview.docx
+2025-10-02 14:05:03 - file_processing.file_mover - INFO - ✅ Moved file to: ..\processed\Overview.docx
+2025-10-02 14:05:03 - watcher.file_watcher - INFO - ✅ Successfully processed: Overview.docx
+2025-10-02 14:05:03 - watcher.file_watcher - INFO -    Size: 98524 bytes
+2025-10-02 14:05:03 - watcher.file_watcher - INFO -    Hash: a9a516eae8806399...
+2025-10-02 14:05:03 - watcher.file_watcher - INFO -    Moved to: ..\processed\Overview.docx
+2025-10-02 14:05:09 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:05:09] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 14:05:10 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:05:10] "GET /api/files/pending HTTP/1.1" 200 -
+2025-10-02 14:05:10 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:05:10] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 14:05:11 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:05:11] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 14:05:20 - werkzeug - INFO - 127.0.0.1 - - [02/Oct/2025 14:05:20] "GET /api/files/pending HTTP/1.1" 200 -
+2025-10-02 14:05:27 - root - INFO - 🛑 Stopping watcher service...
+2025-10-02 14:05:27 - root - INFO - 👋 Watcher service stopped

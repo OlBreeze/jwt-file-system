@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: linear-gradient(135deg, #fc466b 0%, #3f5efb 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    color: #fc466b;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.header p {
+    color: #666;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #fc466b;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #fc466b;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+    font-size: 12px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle input[type="checkbox"] {
+    width: 50px;
+    height: 25px;
+    appearance: none;
+    background: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.toggle input[type="checkbox"]:checked {
+    background: #fc466b;
+}
+
+.toggle input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: white;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+.toggle input[type="checkbox"]:checked::before {
+    transform: translateX(25px);
+}
+
+.btn {
+    background: #fc466b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #e63958;
+}
+
+.btn-secondary {
+    background: #3f5efb;
+}
+
+.btn-secondary:hover {
+    background: #2f4ed7;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status.active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status.watching {
+    background: #cce5ff;
+    color: #004085;
+}
+
+.status.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-box .value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fc466b;
+}
+
+.stat-box .label {
+    color: #666;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.alert.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.file-list {
+    background: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.file-item {
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-item .name {
+    font-weight: 500;
+    color: #333;
+}
+
+.file-item .size {
+    color: #666;
+    font-size: 12px;
+}
+
+.file-item .time {
+    color: #999;
+    font-size: 11px;
+}
+
+.logs-preview {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.logs-preview .log-line {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-left: 3px solid transparent;
+}
+
+.logs-preview .log-line.info {
+    border-left-color: #4ec9b0;
+}
+
+.logs-preview .log-line.error {
+    border-left-color: #f48771;
+}
+
+.logs-preview .log-line.warning {
+    border-left-color: #dcdcaa;
+}
+
+.connection-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.connection-status .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #28a745;
+    animation: pulse 2s infinite;
+}
+
+.connection-status .indicator.disconnected {
+    background: #dc3545;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    background: #fc466b;
+    color: white;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
