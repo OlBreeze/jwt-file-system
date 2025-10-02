@@ -8,12 +8,13 @@ from dotenv import load_dotenv
 
 def load_config(config_path=None):
     """Loads configuration from config.yaml and environment variables"""
+    #--- for local development
     env_path = Path(__file__).parent.parent.parent / '.env'
     if env_path.exists():
         load_dotenv(env_path)
     else:
         load_dotenv()
-
+    #---
     if config_path is None:
         config_path = Path(__file__).parent.parent / 'config.yaml'
 

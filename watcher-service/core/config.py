@@ -16,6 +16,12 @@ def load_config():
     Returns:
         dict: Application configuration
     """
+    env_path = Path(__file__).parent.parent.parent / '.env'
+    if env_path.exists():
+        load_dotenv(env_path)
+    else:
+        load_dotenv()
+
     config_path = Path(__file__).parent.parent / 'config.yaml'
 
     try:
@@ -44,10 +50,6 @@ def load_config():
                 url_key,
                 config['logger_service'].get('url')
             )
-
-        # # Debug output
-        # print(f"Using LOGGER_URL: {config['logger_service']['url']}")
-        # print(f"Docker mode: {is_docker}")
 
         # Overriding other parameters from env
         if os.getenv('LOG_LEVEL'):

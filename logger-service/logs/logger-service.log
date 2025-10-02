@@ -684,3 +684,15 @@
 2025-10-02 17:17:13 - root - INFO - 📝 Received metadata for file: новый 1.md (28.83KB) from watcher-service
 2025-10-02 17:17:13 - root - INFO - ✅ Created: новый_1-20251002T171713Z.txt
 2025-10-02 17:17:13 - root - INFO - ✅ Successfully processed file: новый 1.md
+2025-10-02 18:59:03 - root - INFO - Flask app created successfully
+2025-10-02 18:59:03 - root - INFO - ============================================================
+2025-10-02 18:59:03 - root - INFO - 🚀 Starting logger-service
+2025-10-02 18:59:03 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 18:59:03 - root - INFO - 📍 Port: 5000
+2025-10-02 18:59:03 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 18:59:03 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 18:59:03 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 18:59:03 - root - INFO - ============================================================
+2025-10-02 18:59:57 - root - INFO - 📝 Received metadata for file: UKRAINE ADRESS pesochin.docx (14.04KB) from watcher-service
+2025-10-02 18:59:57 - root - INFO - ✅ Created: UKRAINE_ADRESS_pesochin-20251002T185957Z.txt
+2025-10-02 18:59:57 - root - INFO - ✅ Successfully processed file: UKRAINE ADRESS pesochin.docx

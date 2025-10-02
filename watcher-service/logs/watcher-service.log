@@ -4693,3 +4693,64 @@ socket.gaierror: [Errno 11001] getaddrinfo failed
 2025-10-02 17:18:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:18:22] "GET /api/stats HTTP/1.1" 200 -
 2025-10-02 17:18:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:18:22] "GET /api/logs/recent HTTP/1.1" 200 -
 2025-10-02 17:18:25 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 17:18:25] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 18:59:04 - root - INFO - ============================================================
+2025-10-02 18:59:04 - root - INFO - 🚀 Starting watcher-service
+2025-10-02 18:59:04 - root - INFO - 📁 Watching directory: /app/watched
+2025-10-02 18:59:04 - root - INFO - 📦 Processed directory: /app/processed
+2025-10-02 18:59:04 - root - INFO - 🌐 Logger Service URL: http://logger-service:5000/log
+2025-10-02 18:59:04 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 18:59:04 - root - INFO - ⏱️  JWT expiration: 5 minutes
+2025-10-02 18:59:04 - root - INFO - 📧 Email notifications: enabled
+2025-10-02 18:59:04 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-02 18:59:04 - root - INFO - 🌐 Web UI: http://0.0.0.0:8080/
+2025-10-02 18:59:04 - root - INFO - ============================================================
+2025-10-02 18:59:04 - root - INFO - ✅ Directories ready
+2025-10-02 18:59:04 - root - INFO - 🔍 Checking Logger Service availability...
+2025-10-02 18:59:04 - root - INFO - ✅ Logger Service is available
+2025-10-02 18:59:04 - watcher.observer - INFO - Observer configured for: /app/watched
+2025-10-02 18:59:04 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-10-02 18:59:04 - api.app - INFO - Flask app created successfully
+2025-10-02 18:59:04 - root - INFO - 🌐 Web UI started on http://0.0.0.0:8080
+2025-10-02 18:59:04 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.19.0.3:8080
+2025-10-02 18:59:04 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-02 18:59:16 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:16] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 18:59:16 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:16] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 18:59:18 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:18] "GET /?email_enabled=on&email_to= HTTP/1.1" 200 -
+2025-10-02 18:59:18 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-02 18:59:18 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-10-02 18:59:19 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:19] "[36mGET /static/js/easter_egg.js HTTP/1.1[0m" 304 -
+2025-10-02 18:59:19 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:19] "GET /api/config HTTP/1.1" 200 -
+2025-10-02 18:59:19 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:19] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 18:59:19 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:19] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 18:59:21 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:21] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 18:59:49 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:49] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 18:59:49 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 18:59:49] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 18:59:56 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/UKRAINE ADRESS pesochin.docx
+2025-10-02 18:59:57 - integration.logger_client - INFO - ✅ Metadata sent successfully for: UKRAINE ADRESS pesochin.docx
+2025-10-02 18:59:57 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/UKRAINE ADRESS pesochin.docx
+2025-10-02 18:59:57 - watcher.file_watcher - INFO - ✅ Successfully processed: UKRAINE ADRESS pesochin.docx
+2025-10-02 18:59:57 - watcher.file_watcher - INFO -    Size: 14382 bytes
+2025-10-02 18:59:57 - watcher.file_watcher - INFO -    Hash: f8dadfb22946b521...
+2025-10-02 18:59:57 - watcher.file_watcher - INFO -    Moved to: /app/processed/UKRAINE ADRESS pesochin.docx
+2025-10-02 18:59:59 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-02 19:00:19 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:00:19] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 19:00:19 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:00:19] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 19:00:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:00:22] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 19:00:49 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:00:49] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 19:00:49 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:00:49] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 19:01:19 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:01:19] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 19:01:19 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:01:19] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 19:01:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:01:22] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 19:01:49 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:01:49] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 19:01:49 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:01:49] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 19:02:19 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:02:19] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 19:02:19 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:02:19] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 19:02:21 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:02:21] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 19:03:22 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:03:22] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 19:03:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:03:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-02 19:03:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:03:33] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-02 19:04:21 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:04:21] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-02 19:04:33 - werkzeug - INFO - 172.19.0.1 - - [02/Oct/2025 19:04:33] "GET /api/stats HTTP/1.1" 200 -

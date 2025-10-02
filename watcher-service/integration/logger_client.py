@@ -71,9 +71,8 @@ def send_metadata_to_logger(metadata, config):
         return False, error_msg
 
 def get_logger_health_url(config):
-    """Получить health URL из logger URL"""
+    """Get health URL from logger URL"""
     logger_url = config['logger_service']['url']
-    # Заменяем /log на /health
     health_url = logger_url.rsplit('/log', 1)[0] + '/health'
     return health_url
 
