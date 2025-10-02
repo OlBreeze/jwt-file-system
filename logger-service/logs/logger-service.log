@@ -239,3 +239,48 @@
 2025-10-01 19:00:26 - root - INFO - 📝 Received metadata for file: Overview.docx (77.29KB) from watcher-service
 2025-10-01 19:00:26 - root - INFO - ✅ Created: Overview-20251001T190026Z.txt
 2025-10-01 19:00:26 - root - INFO - ✅ Successfully processed file: Overview.docx
+2025-10-02 12:39:24 - root - INFO - ============================================================
+2025-10-02 12:39:24 - root - INFO - 🚀 Starting logger-service
+2025-10-02 12:39:24 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 12:39:24 - root - INFO - 📍 Port: 5000
+2025-10-02 12:39:24 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 12:39:24 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 12:39:24 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 12:39:24 - root - INFO - ============================================================
+2025-10-02 12:40:09 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-02 12:40:09 - root - INFO - ✅ Created: Код-20251002T094007Z.txt
+2025-10-02 12:40:09 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-02 12:47:20 - root - INFO - ============================================================
+2025-10-02 12:47:20 - root - INFO - 🚀 Starting logger-service
+2025-10-02 12:47:20 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 12:47:20 - root - INFO - 📍 Port: 5000
+2025-10-02 12:47:20 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 12:47:20 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 12:47:20 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 12:47:20 - root - INFO - ============================================================
+2025-10-02 12:48:45 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-02 12:55:00 - root - INFO - ============================================================
+2025-10-02 12:55:00 - root - INFO - 🚀 Starting logger-service
+2025-10-02 12:55:00 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 12:55:00 - root - INFO - 📍 Port: 5000
+2025-10-02 12:55:00 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 12:55:00 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 12:55:00 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 12:55:00 - root - INFO - ============================================================
+2025-10-02 12:55:14 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-02 12:55:14 - root - INFO - ✅ Created: Код-20251002T095512Z.txt
+2025-10-02 12:55:14 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-02 12:56:18 - root - INFO - 📝 Received metadata for file: Screenshot 2025-08-05 204659.jpg (39.51KB) from watcher-service
+2025-10-02 12:56:18 - root - INFO - ✅ Created: Screenshot_2025-08-05_204659-20251002T095615Z.txt
+2025-10-02 12:56:18 - root - INFO - ✅ Successfully processed file: Screenshot 2025-08-05 204659.jpg
+2025-10-02 13:05:18 - root - INFO - ============================================================
+2025-10-02 13:05:18 - root - INFO - 🚀 Starting logger-service
+2025-10-02 13:05:18 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-02 13:05:18 - root - INFO - 📍 Port: 5000
+2025-10-02 13:05:18 - root - INFO - 📁 Logs directory: ../logs
+2025-10-02 13:05:18 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-02 13:05:18 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-02 13:05:18 - root - INFO - ============================================================
+2025-10-02 13:05:31 - root - INFO - 📝 Received metadata for file: новый 1.md (28.83KB) from watcher-service
+2025-10-02 13:05:31 - root - INFO - ✅ Created: новый_1-20251002T100529Z.txt
+2025-10-02 13:05:31 - root - INFO - ✅ Successfully processed file: новый 1.md

@@ -1,21 +1,21 @@
 # Watcher Service Dockerfile
 FROM python:3.11-slim
 
-# Устанавливаем рабочую директорию
+# Set the working directory
 WORKDIR /app
 
-# Копируем requirements и устанавливаем зависимости
+# Copy requirements and install dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Копируем код приложения
-COPY app.py .
+# Copy the application code
+COPY main.py .
 COPY config.yaml .
 
-COPY templates/ templates/
-
-# Создаем директорию для логов сервиса
+#COPY templates/ templates/
+COPY . .
+# Create a directory for service logs
 RUN mkdir -p logs
 
-# Запускаем приложение
+# Launch the application
 CMD ["python", "-u", "app.py"]
