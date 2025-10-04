@@ -9862,3 +9862,14 @@ TypeError: The view function for 'stats.test_connection' did not return a valid 
 2025-10-04 20:42:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:42:28] "GET /api/stats HTTP/1.1" 200 -
 2025-10-04 20:42:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
 2025-10-04 20:42:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:42:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:42:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:42:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:43:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:43:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:43:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:43:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:43:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:43:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:43:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:43:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:44:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:44:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:44:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:44:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:44:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:44:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:44:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:44:28] "GET /api/logs/recent HTTP/1.1" 200 -

@@ -251,7 +251,7 @@ Both services feature a fully functional web-based user interface for monitoring
 
 ### Configuration Management
 
-![](https://github.com/user-attachments/assets/ae4d2f2c-ffe1-466f-9d07-767705485168")
+![](https://github.com/user-attachments/assets/ae4d2f2c-ffe1-466f-9d07-767705485168)
 
 ### Status
 
