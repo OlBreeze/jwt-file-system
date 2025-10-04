@@ -199,7 +199,7 @@ The application automatically manages JWT token lifecycle *def get_jwt_token():*
 
 Secret credentials (like JWT keys and email passwords) are hidden from logs and console output to prevent accidental exposure or leaks (e.g., shown as ***hidden***).
 
-![](https://github.com/user-attachments/assets/c0b24d10-5837-40c2-94fe-008d319b4b86)
+![](https://github.com/user-attachments/assets/74f5708d-31df-4994-9eaf-8d90a510c960)
 
 ---
 ### 📄 Log File Naming Convention
