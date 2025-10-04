@@ -233,7 +233,7 @@ Please note that syslog integration depends on the underlying OS and system conf
 ---
 
 ## 🎨 Web User Interface
-
+Flask — lightweight Python microframework used to build the web API and handle HTTP requests.  
 Both services feature a fully functional web-based user interface for monitoring and configuration management.
 
 ### Features
