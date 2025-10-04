@@ -1,7 +1,7 @@
 jwt:
   algorithm: HS256
   expected_issuer: watcher-service
-  secret: sasa-Software2015
+  secret: temp-key
 logging:
   backup_count: 5
   file: logs/logger-service.log

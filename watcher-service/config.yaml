@@ -2,7 +2,7 @@ jwt:
   algorithm: HS256
   expiration_minutes: 5
   issuer: watcher-service
-  secret: sasa-Software2015
+  secret: temp-key
 logger_service:
   retry_attempts: 3
   retry_delay: 5

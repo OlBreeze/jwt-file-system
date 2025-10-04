@@ -9933,3 +9933,95 @@ TypeError: The view function for 'stats.test_connection' did not return a valid 
 2025-10-04 20:56:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
 2025-10-04 20:56:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:56:28] "GET /api/test-connection HTTP/1.1" 200 -
 2025-10-04 20:56:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:56:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:59:51 - root - INFO - ============================================================
+2025-10-04 20:59:51 - root - INFO - 🚀 Starting watcher-service
+2025-10-04 20:59:51 - root - INFO - 📁 Watching directory: /app/watched
+2025-10-04 20:59:51 - root - INFO - 📦 Processed directory: /app/processed
+2025-10-04 20:59:51 - root - INFO - 🌐 Logger Service URL: http://logger-service:5000/log
+2025-10-04 20:59:51 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 20:59:51 - root - INFO - ⏱️  JWT expiration: 5 minutes
+2025-10-04 20:59:51 - root - INFO - 📧 Email notifications: enabled
+2025-10-04 20:59:51 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-04 20:59:51 - root - INFO - 🌐 Web UI: http://0.0.0.0:8080/
+2025-10-04 20:59:51 - root - INFO - ============================================================
+2025-10-04 20:59:51 - root - INFO - ✅ Directories ready
+2025-10-04 20:59:51 - root - INFO - 🔍 Checking Logger Service availability...
+2025-10-04 20:59:51 - root - INFO - ✅ Logger Service is available
+2025-10-04 20:59:51 - watcher.observer - INFO - Observer configured for: /app/watched
+2025-10-04 20:59:51 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-10-04 20:59:51 - api.app - INFO - Flask app created successfully
+2025-10-04 20:59:51 - root - INFO - 🌐 Web UI started on http://0.0.0.0:8080
+2025-10-04 20:59:51 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.19.0.3:8080
+2025-10-04 20:59:51 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 21:00:23 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/Код.png
+2025-10-04 21:00:23 - integration.logger_client - INFO - ✅ Metadata sent successfully for: Код.png
+2025-10-04 21:00:23 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/Код.png
+2025-10-04 21:00:23 - watcher.file_watcher - INFO - ✅ Successfully processed: Код.png
+2025-10-04 21:00:23 - watcher.file_watcher - INFO -    Size: 88085 bytes
+2025-10-04 21:00:23 - watcher.file_watcher - INFO -    Hash: 918d3ef096...
+2025-10-04 21:00:23 - watcher.file_watcher - INFO -    Moved to: /app/processed/Код.png
+2025-10-04 21:00:26 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-04 21:00:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:00:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 21:00:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:00:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 21:00:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:00:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 21:01:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:01:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 21:01:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:01:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 21:01:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:01:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 21:02:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:02:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 21:02:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:02:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 21:02:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:02:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 21:03:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:03:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 21:03:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:03:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 21:03:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:03:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 21:04:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:04:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 21:04:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:04:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 21:04:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:04:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 21:05:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:05:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 21:05:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:05:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 21:05:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:05:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 21:06:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:06:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 21:06:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:06:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 21:06:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:06:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 21:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:07:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 21:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:07:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 21:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:07:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 21:09:27 - root - INFO - ============================================================
+2025-10-04 21:09:27 - root - INFO - 🚀 Starting watcher-service
+2025-10-04 21:09:27 - root - INFO - 📁 Watching directory: /app/watched
+2025-10-04 21:09:27 - root - INFO - 📦 Processed directory: /app/processed
+2025-10-04 21:09:27 - root - INFO - 🌐 Logger Service URL: http://logger-service:5000/log
+2025-10-04 21:09:27 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 21:09:27 - root - INFO - ⏱️  JWT expiration: 5 minutes
+2025-10-04 21:09:27 - root - INFO - 📧 Email notifications: enabled
+2025-10-04 21:09:27 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-04 21:09:27 - root - INFO - 🌐 Web UI: http://0.0.0.0:8080/
+2025-10-04 21:09:27 - root - INFO - ============================================================
+2025-10-04 21:09:27 - root - INFO - ✅ Directories ready
+2025-10-04 21:09:27 - root - INFO - 🔍 Checking Logger Service availability...
+2025-10-04 21:09:27 - root - INFO - ✅ Logger Service is available
+2025-10-04 21:09:27 - watcher.observer - INFO - Observer configured for: /app/watched
+2025-10-04 21:09:27 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-10-04 21:09:27 - api.app - INFO - Flask app created successfully
+2025-10-04 21:09:27 - root - INFO - 🌐 Web UI started on http://0.0.0.0:8080
+2025-10-04 21:09:27 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.19.0.3:8080
+2025-10-04 21:09:27 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 21:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:09:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 21:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:09:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 21:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:09:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 21:10:05 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/requirements.txt
+2025-10-04 21:10:06 - integration.logger_client - INFO - ✅ Metadata sent successfully for: requirements.txt
+2025-10-04 21:10:06 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/requirements.txt
+2025-10-04 21:10:06 - watcher.file_watcher - INFO - ✅ Successfully processed: requirements.txt
+2025-10-04 21:10:06 - watcher.file_watcher - INFO -    Size: 78 bytes
+2025-10-04 21:10:06 - watcher.file_watcher - INFO -    Hash: ef43b0bfe8...
+2025-10-04 21:10:06 - watcher.file_watcher - INFO -    Moved to: /app/processed/requirements.txt
+2025-10-04 21:10:08 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-04 21:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:10:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 21:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:10:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 21:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:10:28] "GET /api/logs/recent HTTP/1.1" 200 -
