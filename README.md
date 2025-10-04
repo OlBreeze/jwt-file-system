@@ -268,3 +268,12 @@ Try clicking on the author's name multiple times in the footer... You might disc
 ![](https://github.com/user-attachments/assets/7d54e791-8e8b-47da-9f20-9a5b706cc7e4)
 
 ---
+### 📸 Additional Screenshots
+#### 🐳 Docker — Logger Service output
+
+![](https://github.com/user-attachments/assets/b60d8f17-d21b-4c39-81bc-19802fff9b44)
+
+#### 🐳 Docker — Watcher Service output
+
+![](https://github.com/user-attachments/assets/e23db10a-a340-40dd-8c30-a387cd07a98d)
+
