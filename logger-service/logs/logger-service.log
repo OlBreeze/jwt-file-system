@@ -1674,3 +1674,54 @@
 2025-10-04 17:58:02 - root - INFO - ✅ Successfully processed file: img.png
 2025-10-04 17:58:24 - root - INFO - Log level changed to INFO (applied immediately)
 2025-10-04 17:58:24 - root - INFO - Configuration section 'logging' updated
+2025-10-04 18:22:39 - root - INFO - 📊 Logging configured: level=INFO
+2025-10-04 18:22:39 - root - INFO - Flask app created successfully
+2025-10-04 18:22:39 - root - INFO - ============================================================
+2025-10-04 18:22:39 - root - INFO - 🚀 Starting logger-service
+2025-10-04 18:22:39 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 18:22:39 - root - INFO - 📍 Port: 5000
+2025-10-04 18:22:39 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 18:22:39 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 18:22:39 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 18:22:39 - root - INFO - ============================================================
+2025-10-04 18:39:42 - root - INFO - 📝 Received metadata for file: img.png (37.20KB) from watcher-service
+2025-10-04 18:39:42 - root - INFO - ✅ Created: img-20251004T183942Z.txt
+2025-10-04 18:39:42 - root - INFO - ✅ Successfully processed file: img.png
+2025-10-04 18:44:28 - root - INFO - 📝 Received metadata for file: img.png (37.20KB) from watcher-service
+2025-10-04 18:44:28 - root - INFO - ✅ Created: img-20251004T184428Z.txt
+2025-10-04 18:44:28 - root - INFO - ✅ Successfully processed file: img.png
+2025-10-04 19:13:32 - root - INFO - 📊 Logging configured: level=INFO
+2025-10-04 19:13:32 - root - INFO - Flask app created successfully
+2025-10-04 19:13:32 - root - INFO - ============================================================
+2025-10-04 19:13:32 - root - INFO - 🚀 Starting logger-service
+2025-10-04 19:13:32 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 19:13:32 - root - INFO - 📍 Port: 5000
+2025-10-04 19:13:32 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 19:13:32 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 19:13:32 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 19:13:32 - root - INFO - ============================================================
+2025-10-04 19:13:41 - root - INFO - 📝 Received metadata for file: img.png (37.20KB) from watcher-service
+2025-10-04 19:13:41 - root - INFO - ✅ Created: img-20251004T191341Z.txt
+2025-10-04 19:13:41 - root - INFO - ✅ Successfully processed file: img.png
+2025-10-04 19:18:28 - root - INFO - 📊 Logging configured: level=INFO
+2025-10-04 19:18:28 - root - INFO - Flask app created successfully
+2025-10-04 19:18:28 - root - INFO - ============================================================
+2025-10-04 19:18:28 - root - INFO - 🚀 Starting logger-service
+2025-10-04 19:18:28 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 19:18:28 - root - INFO - 📍 Port: 5000
+2025-10-04 19:18:28 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 19:18:28 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 19:18:28 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 19:18:28 - root - INFO - ============================================================
+2025-10-04 19:18:40 - root - INFO - 📝 Received metadata for file: img.png (37.20KB) from watcher-service
+2025-10-04 19:18:40 - root - INFO - ✅ Created: img-20251004T191840Z.txt
+2025-10-04 19:18:40 - root - INFO - ✅ Successfully processed file: img.png
+2025-10-04 19:31:39 - root - INFO - 📝 Received metadata for file: img.png (37.20KB) from watcher-service
+2025-10-04 19:31:39 - root - INFO - ✅ Created: img-20251004T193139Z.txt
+2025-10-04 19:31:39 - root - INFO - ✅ Successfully processed file: img.png
+2025-10-04 19:32:53 - root - INFO - Log level changed to DEBUG (applied immediately)
+2025-10-04 19:32:53 - root - INFO - Configuration section 'logging' updated
+2025-10-04 19:39:56 - root - INFO - 📝 Received metadata for file: img.png (37.20KB) from watcher-service
+2025-10-04 19:39:56 - root - WARNING - Removed: img-20251004T191341Z.txt
+2025-10-04 19:39:56 - root - INFO - ✅ Created: img-20251004T193956Z.txt
+2025-10-04 19:39:56 - root - INFO - ✅ Successfully processed file: img.png

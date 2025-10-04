@@ -9102,3 +9102,743 @@ TypeError: The view function for 'stats.test_connection' did not return a valid 
 2025-10-04 18:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:07:28] "GET /api/stats HTTP/1.1" 200 -
 2025-10-04 18:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:07:28] "GET /api/test-connection HTTP/1.1" 200 -
 2025-10-04 18:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:07:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:08:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:08:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:08:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:08:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:08:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:08:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:09:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:09:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:09:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:10:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:10:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:10:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:11:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:11:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:11:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:11:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:11:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:11:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:12:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:12:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:12:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:12:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:12:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:12:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:13:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:13:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:13:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:13:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:13:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:13:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:14:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:14:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:14:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:14:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:14:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:14:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:15:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:15:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:15:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:15:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:15:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:15:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:16:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:16:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:16:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:16:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:16:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:16:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:17:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:17:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:17:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:17:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:17:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:17:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:18:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:18:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:18:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:18:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:18:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:18:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:19:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:19:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:19:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:19:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:19:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:19:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:20:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:20:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:20:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:20:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:20:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:20:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:21:16 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:21:16] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:21:16 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:21:16] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:21:16 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:21:16] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:21:30 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:21:30] "GET / HTTP/1.1" 200 -
+2025-10-04 18:21:30 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:21:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-04 18:21:30 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:21:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-10-04 18:21:30 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:21:30] "[36mGET /static/js/easter_egg.js HTTP/1.1[0m" 304 -
+2025-10-04 18:21:30 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:21:30] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 18:21:30 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:21:30] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:21:30 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:21:30] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:21:30 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:21:30] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:22:00 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:22:00] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:22:00 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:22:00] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:22:39 - root - INFO - ============================================================
+2025-10-04 18:22:39 - root - INFO - 🚀 Starting watcher-service
+2025-10-04 18:22:39 - root - INFO - 📁 Watching directory: /app/watched
+2025-10-04 18:22:39 - root - INFO - 📦 Processed directory: /app/processed
+2025-10-04 18:22:39 - root - INFO - 🌐 Logger Service URL: http://logger-service:5000/log
+2025-10-04 18:22:39 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 18:22:39 - root - INFO - ⏱️  JWT expiration: 5 minutes
+2025-10-04 18:22:39 - root - INFO - 📧 Email notifications: enabled
+2025-10-04 18:22:39 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-04 18:22:39 - root - INFO - 🌐 Web UI: http://0.0.0.0:8080/
+2025-10-04 18:22:39 - root - INFO - ============================================================
+2025-10-04 18:22:39 - root - INFO - ✅ Directories ready
+2025-10-04 18:22:39 - root - INFO - 🔍 Checking Logger Service availability...
+2025-10-04 18:22:39 - root - INFO - ✅ Logger Service is available
+2025-10-04 18:22:39 - watcher.observer - INFO - Observer configured for: /app/watched
+2025-10-04 18:22:39 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-10-04 18:22:39 - api.app - INFO - Flask app created successfully
+2025-10-04 18:22:39 - root - INFO - 🌐 Web UI started on http://0.0.0.0:8080
+2025-10-04 18:22:39 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.19.0.3:8080
+2025-10-04 18:22:39 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 18:22:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:22:49] "GET / HTTP/1.1" 200 -
+2025-10-04 18:22:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:22:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-04 18:22:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:22:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-10-04 18:22:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:22:49] "[36mGET /static/js/easter_egg.js HTTP/1.1[0m" 304 -
+2025-10-04 18:22:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:22:49] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 18:22:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:22:49] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:22:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:22:49] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:22:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:22:49] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:23:20 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:20] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:23:20 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:20] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:23:41 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:41] "GET /health HTTP/1.1" 200 -
+2025-10-04 18:23:42 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:42] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 18:23:44 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:44] "GET /api/files/count HTTP/1.1" 200 -
+2025-10-04 18:23:46 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:46] "GET /api/files/processed HTTP/1.1" 200 -
+2025-10-04 18:23:48 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:48] "GET /api/files/pending HTTP/1.1" 200 -
+2025-10-04 18:23:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:50] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:23:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:50] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:23:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:50] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:23:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:50] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:23:52 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:52] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:23:54 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:23:54] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:24:20 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:24:20] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:24:20 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:24:20] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:24:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:24:50] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:24:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:24:50] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:24:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:24:50] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:25:20 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:25:20] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:25:20 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:25:20] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:25:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:25:50] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:25:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:25:50] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:25:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:25:50] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:26:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:26:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:26:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:26:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:26:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:26:50] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:27:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:27:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:27:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:27:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:27:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:27:50] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:28:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:28:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:28:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:28:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:28:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:28:50] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:29:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:29:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:29:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:29:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:30:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:30:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:30:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:30:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:30:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:30:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:31:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:31:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:31:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:31:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:31:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:31:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:32:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:32:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:32:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:32:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:32:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:32:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:33:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:33:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:33:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:33:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:33:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:33:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:34:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:34:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:34:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:34:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:34:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:34:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:35:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:35:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:35:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:35:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:35:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:35:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:36:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:36:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:36:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:36:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:36:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:36:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:37:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:37:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:37:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:37:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:37:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:37:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:38:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:38:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:38:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:38:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:38:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:38:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:39:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:39:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:39:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:39:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:39:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:39:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:39:42 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/img.png
+2025-10-04 18:39:42 - integration.logger_client - INFO - ✅ Metadata sent successfully for: img.png
+2025-10-04 18:39:42 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/img.png
+2025-10-04 18:39:42 - watcher.file_watcher - INFO - ✅ Successfully processed: img.png
+2025-10-04 18:39:42 - watcher.file_watcher - INFO -    Size: 38089 bytes
+2025-10-04 18:39:42 - watcher.file_watcher - INFO -    Hash: 4dc30744c5...
+2025-10-04 18:39:42 - watcher.file_watcher - INFO -    Moved to: /app/processed/img.png
+2025-10-04 18:39:45 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-04 18:40:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:40:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:40:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:40:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:40:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:40:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:41:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:41:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:41:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:41:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:41:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:41:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:42:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:42:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:42:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:42:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:42:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:42:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:43:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:43:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:43:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:43:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:43:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:43:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:44:27 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/img.png
+2025-10-04 18:44:28 - integration.logger_client - INFO - ✅ Metadata sent successfully for: img.png
+2025-10-04 18:44:28 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/img_20251004_184428.png
+2025-10-04 18:44:28 - watcher.file_watcher - INFO - ✅ Successfully processed: img.png
+2025-10-04 18:44:28 - watcher.file_watcher - INFO -    Size: 38089 bytes
+2025-10-04 18:44:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:44:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:44:28 - watcher.file_watcher - INFO -    Hash: 4dc30744c5...
+2025-10-04 18:44:28 - watcher.file_watcher - INFO -    Moved to: /app/processed/img_20251004_184428.png
+2025-10-04 18:44:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:44:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:44:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:44:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:44:30 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-04 18:45:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:45:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:45:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:45:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:45:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:45:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:46:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:46:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:46:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:46:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:46:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:46:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:47:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:47:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:47:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:47:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:47:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:47:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:48:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:48:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:48:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:48:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:48:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:48:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:49:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:49:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:49:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:49:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:49:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:49:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:50:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:50:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:50:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:50:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:50:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:50:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:51:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:51:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:51:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:51:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:51:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:51:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:52:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:52:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:52:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:52:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:52:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:52:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:53:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:53:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:53:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:53:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:53:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:53:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:54:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:54:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:54:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:54:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:54:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:54:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:55:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:55:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:55:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:55:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:55:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:55:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:56:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:56:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:56:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:56:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:56:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:56:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:57:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:57:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:57:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:57:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:57:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:57:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:58:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:58:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:58:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:58:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:58:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:58:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:59:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:59:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:59:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:59:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 18:59:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 18:59:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:00:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:00:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:00:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:00:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:00:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:00:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:01:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:01:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:01:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:01:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:01:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:01:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:02:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:02:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:02:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:02:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:02:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:02:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:03:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:03:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:03:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:03:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:03:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:03:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:04:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:04:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:04:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:04:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:04:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:04:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:05:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:05:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:05:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:05:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:05:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:05:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:06:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:06:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:06:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:06:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:06:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:06:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:07:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:07:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:07:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:08:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:08:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:08:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:08:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:08:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:08:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:09:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:09:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:09:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:10:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:10:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:10:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:11:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:11:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:11:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:11:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:11:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:11:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:13:33 - root - INFO - ============================================================
+2025-10-04 19:13:33 - root - INFO - 🚀 Starting watcher-service
+2025-10-04 19:13:33 - root - INFO - 📁 Watching directory: /app/watched
+2025-10-04 19:13:33 - root - INFO - 📦 Processed directory: /app/processed
+2025-10-04 19:13:33 - root - INFO - 🌐 Logger Service URL: http://logger-service:5000/log
+2025-10-04 19:13:33 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 19:13:33 - root - INFO - ⏱️  JWT expiration: 2 minutes
+2025-10-04 19:13:33 - root - INFO - 📧 Email notifications: enabled
+2025-10-04 19:13:33 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-04 19:13:33 - root - INFO - 🌐 Web UI: http://0.0.0.0:8080/
+2025-10-04 19:13:33 - root - INFO - ============================================================
+2025-10-04 19:13:33 - root - INFO - ✅ Directories ready
+2025-10-04 19:13:33 - root - INFO - 🔍 Checking Logger Service availability...
+2025-10-04 19:13:33 - root - INFO - ✅ Logger Service is available
+2025-10-04 19:13:33 - watcher.observer - INFO - Observer configured for: /app/watched
+2025-10-04 19:13:33 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-10-04 19:13:33 - api.app - INFO - Flask app created successfully
+2025-10-04 19:13:33 - root - INFO - 🌐 Web UI started on http://0.0.0.0:8080
+2025-10-04 19:13:33 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.19.0.3:8080
+2025-10-04 19:13:33 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 19:13:41 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/img.png
+2025-10-04 19:13:41 - integration.logger_client - INFO - ✅ Metadata sent successfully for: img.png
+2025-10-04 19:13:41 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/img.png
+2025-10-04 19:13:41 - watcher.file_watcher - INFO - ✅ Successfully processed: img.png
+2025-10-04 19:13:41 - watcher.file_watcher - INFO -    Size: 38089 bytes
+2025-10-04 19:13:41 - watcher.file_watcher - INFO -    Hash: 4dc30744c5...
+2025-10-04 19:13:41 - watcher.file_watcher - INFO -    Moved to: /app/processed/img.png
+2025-10-04 19:13:44 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-04 19:14:14 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/README.md
+2025-10-04 19:14:14 - integration.logger_client - ERROR - ❌ Failed to send metadata: type object 'datetime.time' has no attribute 'time'
+2025-10-04 19:14:14 - watcher.file_watcher - ERROR - Failed to send metadata: Failed to send metadata: type object 'datetime.time' has no attribute 'time'
+2025-10-04 19:14:16 - notifications.email_sender - INFO - 📧 Email notification sent: Failed to Send Metadata Error
+2025-10-04 19:14:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:14:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:14:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:14:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:14:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:14:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:15:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:15:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:15:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:15:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:15:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:15:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:16:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:16:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:16:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:16:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:16:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:16:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:17:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:17:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:17:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:17:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:17:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:17:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:18:29 - root - INFO - ============================================================
+2025-10-04 19:18:29 - root - INFO - 🚀 Starting watcher-service
+2025-10-04 19:18:29 - root - INFO - 📁 Watching directory: /app/watched
+2025-10-04 19:18:29 - root - INFO - 📦 Processed directory: /app/processed
+2025-10-04 19:18:29 - root - INFO - 🌐 Logger Service URL: http://logger-service:5000/log
+2025-10-04 19:18:29 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 19:18:29 - root - INFO - ⏱️  JWT expiration: 2 minutes
+2025-10-04 19:18:29 - root - INFO - 📧 Email notifications: enabled
+2025-10-04 19:18:29 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-04 19:18:29 - root - INFO - 🌐 Web UI: http://0.0.0.0:8080/
+2025-10-04 19:18:29 - root - INFO - ============================================================
+2025-10-04 19:18:29 - root - INFO - ✅ Directories ready
+2025-10-04 19:18:29 - root - INFO - 🔍 Checking Logger Service availability...
+2025-10-04 19:18:29 - root - INFO - ✅ Logger Service is available
+2025-10-04 19:18:29 - watcher.observer - INFO - Observer configured for: /app/watched
+2025-10-04 19:18:29 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-10-04 19:18:29 - api.app - INFO - Flask app created successfully
+2025-10-04 19:18:29 - root - INFO - 🌐 Web UI started on http://0.0.0.0:8080
+2025-10-04 19:18:29 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.19.0.3:8080
+2025-10-04 19:18:29 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 19:18:40 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/img.png
+2025-10-04 19:18:40 - integration.logger_client - INFO - ✅ Metadata sent successfully for: img.png
+2025-10-04 19:18:40 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/img_20251004_191840.png
+2025-10-04 19:18:40 - watcher.file_watcher - INFO - ✅ Successfully processed: img.png
+2025-10-04 19:18:40 - watcher.file_watcher - INFO -    Size: 38089 bytes
+2025-10-04 19:18:40 - watcher.file_watcher - INFO -    Hash: 4dc30744c5...
+2025-10-04 19:18:40 - watcher.file_watcher - INFO -    Moved to: /app/processed/img_20251004_191840.png
+2025-10-04 19:18:43 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-04 19:19:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:19:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:19:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:19:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:19:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:19:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:20:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:20:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:20:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:20:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:20:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:20:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:21:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:21:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:21:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:21:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:21:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:21:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:22:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:22:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:22:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:22:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:22:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:22:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:23:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:23:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:23:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:23:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:23:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:23:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:24:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:24:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:24:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:24:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:24:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:24:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:25:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:25:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:25:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:25:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:25:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:25:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:26:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:26:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:26:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:26:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:26:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:26:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:27:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:27:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:27:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:27:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:27:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:27:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:28:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:28:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:28:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:28:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:28:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:28:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:29:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:29:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:29:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:29:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:29:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:29:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:30:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:30:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:30:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:30:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:30:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:30:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:31:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:31:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:31:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:31:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:31:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:31:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:31:38 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/img.png
+2025-10-04 19:31:39 - integration.logger_client - INFO - ✅ Metadata sent successfully for: img.png
+2025-10-04 19:31:39 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/img_20251004_193139.png
+2025-10-04 19:31:39 - watcher.file_watcher - INFO - ✅ Successfully processed: img.png
+2025-10-04 19:31:39 - watcher.file_watcher - INFO -    Size: 38089 bytes
+2025-10-04 19:31:39 - watcher.file_watcher - INFO -    Hash: 4dc30744c5...
+2025-10-04 19:31:39 - watcher.file_watcher - INFO -    Moved to: /app/processed/img_20251004_193139.png
+2025-10-04 19:31:41 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-04 19:32:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:32:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:32:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:32:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:32:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:32:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:32:49 - api.routes.config_routes - INFO - Log level changed to DEBUG (applied immediately)
+2025-10-04 19:32:49 - api.routes.config_routes - INFO - Configuration section 'logging' updated
+2025-10-04 19:32:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:32:49] "PUT /api/config/logging HTTP/1.1" 200 -
+2025-10-04 19:32:49 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:32:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:32:49] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:32:49 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:32:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:32:49] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:32:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:32:49] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:32:49 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:32:49] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 19:33:20 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:33:20] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:33:20 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:33:20] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:33:50 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:33:50 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:33:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:33:50] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:33:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:33:50] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:33:50 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:33:50] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:34:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:34:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:34:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:34:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:35:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:35:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:35:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:35:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:35:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:35:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:35:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:35:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:36:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:36:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:36:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:36:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:36:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:36:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:36:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:36:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:37:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:37:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:37:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:37:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:37:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:37:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:37:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:37:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:38:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:38:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:38:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:38:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:38:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:38:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:38:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:38:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:39:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:39:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:39:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:39:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:39:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:39:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:39:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:39:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:39:55 - watcher.file_watcher - INFO - 📁 New file detected: /app/watched/img.png
+2025-10-04 19:39:56 - watcher.file_watcher - DEBUG - Extracting metadata from: /app/watched/img.png
+2025-10-04 19:39:56 - file_processing.metadata - DEBUG - Extracted metadata: {'filename': 'img.png', 'created_at': '2025-10-04T19:39:56.171893+00:00', 'file_size': 38089, 'hash': '4dc30744c525869211abdd501f721ef66da1dca6714f871adbf420c21cb2633d'}
+2025-10-04 19:39:56 - watcher.file_watcher - DEBUG - Sending metadata to Logger Service
+2025-10-04 19:39:56 - auth.jwt_handler - DEBUG - Generated new JWT token (expires at 1759606916)
+2025-10-04 19:39:56 - integration.logger_client - DEBUG - Sending metadata to http://logger-service:5000/log
+2025-10-04 19:39:56 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:39:56 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "POST /log HTTP/1.1" 200 100
+2025-10-04 19:39:56 - integration.logger_client - INFO - ✅ Metadata sent successfully for: img.png
+2025-10-04 19:39:56 - watcher.file_watcher - DEBUG - Moving file to processed directory
+2025-10-04 19:39:56 - file_processing.file_mover - INFO - ✅ Moved file to: /app/processed/img_20251004_193956.png
+2025-10-04 19:39:56 - watcher.file_watcher - INFO - ✅ Successfully processed: img.png
+2025-10-04 19:39:56 - watcher.file_watcher - INFO -    Size: 38089 bytes
+2025-10-04 19:39:56 - watcher.file_watcher - INFO -    Hash: 4dc30744c5...
+2025-10-04 19:39:56 - watcher.file_watcher - INFO -    Moved to: /app/processed/img_20251004_193956.png
+2025-10-04 19:39:58 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-04 19:40:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:40:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:40:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:40:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:40:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:40:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:40:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:40:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:41:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:41:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:41:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:41:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:41:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:41:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:41:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:41:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:42:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:42:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:42:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:42:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:42:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:42:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:42:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:42:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:43:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:43:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:43:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:43:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:43:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:43:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:43:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:43:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:44:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:44:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:44:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:44:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:44:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:44:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:44:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:44:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:45:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:45:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:45:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:45:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:45:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:45:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:45:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:45:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:46:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:46:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:46:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:46:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:46:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:46:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:46:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:46:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:47:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:47:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:47:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:47:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:47:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:47:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:47:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:47:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:48:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:48:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:48:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:48:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:48:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:48:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:48:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:48:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:49:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:49:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:49:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:49:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:49:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:49:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:49:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:49:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:50:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:50:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:50:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:50:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:50:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:50:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:50:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:50:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:51:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:51:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:51:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:51:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:51:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:51:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:51:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:51:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:52:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:52:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:52:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:52:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:52:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:52:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:52:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:52:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:53:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:53:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:53:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:53:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:53:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:53:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:53:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:53:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:54:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:54:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:54:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:54:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:54:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:54:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:54:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:54:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:55:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:55:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:55:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:55:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:55:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:55:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:55:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:55:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:56:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:56:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:56:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:56:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:56:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:56:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:56:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:56:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:57:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:57:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:57:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:57:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:57:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:57:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:57:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:57:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:58:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:58:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:58:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:58:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:58:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:58:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:58:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:58:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 19:59:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 19:59:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:59:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 19:59:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 19:59:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:59:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 19:59:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 19:59:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:00:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:00:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:00:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:00:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:00:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:00:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:00:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:00:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:01:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:01:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:01:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:01:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:01:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:01:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:01:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:01:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:02:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:02:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:02:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:02:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:02:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:02:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:02:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:02:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:03:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:03:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:03:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:03:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:03:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:03:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:03:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:03:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:04:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:04:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:04:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:04:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:04:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:04:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:04:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:04:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:05:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:05:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:05:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:05:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:05:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:05:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:05:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:05:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:06:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:06:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:06:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:06:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:06:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:06:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:06:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:06:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:07:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:07:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:07:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:07:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:07:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:07:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:08:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:08:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:08:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:08:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:08:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:08:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:08:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:08:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:09:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:09:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:09:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:09:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:09:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:09:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:10:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:10:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:10:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:10:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:10:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:11:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:11:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:11:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:11:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:11:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:11:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:11:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:11:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:12:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:12:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:12:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:12:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:12:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:12:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:12:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:12:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:13:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:13:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:13:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:13:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:13:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:13:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:13:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:13:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:14:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:14:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:14:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:14:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:14:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:14:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:14:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:14:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:15:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:15:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:15:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:15:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:15:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:15:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:15:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:15:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:16:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:16:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:16:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:16:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:16:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:16:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:16:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:16:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:17:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:17:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:17:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:17:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:17:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:17:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:17:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:17:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:18:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:18:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:18:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:18:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:18:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:18:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:18:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:18:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:19:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:19:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:19:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:19:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:19:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:19:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:19:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:19:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:20:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:20:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:20:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:20:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:20:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:20:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:20:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:20:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:21:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:21:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:21:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:21:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:21:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:21:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:21:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:21:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:22:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:22:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:22:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:22:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:22:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:22:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:22:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:22:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:23:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:23:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:23:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:23:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:23:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:23:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:23:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:23:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:24:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:24:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:24:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:24:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:24:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:24:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:24:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:24:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:25:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:25:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:25:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:25:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:25:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:25:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:25:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:25:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:26:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:26:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:26:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:26:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:26:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:26:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:26:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:26:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:27:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:27:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:27:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:27:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:27:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:27:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:27:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:27:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:28:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:28:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:28:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:28:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:28:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:28:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:28:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:28:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:29:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:29:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:29:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:29:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:29:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:29:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:29:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:29:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:30:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:30:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:30:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:30:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:30:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:30:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:30:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:30:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:31:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:31:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:31:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:31:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:31:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:31:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:31:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:31:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:32:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:32:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:32:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:32:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:32:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:32:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:32:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:32:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:33:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:33:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:33:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:33:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:33:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:33:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:33:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:33:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:34:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:34:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:34:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:34:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:34:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:34:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:34:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:34:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:35:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:35:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:35:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:35:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:35:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:35:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:35:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:35:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:36:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:36:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:36:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:36:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:36:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:36:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:36:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:36:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:37:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:37:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:37:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:37:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:37:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:37:28] "GET /api/test-connection HTTP/1.1" 200 -
+2025-10-04 20:37:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:37:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 20:38:28 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): logger-service:5000
+2025-10-04 20:38:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:38:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 20:38:28 - urllib3.connectionpool - DEBUG - http://logger-service:5000 "GET /health HTTP/1.1" 200 95
+2025-10-04 20:38:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 20:38:28] "GET /api/test-connection HTTP/1.1" 200 -

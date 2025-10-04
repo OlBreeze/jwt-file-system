@@ -4,7 +4,7 @@ Client for interaction with Logger Service
 
 import logging
 import requests
-from auth.jwt_handler import generate_jwt_token
+from auth.jwt_handler import get_jwt_token, generate_jwt_token
 
 logger = logging.getLogger(__name__)
 
@@ -22,7 +22,7 @@ def send_metadata_to_logger(metadata, config):
     """
     try:
         # Generating a JWT token
-        token = generate_jwt_token(config)
+        token = get_jwt_token(config)
         if not token:
             return False, "Failed to generate JWT token"
 

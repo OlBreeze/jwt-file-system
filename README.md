@@ -82,11 +82,26 @@ The system monitors a local directory for new files, extracts metadata, securely
 
 ### Installation
 
-#### Option 1: Docker (Recommended)
-
 ```bash
 # Clone the repository
 git clone https://github.com/OlBreeze/jwt-file-system.git
+```
+Configuration settings are stored in the `.env` file.  
+Copy `.env.example` to `.env` and update the values:  
+
+```bash
+cp .env.example .env
+```  
+#### Update the settings in .env file with your values
+``` 
+JWT_SECRET=key_test_ssss
+EMAIL_PASSWORD='***hidden***'
+EMAIL_FROM=test@gmail.com
+EMAIL_TO=test@gmail.com
+``` 
+#### Option 1: Docker
+
+```
 cd jwt-file-system
 
 # Start services
@@ -115,45 +130,79 @@ python logger-service.py
 cd watcher-service
 python watcher_service.py
 ```
-
-### Configuration settings are stored in the `.env` file. Copy `.env.example` to `.env` and update the values:
-```bash
-cp .env.example .env
-```  
-#### Update the settings in .env file with your values
-``` 
-JWT_SECRET=key_test_ssss
-EMAIL_PASSWORD='***hidden***'
-EMAIL_FROM=test@gmail.com
-EMAIL_TO=test@gmail.com
-``` 
 ---
+## 📝 Project Features
+### 📁 File Processing
 
-## 🔐 JWT Authentication
+The project includes class (`FileWatcherHandler`) that inherits from **FileSystemEventHandler** (from the `watchdog` library). This allows the application to monitor and respond to file system events in real-time.
 
-### Token Details
+* **FileWatcherHandler** is responsible for handling file system events.
+* In our case, we specifically handle the **file creation event** via the `on_created` method.
+* This allows the application to react when new files appear in the watched directory — e.g., for automatic processing or ingestion.  
+
+**PollingObserver** is a cross-platform file monitoring tool that works reliably in environments like Windows and Docker. Unlike Observer, it periodically checks for file changes, making it more stable across different systems.
+```python
+observer = PollingObserver()
+observer.schedule(event_handler, str(watch_dir), recursive=False)
+observer.start()
+```
+### 🔐 JWT Authentication
+#### Token Details
 
 - **Algorithm:** HS256
 - **Shared Secret:** `key-in-env`
 - **Expiration:** 5 minutes from creation
 
-### Claims Structure
 
-```json
-{
-  "iss": "watcher-service",
-  "exp": 1727534602,
-  "iat": 1727534302
-}
+#### Decode
 ```
-### Decode
-![Decode](https://github.com/user-attachments/assets/d5349b52-6510-4448-b6d3-d6589791e367)
+    try:
+        payload = jwt.decode(
+            token,
+            config['jwt']['secret'],
+            algorithms=[config['jwt']['algorithm']]
+        )
+        if payload.get('iss') != config['jwt']['expected_issuer']:
+            return False, f"Invalid issuer"
+        return True, payload
+    except
+    .....
+```
 
-### Encode
-![Encode](https://github.com/user-attachments/assets/abb58071-e770-443b-8efe-98990e0e940e)
+#### Encode
+```
+    try:
+        payload = {
+            'iss': config['jwt']['issuer'],
+            'exp': datetime.now(timezone.utc) + timedelta(
+                minutes=config['jwt']['expiration_minutes']
+            ),
+            'iat': datetime.now(timezone.utc)
+        }
+
+        token = jwt.encode(
+            payload,
+            config['jwt']['secret'],
+            algorithm=config['jwt']['algorithm']
+        )
+
+        return token
+    except
+    ....
+```
+#### JWT Token Management
+
+The application automatically manages JWT token lifecycle *def get_jwt_token():*
+- Generates a new token on first request
+- Caches the token for subsequent requests
+- Automatically refreshes the token when it expires
+
+Secret credentials (like JWT keys and email passwords) are hidden from logs and console output to prevent accidental exposure or leaks (e.g., shown as ***hidden***).
+
+![](https://github.com/user-attachments/assets/c0b24d10-5837-40c2-94fe-008d319b4b86)
 
 ---
-## Log File Naming Convention
+### 📄 Log File Naming Convention
 
 **Pattern:** `<sanitized-filename>-<timestamp>.txt`
 
@@ -165,13 +214,22 @@ Created At: 2025-10-02T20:59:12.171550+00:00
 Hash: 5e8545a2224f4bd34d7d64f6c8742943c9fbd639416750c5b2faf933db211790  
 Processed At: 2025-10-02T20:59:12.271298+00:00
 ```
-
 ---
-### Email Notifications
+### 📧 Email/syslog Notifications
+
+Notifications are implemented via syslog and email channels.    
+
+Service "watcher-service", modules:  
+*     notifications.syslog_sender.py
+*     notifications.email_sender.py
+Service "logger-service" module
+*     services.notification_service.py
+By default, only **error-level** events trigger notifications.  
+The screenshot below shows a sample *success* notification used for testing purposes.  
+
+Please note that syslog integration depends on the underlying OS and system configuration.
 
 ![Encode](https://github.com/user-attachments/assets/c8887952-0b1f-4b70-828f-fe1df77c1c71)
-
-
 ---
 
 ## 🎨 Web User Interface
@@ -191,18 +249,22 @@ Both services feature a fully functional web-based user interface for monitoring
 - **Logger Service UI:** http://localhost:5000/
 - **Watcher Service UI:** http://localhost:8080/
 
+### Configuration Management
+
+![](https://github.com/user-attachments/assets/ae4d2f2c-ffe1-466f-9d07-767705485168")
+
 ### Status
 
 ⚠️ **Note:** The web interface is currently in beta and requires additional testing. Some features may not work as expected. We welcome feedback and bug reports!
 
-### Surprise 🥚
+😄 😄 😄
+
+### 🥚 Surprise 
 
 Good things come to those who click persistently!  
 Try clicking on the author's name multiple times in the footer... You might discover something fun! 🎉
 
 
 ![](https://github.com/user-attachments/assets/7d54e791-8e8b-47da-9f20-9a5b706cc7e4)
-
-![](https://github.com/user-attachments/assets/c0b24d10-5837-40c2-94fe-008d319b4b86)
 
 ---

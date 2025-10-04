@@ -4,9 +4,42 @@ JWT Authentication
 
 import jwt
 import logging
+import time
 from datetime import datetime, timedelta, timezone
 
+_cached_token = None
+_token_expiry = 0
+
 logger = logging.getLogger(__name__)
+
+
+def get_jwt_token(config):
+    """
+    Returns cached JWT token if valid, otherwise generates a new one.
+    """
+    global _cached_token, _token_expiry
+
+    # Checking if the token has expired
+    if _cached_token and time.time() < _token_expiry:
+        return _cached_token
+
+    # Generating a new token
+    token = generate_jwt_token(config)
+    if not token:
+        return None
+
+    # Extracting the expiration time from the token
+    try:
+        decoded = jwt.decode(token, options={"verify_signature": False})
+        _token_expiry = decoded.get("exp", 0)
+    except Exception as e:
+        logger.warning(f"Cannot decode token expiration: {e}")
+        # fallback — If exp is not found, set it manually
+        _token_expiry = time.time() + 300  # 5 min
+
+    _cached_token = token
+    logger.debug(f"Generated new JWT token (expires at {_token_expiry})")
+    return token
 
 
 def generate_jwt_token(config):
