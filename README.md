@@ -155,7 +155,7 @@ observer.start()
 
 
 #### Decode
-```
+```python
     try:
         payload = jwt.decode(
             token,
@@ -170,7 +170,7 @@ observer.start()
 ```
 
 #### Encode
-```
+```python
     try:
         payload = {
             'iss': config['jwt']['issuer'],
@@ -232,6 +232,24 @@ Please note that syslog integration depends on the underlying OS and system conf
 ![Encode](https://github.com/user-attachments/assets/c8887952-0b1f-4b70-828f-fe1df77c1c71)
 ---
 
+### Logging 📄 
+
+The application includes comprehensive logging functionality:
+- Logs are stored in a configurable directory (specified in settings)
+- Log levels can be adjusted through the web interface
+- Automatic log rotation based on file size and backup count
+
+```python
+# Configurable logging with rotation
+file_handler = RotatingFileHandler(
+    config['logging']['file'],
+    maxBytes=config['logging']['max_size_mb'] * 1024 * 1024,
+    backupCount=config['logging']['backup_count'],
+    encoding='utf-8'
+)
+file_handler.setLevel(getattr(logging, config['logging']['level'].upper()))
+```
+---
 ## 🎨 Web User Interface
 Flask — lightweight Python microframework used to build the web API and handle HTTP requests.  
 Both services feature a fully functional web-based user interface for monitoring and configuration management.
