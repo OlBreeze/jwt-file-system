@@ -28,9 +28,15 @@ def get_pending_files():
         if not watched_dir.exists():
             return jsonify([]), 200
 
+        ignored_patterns = {'.gitkeep', '.gitignore', '.DS_Store', 'Thumbs.db'}
+
         files = []
         for file_path in watched_dir.glob('*'):
             if file_path.is_file():
+                # Pass files from ignored list
+                if file_path.name in ignored_patterns:
+                    continue
+
                 stat = file_path.stat()
                 files.append({
                     'name': file_path.name,
@@ -103,8 +109,13 @@ def get_files_count():
         config = current_app.config['WATCHER_CONFIG']
         watched_dir = Path(config['watcher']['watch_directory'])
         processed_dir = Path(config['watcher']['processed_directory'])
+        ignored_patterns = {'.gitkeep', '.gitignore', '.DS_Store', 'Thumbs.db'}
 
-        pending_count = len(list(watched_dir.glob('*'))) if watched_dir.exists() else 0
+        pending_count = sum(
+            1 for f in watched_dir.glob('*')
+            if f.is_file() and f.name not in ignored_patterns
+        ) if watched_dir.exists() else 0
+
         processed_count = len(list(processed_dir.glob('*'))) if processed_dir.exists() else 0
 
         return jsonify({

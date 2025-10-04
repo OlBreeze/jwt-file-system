@@ -22,7 +22,7 @@ def load_config(config_path=None):
         with open(config_path, 'r', encoding='utf-8') as f:
             config = yaml.safe_load(f)
 
-        # JWT Secret (required)
+        # JWT Secret
         jwt_secret = os.getenv('JWT_SECRET')
         if jwt_secret:
             config['jwt']['secret'] = jwt_secret

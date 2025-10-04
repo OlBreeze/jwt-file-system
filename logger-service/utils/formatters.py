@@ -25,6 +25,10 @@ def format_timestamp_for_filename(iso_timestamp):
         2025-09-30T14:33:22Z -> 20250930T143322Z
         2025-09-30T14:33:22+00:00 -> 20250930T143322Z
     """
+    # logger.debug("This is DEBUG")
+    # logger.info("This is INFO")
+
+
     try:
         # Parsing different formats
         if iso_timestamp.endswith('Z'):

@@ -4,7 +4,7 @@ async function loadConfig() {
         const response = await fetch('/api/config');
         const config = await response.json();
 
-        console.log('Loaded config:', config); // Debug
+        // console.log('Loaded config:', config); // Debug
 
         // Logging settings
         document.getElementById('log_level').value = config.logging.level;
@@ -18,8 +18,8 @@ async function loadConfig() {
 
         document.getElementById('service-port').textContent = config.service.port;
 
-        console.log('Email enabled:', config.notifications?.email?.enabled); // Debug
-        console.log('Email to:', config.notifications?.email?.to); // Debug
+        // console.log('Email enabled:', config.notifications?.email?.enabled); // Debug
+        // console.log('Email to:', config.notifications?.email?.to); // Debug
     } catch (error) {
         showAlert('Failed to load configuration: ' + error.message, 'error');
         console.error('Load config error:', error); // Debug

@@ -109,12 +109,24 @@ pip install -r requirements.txt
 
 # Start Logger Service
 cd logger-service
-python logger_service.py
+python logger-service.py
 
 # In another terminal, start Watcher Service
 cd watcher-service
 python watcher_service.py
 ```
+
+### Configuration settings are stored in the `.env` file. Copy `.env.example` to `.env` and update the values:
+```bash
+cp .env.example .env
+```  
+#### Update the settings in .env file with your values
+``` 
+JWT_SECRET=key_test_ssss
+EMAIL_PASSWORD='***hidden***'
+EMAIL_FROM=test@gmail.com
+EMAIL_TO=test@gmail.com
+``` 
 ---
 
 ## 🔐 JWT Authentication
@@ -190,5 +202,7 @@ Try clicking on the author's name multiple times in the footer... You might disc
 
 
 ![](https://github.com/user-attachments/assets/7d54e791-8e8b-47da-9f20-9a5b706cc7e4)
+
+![](https://github.com/user-attachments/assets/c0b24d10-5837-40c2-94fe-008d319b4b86)
 
 ---

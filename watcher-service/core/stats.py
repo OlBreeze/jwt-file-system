@@ -59,7 +59,13 @@ class Stats:
         if not watched_dir.exists():
             return 0
 
-        return len(list(watched_dir.glob('*')))
+        ignored_patterns = {'.gitkeep', '.gitignore', '.DS_Store', 'Thumbs.db'}
+        pending_count = sum(
+            1 for f in watched_dir.glob('*')
+            if f.is_file() and f.name not in ignored_patterns
+        ) if watched_dir.exists() else 0
+
+        return pending_count  # len(list(watched_dir.glob('*')))
 
     def to_dict(self, config=None):
         """

@@ -64,9 +64,11 @@ def test_connection():
     Returns:
         JSON: Connection test result
     """
+
     try:
         config = current_app.config['WATCHER_CONFIG']
-        logger_url = config['logger_service']['url'].replace('/log', '/health')
+        # logger_url = config['logger_service']['url'].replace('/log', '/health')
+        logger_url = config['logger_service']['url'].rsplit('/log', 1)[0] + '/health'
 
         response = requests.get(logger_url, timeout=5)
 
@@ -80,22 +82,22 @@ def test_connection():
             return jsonify({
                 'success': False,
                 'error': f'Logger returned status {response.status_code}'
-            }), 200
+            }), 502
 
     except requests.exceptions.Timeout:
         return jsonify({
             'success': False,
             'error': 'Connection timeout'
-        }), 200
+        }), 504
 
     except requests.exceptions.ConnectionError:
         return jsonify({
             'success': False,
             'error': 'Cannot connect to Logger Service'
-        }), 200
+        }), 503
 
     except Exception as e:
         return jsonify({
             'success': False,
             'error': str(e)
-        }), 200
+        }), 500

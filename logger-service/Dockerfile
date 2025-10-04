@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code
-COPY main.py .
+COPY logger_service.py .
 COPY config.yaml .
 
 ## Copy templates for Web UI
@@ -22,4 +22,4 @@ RUN mkdir -p logs
 EXPOSE 5000
 
 # Launch the application
-CMD ["python", "-u", "main.py"]
+CMD ["python", "-u", "logger_service.py"]

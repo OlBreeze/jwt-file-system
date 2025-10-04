@@ -4,20 +4,20 @@ async function loadConfig() {
         const response = await fetch('/api/config');
         const config = await response.json();
 
-        console.log('Loaded config:', config); // Debug
+        // console.log('Loaded config:', config); // Debug
 
         // Logging settings
         document.getElementById('log_level').value = config.logging.level;
         document.getElementById('max_size_mb').value = config.logging.max_size_mb;
         document.getElementById('backup_count').value = config.logging.backup_count;
 
-        // Notifications - ИСПРАВЛЕНО
+        // Notifications
         document.getElementById('email_enabled').checked = config.notifications?.email?.enabled || false;
         document.getElementById('email_to').value = config.notifications?.email?.to || '';
         document.getElementById('syslog_enabled').checked = config.notifications?.syslog?.enabled || false;
 
-        console.log('Email enabled:', config.notifications?.email?.enabled); // Debug
-        console.log('Email to:', config.notifications?.email?.to); // Debug
+        // console.log('Email enabled:', config.notifications?.email?.enabled); // Debug
+        // console.log('Email to:', config.notifications?.email?.to); // Debug
     } catch (error) {
         showAlert('Failed to load configuration: ' + error.message, 'error');
         console.error('Load config error:', error); // Debug
@@ -48,14 +48,14 @@ document.getElementById('notifications-form').addEventListener('submit', async (
             enabled: document.getElementById('syslog_enabled').checked
         }
     };
-    console.log('Saving notifications:', data); // Debug
+    // console.log('Saving notifications:', data); // Debug
     await saveConfig('notifications', data);
 });
 
-// Save config API - ИСПРАВЛЕНО
+// Save config API
 async function saveConfig(section, data) {
     try {
-        console.log(`Saving ${section}:`, data); // Debug
+        // console.log(`Saving ${section}:`, data); // Debug
 
         const response = await fetch(`/api/config/${section}`, {
             method: 'PUT',

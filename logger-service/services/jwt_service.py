@@ -1,5 +1,8 @@
 """JWT authentication"""
+import logging
 import jwt
+
+logger = logging.getLogger(__name__)
 
 def validate_jwt_token(token, config):
     """Validates JWT token"""
@@ -9,10 +12,8 @@ def validate_jwt_token(token, config):
             config['jwt']['secret'],
             algorithms=[config['jwt']['algorithm']]
         )
-
         if payload.get('iss') != config['jwt']['expected_issuer']:
             return False, f"Invalid issuer"
-
         return True, payload
 
     except jwt.ExpiredSignatureError:

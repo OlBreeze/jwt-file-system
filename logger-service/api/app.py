@@ -1,5 +1,5 @@
 """
-Flask приложение для Logger Service
+Flask application for Logger Service
 """
 
 from pathlib import Path
@@ -13,14 +13,14 @@ from .routes.error_handlers import  register_error_handlers
 
 def create_app(config, logger):
     """
-    Создает и настраивает Flask приложение
+    Creates and configures a Flask application.
 
     Args:
-        config (dict): Конфигурация приложения
-        logger: Logger объект
+        config (dict): Application configuration
+        logger: Logger object
 
     Returns:
-        Flask: Настроенное приложение
+        Flask: The configured application
     """
     base_dir = Path(__file__).parent.parent
 
@@ -35,17 +35,17 @@ def create_app(config, logger):
 
     app.config['JSON_AS_ASCII'] = False
 
-    # Сохраняем конфигурацию в контексте приложения
+    # Saving configuration in the application context
     app.config['LOGGER_CONFIG'] = config
     app.config['LOGGER_INSTANCE'] = logger
 
-    # Регистрируем blueprints
+    # Registering blueprints
     app.register_blueprint(create_config_bp(config, logger))
     app.register_blueprint(create_stats_bp(config, logger))
     app.register_blueprint(create_logs_bp(config, logger))
     app.register_blueprint(create_log_bp(config, logger))
 
-    # Регистрируем обработчики ошибок
+    # Registering error handlers
     register_error_handlers(app, config, logger)
 
     logger.info("Flask app created successfully")

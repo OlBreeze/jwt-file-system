@@ -2,6 +2,7 @@
 API endpoints for configuration management
 """
 
+import copy
 import logging
 import yaml
 from pathlib import Path
@@ -57,8 +58,7 @@ def create_config_bp(config, app_logger):
     @config_bp.route('/api/config', methods=['GET'])
     def get_config():
         """Get the current configuration"""
-        # Hiding sensitive data
-        safe_config = config.copy()
+        safe_config = copy.deepcopy(config)
         if 'jwt' in safe_config and 'secret' in safe_config['jwt']:
             safe_config['jwt']['secret'] = '***hidden***'
         if 'notifications' in safe_config:
@@ -80,11 +80,34 @@ def create_config_bp(config, app_logger):
             if section not in config:
                 return jsonify({'error': f'Unknown section: {section}'}), 400
 
+            # PROTECTING SECRETS
+            if section == 'jwt' and isinstance(data, dict):
+                if data.get('secret') == '***hidden***':
+                    app_logger.debug("Preserving original JWT secret")
+                    data['secret'] = config['jwt']['secret']
+
+            if section == 'notifications' and isinstance(data, dict):
+                if 'email' in data and isinstance(data['email'], dict):
+                    if data['email'].get('password') == '***hidden***':
+                        app_logger.debug("Preserving original email password")
+                        data['email']['password'] = config['notifications']['email']['password']
+
             # Updating the section in memory
             if isinstance(config[section], dict) and isinstance(data, dict):
                 config[section].update(data)
             else:
                 config[section] = data
+
+            # Apply logging level changes immediately
+            if section == 'logging' and 'level' in data:
+                new_level = getattr(logging, data['level'].upper(), logging.INFO)
+                root_logger = logging.getLogger()
+                root_logger.setLevel(new_level)
+
+                for handler in root_logger.handlers:
+                    handler.setLevel(new_level)
+
+                app_logger.info(f"Log level changed to {data['level']} (applied immediately)")
 
             # Save to file
             config_path = Path(__file__).parent.parent.parent / 'config.yaml'

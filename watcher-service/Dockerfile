@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code
-COPY main.py .
+COPY watcher_service.py .
 COPY config.yaml .
 
 #COPY templates/ templates/
@@ -18,4 +18,4 @@ COPY . .
 RUN mkdir -p logs
 
 # Launch the application
-CMD ["python", "-u", "main.py"]
+CMD ["python", "-u", "watcher_service.py"]

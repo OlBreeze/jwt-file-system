@@ -2,7 +2,7 @@ jwt:
   algorithm: HS256
   expiration_minutes: 5
   issuer: watcher-service
-  secret: '***hidden***'
+  secret: sasa-Software2015
 logger_service:
   retry_attempts: 3
   retry_delay: 5
@@ -11,13 +11,14 @@ logger_service:
   url_docker: http://logger-service:5000/log
   url_local: http://localhost:5000/log
 logging:
-  backup_count: 3
+  backup_count: 5
   file: logs/watcher-service.log
   level: INFO
   max_size_mb: 5
 notifications:
   email:
     enabled: true
+    password: xclqyrjarfzvaavi
     to: default@example.com
   syslog:
     enabled: false

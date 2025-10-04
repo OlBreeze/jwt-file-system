@@ -29,11 +29,14 @@ def setup_logging(config):
     console_handler.setLevel(log_level)
 
     root_logger = logging.getLogger()
+    root_logger.handlers.clear()
     root_logger.setLevel(log_level)
     root_logger.addHandler(file_handler)
     root_logger.addHandler(console_handler)
 
     if log_level > logging.DEBUG:
         logging.getLogger('werkzeug').setLevel(logging.WARNING)
-
+    # Проверка
+    root_logger.info(f"📊 Logging configured: level={logging.getLevelName(log_level)}")
+    root_logger.debug("🐛 DEBUG logging is active")
     return root_logger

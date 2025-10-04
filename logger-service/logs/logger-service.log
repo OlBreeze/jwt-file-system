@@ -708,3 +708,969 @@
 2025-10-02 20:59:12 - root - INFO - 📝 Received metadata for file: Arnona.pdf (476.83KB) from watcher-service
 2025-10-02 20:59:12 - root - INFO - ✅ Created: Arnona-20251002T205912Z.txt
 2025-10-02 20:59:12 - root - INFO - ✅ Successfully processed file: Arnona.pdf
+2025-10-04 08:25:13 - root - INFO - Flask app created successfully
+2025-10-04 08:25:13 - root - INFO - ============================================================
+2025-10-04 08:25:13 - root - INFO - 🚀 Starting logger-service
+2025-10-04 08:25:13 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 08:25:13 - root - INFO - 📍 Port: 5000
+2025-10-04 08:25:13 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 08:25:13 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 08:25:14 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 08:25:14 - root - INFO - ============================================================
+2025-10-04 09:07:05 - root - INFO - 📝 Received metadata for file: новый 11.md (28.83KB) from watcher-service
+2025-10-04 09:07:05 - root - INFO - ✅ Created: новый_11-20251004T090705Z.txt
+2025-10-04 09:07:05 - root - INFO - ✅ Successfully processed file: новый 11.md
+2025-10-04 09:58:06 - root - INFO - Flask app created successfully
+2025-10-04 09:58:06 - root - INFO - ============================================================
+2025-10-04 09:58:06 - root - INFO - 🚀 Starting logger-service
+2025-10-04 09:58:06 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 09:58:06 - root - INFO - 📍 Port: 5000
+2025-10-04 09:58:06 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 09:58:06 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 09:58:06 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 09:58:06 - root - INFO - ============================================================
+2025-10-04 10:00:08 - root - INFO - Flask app created successfully
+2025-10-04 10:00:08 - root - INFO - ============================================================
+2025-10-04 10:00:08 - root - INFO - 🚀 Starting logger-service
+2025-10-04 10:00:08 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 10:00:08 - root - INFO - 📍 Port: 5000
+2025-10-04 10:00:08 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 10:00:08 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 10:00:08 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 10:00:08 - root - INFO - ============================================================
+2025-10-04 10:07:03 - root - INFO - Flask app created successfully
+2025-10-04 10:07:03 - root - INFO - ============================================================
+2025-10-04 10:07:03 - root - INFO - 🚀 Starting logger-service
+2025-10-04 10:07:03 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 10:07:03 - root - INFO - 📍 Port: 5000
+2025-10-04 10:07:03 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 10:07:03 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 10:07:03 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 10:07:03 - root - INFO - ============================================================
+2025-10-04 13:13:01 - root - INFO - Flask app created successfully
+2025-10-04 13:13:01 - root - INFO - ============================================================
+2025-10-04 13:13:01 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:13:01 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:13:01 - root - INFO - 📍 Port: 5000
+2025-10-04 13:13:01 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:13:01 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:13:01 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:13:01 - root - INFO - ============================================================
+2025-10-04 13:17:57 - root - INFO - Flask app created successfully
+2025-10-04 13:17:57 - root - INFO - ============================================================
+2025-10-04 13:17:57 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:17:57 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:17:57 - root - INFO - 📍 Port: 5000
+2025-10-04 13:17:57 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:17:57 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:17:57 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:17:57 - root - INFO - ============================================================
+2025-10-04 13:20:32 - root - INFO - Flask app created successfully
+2025-10-04 13:20:32 - root - INFO - ============================================================
+2025-10-04 13:20:32 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:20:32 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:20:32 - root - INFO - 📍 Port: 5000
+2025-10-04 13:20:32 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:20:32 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:20:32 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:20:32 - root - INFO - ============================================================
+2025-10-04 13:26:12 - root - INFO - Flask app created successfully
+2025-10-04 13:26:12 - root - INFO - ============================================================
+2025-10-04 13:26:12 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:26:12 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:26:12 - root - INFO - 📍 Port: 5000
+2025-10-04 13:26:12 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:26:12 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:26:12 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:26:12 - root - INFO - ============================================================
+2025-10-04 13:27:35 - root - INFO - Flask app created successfully
+2025-10-04 13:27:35 - root - INFO - ============================================================
+2025-10-04 13:27:35 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:27:35 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:27:35 - root - INFO - 📍 Port: 5000
+2025-10-04 13:27:35 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:27:35 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:27:35 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:27:35 - root - INFO - ============================================================
+2025-10-04 13:28:05 - root - INFO - Flask app created successfully
+2025-10-04 13:28:05 - root - INFO - ============================================================
+2025-10-04 13:28:05 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:28:05 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:28:05 - root - INFO - 📍 Port: 5000
+2025-10-04 13:28:05 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:28:05 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:28:05 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:28:05 - root - INFO - ============================================================
+2025-10-04 13:29:02 - root - INFO - Flask app created successfully
+2025-10-04 13:29:02 - root - INFO - ============================================================
+2025-10-04 13:29:02 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:29:02 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:29:02 - root - INFO - 📍 Port: 5000
+2025-10-04 13:29:02 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:29:02 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:29:02 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:29:02 - root - INFO - ============================================================
+2025-10-04 13:30:52 - root - INFO - Flask app created successfully
+2025-10-04 13:30:52 - root - INFO - ============================================================
+2025-10-04 13:30:52 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:30:52 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:30:52 - root - INFO - 📍 Port: 5000
+2025-10-04 13:30:52 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:30:52 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:30:52 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:30:52 - root - INFO - ============================================================
+2025-10-04 13:32:07 - root - INFO - Flask app created successfully
+2025-10-04 13:32:07 - root - INFO - ============================================================
+2025-10-04 13:32:07 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:32:07 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:32:07 - root - INFO - 📍 Port: 5000
+2025-10-04 13:32:07 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:32:07 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:32:07 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:32:07 - root - INFO - ============================================================
+2025-10-04 13:33:37 - root - INFO - Flask app created successfully
+2025-10-04 13:33:37 - root - INFO - ============================================================
+2025-10-04 13:33:37 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:33:37 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:33:37 - root - INFO - 📍 Port: 5000
+2025-10-04 13:33:37 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:33:37 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:33:37 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:33:37 - root - INFO - ============================================================
+2025-10-04 13:35:52 - root - INFO - Flask app created successfully
+2025-10-04 13:35:52 - root - INFO - ============================================================
+2025-10-04 13:35:52 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:35:52 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:35:52 - root - INFO - 📍 Port: 5000
+2025-10-04 13:35:52 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:35:52 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:35:52 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:35:52 - root - INFO - ============================================================
+2025-10-04 13:37:35 - root - INFO - Flask app created successfully
+2025-10-04 13:37:35 - root - INFO - ============================================================
+2025-10-04 13:37:35 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:37:35 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:37:35 - root - INFO - 📍 Port: 5000
+2025-10-04 13:37:35 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:37:35 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:37:35 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:37:35 - root - INFO - ============================================================
+2025-10-04 13:38:36 - root - INFO - Flask app created successfully
+2025-10-04 13:38:36 - root - INFO - ============================================================
+2025-10-04 13:38:36 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:38:36 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:38:36 - root - INFO - 📍 Port: 5000
+2025-10-04 13:38:36 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:38:36 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:38:36 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:38:36 - root - INFO - ============================================================
+2025-10-04 13:41:41 - root - INFO - Flask app created successfully
+2025-10-04 13:41:41 - root - INFO - ============================================================
+2025-10-04 13:41:41 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:41:41 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:41:41 - root - INFO - 📍 Port: 5000
+2025-10-04 13:41:41 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:41:41 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:41:41 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:41:41 - root - INFO - ============================================================
+2025-10-04 13:45:16 - root - INFO - Flask app created successfully
+2025-10-04 13:45:16 - root - INFO - ============================================================
+2025-10-04 13:45:16 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:45:16 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:45:16 - root - INFO - 📍 Port: 5000
+2025-10-04 13:45:16 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:45:16 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:45:16 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:45:16 - root - INFO - ============================================================
+2025-10-04 13:46:15 - root - INFO - Flask app created successfully
+2025-10-04 13:46:15 - root - INFO - ============================================================
+2025-10-04 13:46:15 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:46:15 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:46:15 - root - INFO - 📍 Port: 5000
+2025-10-04 13:46:15 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:46:15 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:46:15 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:46:15 - root - INFO - ============================================================
+2025-10-04 13:46:57 - root - INFO - Flask app created successfully
+2025-10-04 13:46:57 - root - INFO - ============================================================
+2025-10-04 13:46:57 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:46:57 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:46:57 - root - INFO - 📍 Port: 5000
+2025-10-04 13:46:57 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:46:57 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:46:57 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:46:57 - root - INFO - ============================================================
+2025-10-04 13:48:18 - root - INFO - Flask app created successfully
+2025-10-04 13:48:18 - root - INFO - ============================================================
+2025-10-04 13:48:18 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:48:18 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:48:18 - root - INFO - 📍 Port: 5000
+2025-10-04 13:48:18 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:48:18 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:48:18 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:48:18 - root - INFO - ============================================================
+2025-10-04 13:52:42 - root - INFO - Flask app created successfully
+2025-10-04 13:52:42 - root - INFO - ============================================================
+2025-10-04 13:52:42 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:52:42 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:52:42 - root - INFO - 📍 Port: 5000
+2025-10-04 13:52:42 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:52:42 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:52:42 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:52:42 - root - INFO - ============================================================
+2025-10-04 13:54:45 - root - INFO - Flask app created successfully
+2025-10-04 13:54:45 - root - INFO - ============================================================
+2025-10-04 13:54:45 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:54:45 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:54:45 - root - INFO - 📍 Port: 5000
+2025-10-04 13:54:45 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:54:45 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:54:45 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:54:45 - root - INFO - ============================================================
+2025-10-04 13:56:05 - root - INFO - Flask app created successfully
+2025-10-04 13:56:05 - root - INFO - ============================================================
+2025-10-04 13:56:05 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:56:05 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:56:05 - root - INFO - 📍 Port: 5000
+2025-10-04 13:56:05 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:56:05 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:56:05 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:56:05 - root - INFO - ============================================================
+2025-10-04 13:56:49 - root - INFO - Flask app created successfully
+2025-10-04 13:56:49 - root - INFO - ============================================================
+2025-10-04 13:56:49 - root - INFO - 🚀 Starting logger-service
+2025-10-04 13:56:49 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 13:56:49 - root - INFO - 📍 Port: 5000
+2025-10-04 13:56:49 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 13:56:49 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 13:56:49 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 13:56:49 - root - INFO - ============================================================
+2025-10-04 14:17:21 - root - INFO - Flask app created successfully
+2025-10-04 14:17:21 - root - INFO - ============================================================
+2025-10-04 14:17:21 - root - INFO - 🚀 Starting logger-service
+2025-10-04 14:17:21 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 14:17:21 - root - INFO - 📍 Port: 5000
+2025-10-04 14:17:21 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 14:17:21 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 14:17:21 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 14:17:21 - root - INFO - ============================================================
+2025-10-04 14:43:01 - root - INFO - Flask app created successfully
+2025-10-04 14:43:01 - root - INFO - ============================================================
+2025-10-04 14:43:01 - root - INFO - 🚀 Starting logger-service
+2025-10-04 14:43:01 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 14:43:01 - root - INFO - 📍 Port: 5000
+2025-10-04 14:43:01 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 14:43:01 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 14:43:01 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 14:43:01 - root - INFO - ============================================================
+2025-10-04 14:53:28 - root - INFO - Flask app created successfully
+2025-10-04 14:53:28 - root - INFO - ============================================================
+2025-10-04 14:53:28 - root - INFO - 🚀 Starting logger-service
+2025-10-04 14:53:28 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 14:53:28 - root - INFO - 📍 Port: 5000
+2025-10-04 14:53:28 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 14:53:28 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 14:53:28 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 14:53:28 - root - INFO - ============================================================
+2025-10-04 14:56:21 - root - INFO - Flask app created successfully
+2025-10-04 14:56:21 - root - INFO - ============================================================
+2025-10-04 14:56:21 - root - INFO - 🚀 Starting logger-service
+2025-10-04 14:56:21 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 14:56:21 - root - INFO - 📍 Port: 5000
+2025-10-04 14:56:21 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 14:56:21 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 14:56:21 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 14:56:21 - root - INFO - ============================================================
+2025-10-04 14:59:26 - root - INFO - Flask app created successfully
+2025-10-04 14:59:26 - root - INFO - ============================================================
+2025-10-04 14:59:26 - root - INFO - 🚀 Starting logger-service
+2025-10-04 14:59:26 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 14:59:26 - root - INFO - 📍 Port: 5000
+2025-10-04 14:59:26 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 14:59:26 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 14:59:26 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 14:59:26 - root - INFO - ============================================================
+2025-10-04 15:03:24 - root - INFO - Flask app created successfully
+2025-10-04 15:03:24 - root - INFO - ============================================================
+2025-10-04 15:03:24 - root - INFO - 🚀 Starting logger-service
+2025-10-04 15:03:24 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 15:03:24 - root - INFO - 📍 Port: 5000
+2025-10-04 15:03:24 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 15:03:24 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 15:03:24 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 15:03:24 - root - INFO - ============================================================
+2025-10-04 15:17:10 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 15:17:10 - root - INFO - ✅ Created: Код-20251004T121708Z.txt
+2025-10-04 15:17:10 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 15:17:52 - root - INFO - 📝 Received metadata for file: syllabus CS - IT WORKS.pdf (164.40KB) from watcher-service
+2025-10-04 15:17:52 - root - INFO - ✅ Created: syllabus_CS_-_IT_WORKS-20251004T121750Z.txt
+2025-10-04 15:17:52 - root - INFO - ✅ Successfully processed file: syllabus CS - IT WORKS.pdf
+2025-10-04 15:24:34 - root - INFO - Flask app created successfully
+2025-10-04 15:24:34 - root - INFO - ============================================================
+2025-10-04 15:24:34 - root - INFO - 🚀 Starting logger-service
+2025-10-04 15:24:34 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 15:24:34 - root - INFO - 📍 Port: 5000
+2025-10-04 15:24:34 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 15:24:34 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 15:24:34 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 15:24:34 - root - INFO - ============================================================
+2025-10-04 15:40:38 - root - INFO - Flask app created successfully
+2025-10-04 15:40:38 - root - INFO - ============================================================
+2025-10-04 15:40:38 - root - INFO - 🚀 Starting logger-service
+2025-10-04 15:40:38 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 15:40:38 - root - INFO - 📍 Port: 5000
+2025-10-04 15:40:38 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 15:40:38 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 15:40:38 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 15:40:38 - root - INFO - ============================================================
+2025-10-04 15:50:49 - root - INFO - Configuration section 'logging' updated
+2025-10-04 15:51:05 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-04 15:53:15 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-04 15:56:01 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-04 16:03:38 - root - INFO - Flask app created successfully
+2025-10-04 16:03:38 - root - INFO - ============================================================
+2025-10-04 16:03:38 - root - INFO - 🚀 Starting logger-service
+2025-10-04 16:03:38 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 16:03:38 - root - INFO - 📍 Port: 5000
+2025-10-04 16:03:38 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 16:03:38 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 16:03:38 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 16:03:38 - root - INFO - ============================================================
+2025-10-04 16:04:19 - root - INFO - 📝 Received metadata for file: Screenshot 2025-08-05 204820.jpg (39.36KB) from watcher-service
+2025-10-04 16:04:19 - root - INFO - ✅ Created: Screenshot_2025-08-05_204820-20251004T130417Z.txt
+2025-10-04 16:04:19 - root - INFO - ✅ Successfully processed file: Screenshot 2025-08-05 204820.jpg
+2025-10-04 16:04:36 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 16:04:36 - root - INFO - ✅ Created: Код-20251004T130434Z.txt
+2025-10-04 16:04:36 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 16:07:21 - root - INFO - Configuration section 'logging' updated
+2025-10-04 16:07:36 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-04 16:15:00 - root - INFO - Flask app created successfully
+2025-10-04 16:15:00 - root - INFO - ============================================================
+2025-10-04 16:15:00 - root - INFO - 🚀 Starting logger-service
+2025-10-04 16:15:00 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 16:15:00 - root - INFO - 📍 Port: 5000
+2025-10-04 16:15:00 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 16:15:00 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 16:15:00 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 16:15:00 - root - INFO - ============================================================
+2025-10-04 16:15:40 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 16:15:40 - root - INFO - ✅ Created: Код-20251004T131538Z.txt
+2025-10-04 16:15:40 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 16:15:55 - root - INFO - Configuration section 'logging' updated
+2025-10-04 16:16:08 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-04 16:23:44 - root - INFO - Flask app created successfully
+2025-10-04 16:23:44 - root - INFO - ============================================================
+2025-10-04 16:23:44 - root - INFO - 🚀 Starting logger-service
+2025-10-04 16:23:44 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 16:23:44 - root - INFO - 📍 Port: 5000
+2025-10-04 16:23:44 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 16:23:44 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 16:23:44 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 16:23:44 - root - INFO - ============================================================
+2025-10-04 16:24:13 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:24:13 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODQ1NTEsImlhdCI6MTc1OTU4NDI1MX0.DdiBx_5zcEloBOIpSftxxVRoAtkPJToi4HEVLIrqXcY...
+2025-10-04 16:24:13 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 16:24:13 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:24:13 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:24:13 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 16:24:13 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 16:24:13 - root - INFO - 📝 Received metadata for file: syllabus CS - IT WORKS.pdf (164.40KB) from watcher-service
+2025-10-04 16:24:13 - root - INFO - ✅ Created: syllabus_CS_-_IT_WORKS-20251004T132411Z.txt
+2025-10-04 16:24:13 - root - INFO - ✅ Successfully processed file: syllabus CS - IT WORKS.pdf
+2025-10-04 16:24:57 - root - INFO - Configuration section 'logging' updated
+2025-10-04 16:25:20 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:25:20 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODQ2MTgsImlhdCI6MTc1OTU4NDMxOH0.cTVjBUT85zzWrMpDQMLs1qoQdYGGZVhqX6hR_NF0eN4...
+2025-10-04 16:25:20 - services.jwt_service - INFO -    Secret (first 10): ***hidden***...
+2025-10-04 16:25:20 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:25:20 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:25:20 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-04 16:26:57 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:26:57 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODQ3MTUsImlhdCI6MTc1OTU4NDQxNX0.bz2eYUdlzibVypgFwu_K-x1PcMlrgJZaOjHEAyIinFw...
+2025-10-04 16:26:57 - services.jwt_service - INFO -    Secret (first 10): ***hidden***...
+2025-10-04 16:26:57 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:26:57 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:26:57 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-04 16:27:48 - root - INFO - Flask app created successfully
+2025-10-04 16:27:48 - root - INFO - ============================================================
+2025-10-04 16:27:48 - root - INFO - 🚀 Starting logger-service
+2025-10-04 16:27:48 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 16:27:48 - root - INFO - 📍 Port: 5000
+2025-10-04 16:27:48 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 16:27:48 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 16:27:48 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 16:27:48 - root - INFO - ============================================================
+2025-10-04 16:28:01 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:28:01 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODQ3NzksImlhdCI6MTc1OTU4NDQ3OX0.PS3TVUcBRJSkC5w-GN708f8FBTOaz_MfTKfhKSqy7wk...
+2025-10-04 16:28:01 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 16:28:01 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:28:01 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:28:01 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 16:28:01 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 16:28:01 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 16:28:01 - root - INFO - ✅ Created: Код-20251004T132759Z.txt
+2025-10-04 16:28:01 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 16:28:19 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:28:19 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODQ3OTcsImlhdCI6MTc1OTU4NDQ5N30.uczpWWzyMd6Ktcg1l1FGQKeyWxCMQw3MUl2UjSrItwo...
+2025-10-04 16:28:19 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 16:28:19 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:28:19 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:28:19 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 16:28:19 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 16:28:19 - root - INFO - 📝 Received metadata for file: Screenshot 2025-08-05 204659.jpg (39.51KB) from watcher-service
+2025-10-04 16:28:19 - root - INFO - ✅ Created: Screenshot_2025-08-05_204659-20251004T132817Z.txt
+2025-10-04 16:28:19 - root - INFO - ✅ Successfully processed file: Screenshot 2025-08-05 204659.jpg
+2025-10-04 16:29:03 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:29:03 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODQ4NDEsImlhdCI6MTc1OTU4NDU0MX0.qWYdE_50i0wNgucLFsT-rFXESqQBgMa5TqMhK5K0aQ4...
+2025-10-04 16:29:03 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 16:29:03 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:29:03 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:29:03 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 16:29:03 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 16:29:03 - root - INFO - 📝 Received metadata for file: Привет.docx (4.54MB) from watcher-service
+2025-10-04 16:29:03 - root - INFO - ✅ Created: Привет-20251004T132901Z.txt
+2025-10-04 16:29:03 - root - INFO - ✅ Successfully processed file: Привет.docx
+2025-10-04 16:31:43 - root - INFO - Flask app created successfully
+2025-10-04 16:31:43 - root - INFO - ============================================================
+2025-10-04 16:31:43 - root - INFO - 🚀 Starting logger-service
+2025-10-04 16:31:43 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 16:31:43 - root - INFO - 📍 Port: 5000
+2025-10-04 16:31:43 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 16:31:43 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 16:31:43 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 16:31:43 - root - INFO - ============================================================
+2025-10-04 16:32:00 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:32:00 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODUwMTgsImlhdCI6MTc1OTU4NDcxOH0.5ny6wGkZl8-K0EmSRyl1qI4BvfWJ6tabNDNRmJ89iZc...
+2025-10-04 16:32:00 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 16:32:00 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:32:00 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:32:00 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 16:32:00 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 16:32:00 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 16:32:00 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 16:32:00 - root - INFO - ✅ Created: Код-20251004T133158Z.txt
+2025-10-04 16:32:00 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 16:32:42 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:32:42 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODUwNjAsImlhdCI6MTc1OTU4NDc2MH0.A8PJ3kunI-n226qMeWetLGhqY2r9zt2yVPaEqcnLYrs...
+2025-10-04 16:32:42 - services.jwt_service - INFO -    Secret (first 10): ***hidden***...
+2025-10-04 16:32:42 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:32:42 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:32:42 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-04 16:34:29 - root - INFO - Flask app created successfully
+2025-10-04 16:34:29 - root - INFO - ============================================================
+2025-10-04 16:34:29 - root - INFO - 🚀 Starting logger-service
+2025-10-04 16:34:29 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 16:34:29 - root - INFO - 📍 Port: 5000
+2025-10-04 16:34:29 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 16:34:29 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 16:34:29 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 16:34:29 - root - INFO - ============================================================
+2025-10-04 16:34:51 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:34:51 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODUxODksImlhdCI6MTc1OTU4NDg4OX0.DqeCKoIfuUHxcB5AmULAEstXSpPyLdjGNRbQs__zHRs...
+2025-10-04 16:34:51 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 16:34:51 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:34:51 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:34:51 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 16:34:51 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 16:34:51 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 16:34:51 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 16:34:51 - root - INFO - ✅ Created: Код-20251004T133449Z.txt
+2025-10-04 16:34:51 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 16:35:23 - root - INFO - Configuration section 'logging' updated
+2025-10-04 16:35:36 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:35:36 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODUyMzQsImlhdCI6MTc1OTU4NDkzNH0.Fqapqg5A33-cpPxH7yxI7RVJVPUIg78wPubHW9Pc9wQ...
+2025-10-04 16:35:36 - services.jwt_service - INFO -    Secret (first 10): ***hidden***...
+2025-10-04 16:35:36 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:35:36 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:35:36 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-04 16:51:10 - root - INFO - Flask app created successfully
+2025-10-04 16:51:10 - root - INFO - ============================================================
+2025-10-04 16:51:10 - root - INFO - 🚀 Starting logger-service
+2025-10-04 16:51:10 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 16:51:10 - root - INFO - 📍 Port: 5000
+2025-10-04 16:51:10 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 16:51:10 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 16:51:10 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 16:51:10 - root - INFO - ============================================================
+2025-10-04 16:51:29 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:51:29 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODYxODcsImlhdCI6MTc1OTU4NTg4N30.XFtvfURMnP0UU8sO_yxvHj4byUrAcuARBaxD_5xXbIM...
+2025-10-04 16:51:29 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 16:51:29 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:51:29 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:51:29 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 16:51:29 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 16:51:29 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 16:51:29 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 16:51:29 - root - INFO - ✅ Created: Код-20251004T135127Z.txt
+2025-10-04 16:51:29 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 16:52:19 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:52:19 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODYyMzcsImlhdCI6MTc1OTU4NTkzN30.K9OOv2sDv3vMZDnoCU1YhS20mRGzBmFrnshQLyOP6G0...
+2025-10-04 16:52:19 - services.jwt_service - INFO -    Secret (first 10): ***hidden***...
+2025-10-04 16:52:19 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:52:19 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:52:19 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-04 16:56:19 - root - INFO - Flask app created successfully
+2025-10-04 16:56:19 - root - INFO - ============================================================
+2025-10-04 16:56:19 - root - INFO - 🚀 Starting logger-service
+2025-10-04 16:56:19 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 16:56:19 - root - INFO - 📍 Port: 5000
+2025-10-04 16:56:19 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 16:56:19 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 16:56:19 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 16:56:19 - root - INFO - ============================================================
+2025-10-04 16:56:32 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:56:32 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODY0OTAsImlhdCI6MTc1OTU4NjE5MH0.00OeiliW1-k5jFw_SZaYmAr_DCPlhWR-79NBUXOZ6zs...
+2025-10-04 16:56:32 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 16:56:32 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:56:32 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:56:32 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 16:56:32 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 16:56:32 - root - INFO - 📝 Received metadata for file: q.txt (0B) from watcher-service
+2025-10-04 16:56:32 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 16:56:32 - root - INFO - ✅ Created: q-20251004T135630Z.txt
+2025-10-04 16:56:32 - root - INFO - ✅ Successfully processed file: q.txt
+2025-10-04 16:56:51 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 16:56:51 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODY1MDksImlhdCI6MTc1OTU4NjIwOX0.fV5VHQxfLjRJb9FKfrCRFN-mt3l8nIHAy44TMPqs0NA...
+2025-10-04 16:56:51 - services.jwt_service - INFO -    Secret (first 10): ***hidden***...
+2025-10-04 16:56:51 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 16:56:51 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 16:56:51 - api.middleware - WARNING - ❌ JWT validation failed: Invalid token signature
+2025-10-04 17:01:58 - root - INFO - Flask app created successfully
+2025-10-04 17:01:58 - root - INFO - ============================================================
+2025-10-04 17:01:58 - root - INFO - 🚀 Starting logger-service
+2025-10-04 17:01:58 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 17:01:58 - root - INFO - 📍 Port: 5000
+2025-10-04 17:01:58 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 17:01:58 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 17:01:58 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 17:01:58 - root - INFO - ============================================================
+2025-10-04 17:03:13 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:03:13 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODY4OTEsImlhdCI6MTc1OTU4NjU5MX0.u-p4Ejs5KKTlBVJ3lnf-QgskBfcNb7Ir1U-uc8Fh2bA...
+2025-10-04 17:03:13 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:03:13 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:03:13 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:03:13 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:03:13 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:03:13 - root - INFO - 📝 Received metadata for file: Screenshot 2025-08-05 204659.jpg (39.51KB) from watcher-service
+2025-10-04 17:03:13 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:03:13 - root - INFO - ✅ Created: Screenshot_2025-08-05_204659-20251004T140311Z.txt
+2025-10-04 17:03:13 - root - INFO - ✅ Successfully processed file: Screenshot 2025-08-05 204659.jpg
+2025-10-04 17:04:21 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:04:21 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODY5NTksImlhdCI6MTc1OTU4NjY1OX0.R-fl8LcDAUAt4lZ7vROvTICCxKuSnwZNI3eWPrrF6wc...
+2025-10-04 17:04:21 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:04:21 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:04:21 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:04:21 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:04:21 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:04:21 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 17:04:21 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:04:21 - root - INFO - ✅ Created: Код-20251004T140419Z.txt
+2025-10-04 17:04:21 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 17:04:34 - root - INFO - Configuration section 'logging' updated
+2025-10-04 17:04:46 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:04:46 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODY5ODQsImlhdCI6MTc1OTU4NjY4NH0.XPrXUyAozjo59zx2XN4A-ly1n5um6z47XjpILuzE-vg...
+2025-10-04 17:04:46 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:04:46 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:04:46 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:04:46 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:04:46 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:04:46 - root - INFO - 📝 Received metadata for file: Temu Web Document.pdf (611.04KB) from watcher-service
+2025-10-04 17:04:46 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:04:46 - root - INFO - ✅ Created: Temu_Web_Document-20251004T140444Z.txt
+2025-10-04 17:04:46 - root - INFO - ✅ Successfully processed file: Temu Web Document.pdf
+2025-10-04 17:05:39 - root - INFO - Configuration section 'logging' updated
+2025-10-04 17:05:44 - root - INFO - Configuration section 'logging' updated
+2025-10-04 17:06:08 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:06:08 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODcwNjYsImlhdCI6MTc1OTU4Njc2Nn0.xqRbgKRQ_syhrJE4fJ3HV21oLEe6soCzFHifVdBcIio...
+2025-10-04 17:06:08 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:06:08 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:06:08 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:06:08 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:06:08 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:06:08 - root - INFO - 📝 Received metadata for file: Screenshot 2025-08-05 204820.jpg (39.36KB) from watcher-service
+2025-10-04 17:06:08 - root - WARNING - Removed: Screenshot_2025-08-05_204659-20251004T140311Z.txt
+2025-10-04 17:06:08 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:06:08 - root - INFO - ✅ Created: Screenshot_2025-08-05_204820-20251004T140606Z.txt
+2025-10-04 17:06:08 - root - INFO - ✅ Successfully processed file: Screenshot 2025-08-05 204820.jpg
+2025-10-04 17:11:39 - root - INFO - Flask app created successfully
+2025-10-04 17:11:39 - root - INFO - ============================================================
+2025-10-04 17:11:39 - root - INFO - 🚀 Starting logger-service
+2025-10-04 17:11:39 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 17:11:39 - root - INFO - 📍 Port: 5000
+2025-10-04 17:11:39 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 17:11:39 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 17:11:39 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 17:11:39 - root - INFO - ============================================================
+2025-10-04 17:11:39 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.32.214.179:5000
+2025-10-04 17:11:39 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 17:11:47 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:11:47] "GET /health HTTP/1.1" 200 -
+2025-10-04 17:11:57 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:11:57 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODc0MTUsImlhdCI6MTc1OTU4NzExNX0.YDHqIe_WkGy7huJUaxq76Xs4NEDvr_ouOhnVSKLv3Z0...
+2025-10-04 17:11:57 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:11:57 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:11:57 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:11:57 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:11:57 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:11:57 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 17:11:57 - utils.formatters - DEBUG - Это DEBUG сообщение - видно только если DEBUG включен
+2025-10-04 17:11:57 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:11:57 - root - INFO - ✅ Created: Код-20251004T141155Z.txt
+2025-10-04 17:11:57 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 17:11:57 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:11:57] "POST /log HTTP/1.1" 200 -
+2025-10-04 17:12:16 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:16] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:12:16 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:16] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 17:12:23 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:23] "GET /?email_enabled=on&email_to= HTTP/1.1" 200 -
+2025-10-04 17:12:23 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-04 17:12:23 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-10-04 17:12:23 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:23] "[36mGET /static/js/easter_egg.js HTTP/1.1[0m" 304 -
+2025-10-04 17:12:23 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:23] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 17:12:23 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:23] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:12:23 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:12:24 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:24] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 17:12:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:26] "GET /?email_enabled=on&email_to= HTTP/1.1" 200 -
+2025-10-04 17:12:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:26] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:12:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-04 17:12:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-10-04 17:12:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:26] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 17:12:27 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:27] "[36mGET /static/js/easter_egg.js HTTP/1.1[0m" 304 -
+2025-10-04 17:12:27 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:27] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:12:27 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:27] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 17:12:30 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:30] "GET /health HTTP/1.1" 200 -
+2025-10-04 17:12:32 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:32] "GET /health HTTP/1.1" 200 -
+2025-10-04 17:12:37 - root - INFO - Configuration section 'logging' updated
+2025-10-04 17:12:37 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:37] "PUT /api/config/logging HTTP/1.1" 200 -
+2025-10-04 17:12:37 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:37] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 17:12:39 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:39] "GET /?email_enabled=on&email_to= HTTP/1.1" 200 -
+2025-10-04 17:12:39 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:39] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-04 17:12:39 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-04 17:12:40 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-10-04 17:12:40 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:40] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 17:12:40 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:40] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:12:40 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:40] "[36mGET /static/js/easter_egg.js HTTP/1.1[0m" 304 -
+2025-10-04 17:12:40 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:40] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 17:12:59 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:12:59 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODc0NzcsImlhdCI6MTc1OTU4NzE3N30.uCDdGSnB2y0zn_FqR2jfnGwz7dxaAeCy7AoIMAJEgp4...
+2025-10-04 17:12:59 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:12:59 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:12:59 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:12:59 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:12:59 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:12:59 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 17:12:59 - utils.formatters - DEBUG - Это DEBUG сообщение - видно только если DEBUG включен
+2025-10-04 17:12:59 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:12:59 - root - INFO - ✅ Created: Код-20251004T141257Z.txt
+2025-10-04 17:12:59 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 17:12:59 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:12:59] "POST /log HTTP/1.1" 200 -
+2025-10-04 17:13:10 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:13:10] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 17:13:10 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:13:10] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:13:20 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:13:20 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODc0OTgsImlhdCI6MTc1OTU4NzE5OH0.9l-cfk9mj_G6kCi6DAQI9icqJwhZbC_mthtol5vhn3k...
+2025-10-04 17:13:20 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:13:20 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:13:20 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:13:20 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:13:20 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:13:20 - root - INFO - 📝 Received metadata for file: q.txt (0B) from watcher-service
+2025-10-04 17:13:20 - utils.formatters - DEBUG - Это DEBUG сообщение - видно только если DEBUG включен
+2025-10-04 17:13:20 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:13:20 - root - INFO - ✅ Created: q-20251004T141318Z.txt
+2025-10-04 17:13:20 - root - INFO - ✅ Successfully processed file: q.txt
+2025-10-04 17:13:20 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:13:20] "POST /log HTTP/1.1" 200 -
+2025-10-04 17:13:33 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:13:33] "GET /health HTTP/1.1" 200 -
+2025-10-04 17:18:11 - root - INFO - Flask app created successfully
+2025-10-04 17:18:11 - root - INFO - ============================================================
+2025-10-04 17:18:11 - root - INFO - 🚀 Starting logger-service
+2025-10-04 17:18:11 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 17:18:11 - root - INFO - 📍 Port: 5000
+2025-10-04 17:18:11 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 17:18:11 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 17:18:11 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 17:18:11 - root - INFO - ============================================================
+2025-10-04 17:18:35 - root - INFO - Flask app created successfully
+2025-10-04 17:18:35 - root - INFO - ============================================================
+2025-10-04 17:18:35 - root - INFO - 🚀 Starting logger-service
+2025-10-04 17:18:35 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 17:18:35 - root - INFO - 📍 Port: 5000
+2025-10-04 17:18:35 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 17:18:35 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 17:18:35 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 17:18:35 - root - INFO - ============================================================
+2025-10-04 17:20:05 - root - INFO - Flask app created successfully
+2025-10-04 17:20:05 - root - INFO - ============================================================
+2025-10-04 17:20:05 - root - INFO - 🚀 Starting logger-service
+2025-10-04 17:20:05 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 17:20:05 - root - INFO - 📍 Port: 5000
+2025-10-04 17:20:05 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 17:20:05 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 17:20:05 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 17:20:05 - root - INFO - ============================================================
+2025-10-04 17:20:53 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:20:53 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODc5NTEsImlhdCI6MTc1OTU4NzY1MX0.eVeYOdnqAM8LwFNobfp_RyQZgIdSoHGttWQBNdgEkqI...
+2025-10-04 17:20:53 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:20:53 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:20:53 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:20:53 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:20:53 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:20:53 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 17:20:53 - root - WARNING - Removed: Код-20251004T141155Z.txt
+2025-10-04 17:20:53 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:20:53 - root - INFO - ✅ Created: Код-20251004T142051Z.txt
+2025-10-04 17:20:53 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 17:24:51 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:24:51 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODgxODksImlhdCI6MTc1OTU4Nzg4OX0.iFW0BV556SBpNAzI7_WyirwWkCtRgKS4M1fZyWHTyhY...
+2025-10-04 17:24:51 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:24:51 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:24:51 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:24:51 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:24:51 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:24:51 - root - INFO - 📝 Received metadata for file: Temu Web Document.pdf (611.04KB) from watcher-service
+2025-10-04 17:24:51 - root - WARNING - Removed: Код-20251004T141257Z.txt
+2025-10-04 17:24:51 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:24:51 - root - INFO - ✅ Created: Temu_Web_Document-20251004T142448Z.txt
+2025-10-04 17:24:51 - root - INFO - ✅ Successfully processed file: Temu Web Document.pdf
+2025-10-04 17:29:34 - root - INFO - Flask app created successfully
+2025-10-04 17:29:34 - root - INFO - ============================================================
+2025-10-04 17:29:34 - root - INFO - 🚀 Starting logger-service
+2025-10-04 17:29:34 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 17:29:34 - root - INFO - 📍 Port: 5000
+2025-10-04 17:29:34 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 17:29:34 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 17:29:34 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 17:29:34 - root - INFO - ============================================================
+2025-10-04 17:29:50 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:29:50 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODg0ODgsImlhdCI6MTc1OTU4ODE4OH0.Y4hLrwKnlV9WQZ1HGZvAA4FB6V0PIzgiryZj5SqfiKs...
+2025-10-04 17:29:50 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:29:50 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:29:50 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:29:50 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:29:50 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:29:50 - root - INFO - 📝 Received metadata for file: Temu Web Document.pdf (611.04KB) from watcher-service
+2025-10-04 17:29:50 - root - WARNING - Removed: q-20251004T141318Z.txt
+2025-10-04 17:29:50 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:29:50 - root - INFO - ✅ Created: Temu_Web_Document-20251004T142948Z.txt
+2025-10-04 17:29:50 - root - INFO - ✅ Successfully processed file: Temu Web Document.pdf
+2025-10-04 17:34:30 - root - INFO - Flask app created successfully
+2025-10-04 17:34:30 - root - INFO - ============================================================
+2025-10-04 17:34:30 - root - INFO - 🚀 Starting logger-service
+2025-10-04 17:34:30 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 17:34:30 - root - INFO - 📍 Port: 5000
+2025-10-04 17:34:30 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 17:34:30 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 17:34:30 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 17:34:30 - root - INFO - ============================================================
+2025-10-04 17:35:17 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:35:17 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODg4MTUsImlhdCI6MTc1OTU4ODUxNX0.Gy5gccdY6vCMiT6I9Y4cqH_TOwVfPMAEjSFYHWs2ndE...
+2025-10-04 17:35:17 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:35:17 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:35:17 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:35:17 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:35:17 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:35:17 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 17:35:17 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:35:17 - root - INFO - ✅ Created: Код-20251004T143515Z.txt
+2025-10-04 17:35:17 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 17:42:55 - root - INFO - Configuration section 'logging' updated
+2025-10-04 17:43:17 - services.jwt_service - INFO - 🔍 Validating token:
+2025-10-04 17:43:17 - services.jwt_service - INFO -    Token (first 30): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ3YXRjaGVyLXNlcnZpY2UiLCJleHAiOjE3NTk1ODkyOTUsImlhdCI6MTc1OTU4ODk5NX0.wmd6aNZj_H-Lss1ncil5eW1hiQd3ib7nje5vdCJI-Co...
+2025-10-04 17:43:17 - services.jwt_service - INFO -    Secret (first 10): sasa-Software2015...
+2025-10-04 17:43:17 - services.jwt_service - INFO -    Expected issuer: watcher-service
+2025-10-04 17:43:17 - services.jwt_service - INFO -    Algorithm: HS256
+2025-10-04 17:43:17 - services.jwt_service - INFO - ✅ Token decoded, issuer in token: watcher-service
+2025-10-04 17:43:17 - services.jwt_service - INFO - ✅ Token valid!
+2025-10-04 17:43:17 - root - INFO - 📝 Received metadata for file: Screenshot 2025-08-05 204820.jpg (39.36KB) from watcher-service
+2025-10-04 17:43:17 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:43:17 - root - INFO - ✅ Created: Screenshot_2025-08-05_204820-20251004T144315Z.txt
+2025-10-04 17:43:17 - root - INFO - ✅ Successfully processed file: Screenshot 2025-08-05 204820.jpg
+2025-10-04 17:50:36 - root - INFO - 📊 Logging configured: level=DEBUG
+2025-10-04 17:50:36 - root - DEBUG - 🐛 DEBUG logging is active
+2025-10-04 17:50:36 - root - INFO - Flask app created successfully
+2025-10-04 17:50:36 - root - INFO - ============================================================
+2025-10-04 17:50:36 - root - INFO - 🚀 Starting logger-service
+2025-10-04 17:50:36 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 17:50:36 - root - INFO - 📍 Port: 5000
+2025-10-04 17:50:36 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 17:50:36 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 17:50:36 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 17:50:36 - root - INFO - ============================================================
+2025-10-04 17:50:36 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.32.214.179:5000
+2025-10-04 17:50:36 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 17:50:40 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:50:40] "GET /health HTTP/1.1" 200 -
+2025-10-04 17:51:04 - root - INFO - 📝 Received metadata for file: Temu Web Document.pdf (611.04KB) from watcher-service
+2025-10-04 17:51:04 - utils.formatters - DEBUG - Это DEBUG сообщение - видно только если DEBUG включен
+2025-10-04 17:51:04 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:51:04 - root - INFO - ✅ Created: Temu_Web_Document-20251004T145102Z.txt
+2025-10-04 17:51:04 - root - INFO - ✅ Successfully processed file: Temu Web Document.pdf
+2025-10-04 17:51:04 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:04] "POST /log HTTP/1.1" 200 -
+2025-10-04 17:51:23 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:23] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:51:23 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:23] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 17:51:25 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:25] "GET /?email_enabled=on&email_to= HTTP/1.1" 200 -
+2025-10-04 17:51:25 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-04 17:51:25 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-10-04 17:51:25 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:25] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 17:51:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:26] "[36mGET /static/js/easter_egg.js HTTP/1.1[0m" 304 -
+2025-10-04 17:51:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:26] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:51:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:26] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 17:51:30 - root - INFO - Configuration section 'logging' updated
+2025-10-04 17:51:30 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:30] "PUT /api/config/logging HTTP/1.1" 200 -
+2025-10-04 17:51:30 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:30] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 17:51:39 - root - INFO - 📝 Received metadata for file: Скачать фавикон с любого сайта - Shortcut.lnk (862B) from watcher-service
+2025-10-04 17:51:39 - root - WARNING - Removed: Код-20251004T143515Z.txt
+2025-10-04 17:51:39 - utils.formatters - DEBUG - Это DEBUG сообщение - видно только если DEBUG включен
+2025-10-04 17:51:39 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:51:39 - root - INFO - ✅ Created: Скачать_фавикон_с_любого_сайта_-_Shortcut-20251004T145137Z.txt
+2025-10-04 17:51:39 - root - INFO - ✅ Successfully processed file: Скачать фавикон с любого сайта - Shortcut.lnk
+2025-10-04 17:51:39 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:39] "POST /log HTTP/1.1" 200 -
+2025-10-04 17:51:56 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:56] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:51:56 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:51:56] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 17:52:11 - root - INFO - 📝 Received metadata for file: Screenshot 2025-08-05 204659.jpg (39.51KB) from watcher-service
+2025-10-04 17:52:11 - root - WARNING - Removed: Screenshot_2025-08-05_204820-20251004T144315Z.txt
+2025-10-04 17:52:11 - utils.formatters - DEBUG - Это DEBUG сообщение - видно только если DEBUG включен
+2025-10-04 17:52:11 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 17:52:11 - root - INFO - ✅ Created: Screenshot_2025-08-05_204659-20251004T145208Z.txt
+2025-10-04 17:52:11 - root - INFO - ✅ Successfully processed file: Screenshot 2025-08-05 204659.jpg
+2025-10-04 17:52:11 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:52:11] "POST /log HTTP/1.1" 200 -
+2025-10-04 17:52:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:52:26] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:52:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:52:26] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 17:52:42 - root - INFO - Configuration section 'logging' updated
+2025-10-04 17:52:42 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:52:42] "PUT /api/config/logging HTTP/1.1" 200 -
+2025-10-04 17:52:42 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:52:42] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 17:52:56 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:52:56] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 17:52:56 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:52:56] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:53:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:53:26] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:53:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:53:26] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 17:53:56 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:53:56] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 17:53:56 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 17:53:56] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:03:18 - root - INFO - 📊 Logging configured: level=DEBUG
+2025-10-04 18:03:18 - root - DEBUG - 🐛 DEBUG logging is active
+2025-10-04 18:03:18 - root - INFO - Flask app created successfully
+2025-10-04 18:03:18 - root - INFO - ============================================================
+2025-10-04 18:03:18 - root - INFO - 🚀 Starting logger-service
+2025-10-04 18:03:18 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 18:03:18 - root - INFO - 📍 Port: 5000
+2025-10-04 18:03:18 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 18:03:18 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 18:03:18 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 18:03:18 - root - INFO - ============================================================
+2025-10-04 18:03:18 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.32.214.179:5000
+2025-10-04 18:03:18 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 18:03:28 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:03:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:03:28 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:03:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:03:32 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:03:32] "GET /health HTTP/1.1" 200 -
+2025-10-04 18:03:45 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:03:45] "GET /?email_enabled=on&email_to= HTTP/1.1" 200 -
+2025-10-04 18:03:45 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:03:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-04 18:03:45 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:03:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-10-04 18:03:46 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:03:46] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 18:03:46 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:03:46] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:03:46 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:03:46] "[36mGET /static/js/easter_egg.js HTTP/1.1[0m" 304 -
+2025-10-04 18:03:46 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:03:46] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:03:51 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:03:51] "GET /health HTTP/1.1" 200 -
+2025-10-04 18:04:07 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 18:04:07 - utils.formatters - DEBUG - Это DEBUG сообщение - видно только если DEBUG включен
+2025-10-04 18:04:07 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 18:04:07 - root - INFO - ✅ Created: Код-20251004T150405Z.txt
+2025-10-04 18:04:07 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 18:04:07 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:04:07] "POST /log HTTP/1.1" 200 -
+2025-10-04 18:04:16 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:04:16] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:04:16 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:04:16] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:04:25 - root - INFO - Log level changed to INFO (applied immediately)
+2025-10-04 18:04:25 - root - INFO - Configuration section 'logging' updated
+2025-10-04 18:04:25 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:04:25] "PUT /api/config/logging HTTP/1.1" 200 -
+2025-10-04 18:04:26 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:04:26] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 18:04:28 - root - INFO - Log level changed to INFO (applied immediately)
+2025-10-04 18:04:28 - root - INFO - Configuration section 'logging' updated
+2025-10-04 18:04:28 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:04:28] "PUT /api/config/logging HTTP/1.1" 200 -
+2025-10-04 18:04:28 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:04:28] "GET /api/config HTTP/1.1" 200 -
+2025-10-04 18:04:43 - root - INFO - 📝 Received metadata for file: syllabus CS - IT WORKS.pdf (164.40KB) from watcher-service
+2025-10-04 18:04:43 - utils.formatters - INFO - Это INFO сообщение - видно всегда
+2025-10-04 18:04:43 - root - INFO - ✅ Created: syllabus_CS_-_IT_WORKS-20251004T150441Z.txt
+2025-10-04 18:04:43 - root - INFO - ✅ Successfully processed file: syllabus CS - IT WORKS.pdf
+2025-10-04 18:04:43 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:04:43] "POST /log HTTP/1.1" 200 -
+2025-10-04 18:04:46 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:04:46] "GET /api/stats HTTP/1.1" 200 -
+2025-10-04 18:04:46 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:04:46] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-04 18:04:51 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 18:04:51] "GET /health HTTP/1.1" 200 -
+2025-10-04 17:33:18 - root - INFO - 📊 Logging configured: level=INFO
+2025-10-04 17:33:18 - root - INFO - Flask app created successfully
+2025-10-04 17:33:18 - root - INFO - ============================================================
+2025-10-04 17:33:18 - root - INFO - 🚀 Starting logger-service
+2025-10-04 17:33:18 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 17:33:18 - root - INFO - 📍 Port: 5000
+2025-10-04 17:33:18 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 17:33:18 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 17:33:18 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 17:33:18 - root - INFO - ============================================================
+2025-10-04 17:33:31 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 17:33:31 - root - INFO - ✅ Created: Код-20251004T173331Z.txt
+2025-10-04 17:33:31 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 17:34:43 - root - INFO - Log level changed to DEBUG (applied immediately)
+2025-10-04 17:34:43 - root - INFO - Configuration section 'logging' updated
+2025-10-04 17:34:54 - root - INFO - 📝 Received metadata for file: UKRAINE ADRESS pesochin.docx (14.04KB) from watcher-service
+2025-10-04 17:34:54 - root - WARNING - Removed: Код-20251004T150405Z.txt
+2025-10-04 17:34:54 - root - INFO - ✅ Created: UKRAINE_ADRESS_pesochin-20251004T173454Z.txt
+2025-10-04 17:34:54 - root - INFO - ✅ Successfully processed file: UKRAINE ADRESS pesochin.docx
+2025-10-04 17:36:03 - root - INFO - 📝 Received metadata for file: Привет.docx (4.54MB) from watcher-service
+2025-10-04 17:36:03 - root - WARNING - Removed: syllabus_CS_-_IT_WORKS-20251004T150441Z.txt
+2025-10-04 17:36:03 - root - INFO - ✅ Created: Привет-20251004T173603Z.txt
+2025-10-04 17:36:03 - root - INFO - ✅ Successfully processed file: Привет.docx
+2025-10-04 17:37:10 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 17:37:10 - root - WARNING - Removed: Код-20251004T173331Z.txt
+2025-10-04 17:37:10 - root - INFO - ✅ Created: Код-20251004T173710Z.txt
+2025-10-04 17:37:10 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 17:50:40 - root - INFO - 📊 Logging configured: level=INFO
+2025-10-04 17:50:40 - root - INFO - Flask app created successfully
+2025-10-04 17:50:40 - root - INFO - ============================================================
+2025-10-04 17:50:40 - root - INFO - 🚀 Starting logger-service
+2025-10-04 17:50:40 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-04 17:50:40 - root - INFO - 📍 Port: 5000
+2025-10-04 17:50:40 - root - INFO - 📁 Logs directory: ../logs
+2025-10-04 17:50:40 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-04 17:50:40 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-04 17:50:40 - root - INFO - ============================================================
+2025-10-04 17:51:41 - root - INFO - 📝 Received metadata for file: Forest.pdf (81.62KB) from watcher-service
+2025-10-04 17:51:41 - root - INFO - ✅ Created: Forest-20251004T175141Z.txt
+2025-10-04 17:51:41 - root - INFO - ✅ Successfully processed file: Forest.pdf
+2025-10-04 17:52:19 - root - INFO - 📝 Received metadata for file: Код.png (86.02KB) from watcher-service
+2025-10-04 17:52:19 - root - INFO - ✅ Created: Код-20251004T175219Z.txt
+2025-10-04 17:52:19 - root - INFO - ✅ Successfully processed file: Код.png
+2025-10-04 17:53:30 - root - INFO - 📝 Received metadata for file: новый 1.md (28.83KB) from watcher-service
+2025-10-04 17:53:30 - root - INFO - ✅ Created: новый_1-20251004T175330Z.txt
+2025-10-04 17:53:30 - root - INFO - ✅ Successfully processed file: новый 1.md
+2025-10-04 17:54:00 - root - INFO - Log level changed to DEBUG (applied immediately)
+2025-10-04 17:54:00 - root - INFO - Configuration section 'logging' updated
+2025-10-04 17:54:05 - root - INFO - 📝 Received metadata for file: новый 1.md (28.83KB) from watcher-service
+2025-10-04 17:54:05 - root - WARNING - Removed: Forest-20251004T175141Z.txt
+2025-10-04 17:54:05 - root - INFO - ✅ Created: новый_1-20251004T175405Z.txt
+2025-10-04 17:54:05 - root - INFO - ✅ Successfully processed file: новый 1.md
+2025-10-04 17:54:46 - root - INFO - 📝 Received metadata for file: Скачать фавикон с любого сайта - Shortcut.lnk (862B) from watcher-service
+2025-10-04 17:54:46 - root - WARNING - Removed: Код-20251004T175219Z.txt
+2025-10-04 17:54:46 - root - INFO - ✅ Created: Скачать_фавикон_с_любого_сайта_-_Shortcut-20251004T175446Z.txt
+2025-10-04 17:54:46 - root - INFO - ✅ Successfully processed file: Скачать фавикон с любого сайта - Shortcut.lnk
+2025-10-04 17:55:24 - root - INFO - Log level changed to INFO (applied immediately)
+2025-10-04 17:55:24 - root - INFO - Configuration section 'logging' updated
+2025-10-04 17:57:18 - root - INFO - 📝 Received metadata for file: новый 1.md (28.83KB) from watcher-service
+2025-10-04 17:57:18 - root - WARNING - Removed: новый_1-20251004T175330Z.txt
+2025-10-04 17:57:18 - root - INFO - ✅ Created: новый_1-20251004T175718Z.txt
+2025-10-04 17:57:18 - root - INFO - ✅ Successfully processed file: новый 1.md
+2025-10-04 17:57:29 - root - INFO - 📝 Received metadata for file: img.png (37.20KB) from watcher-service
+2025-10-04 17:57:29 - root - WARNING - Removed: новый_1-20251004T175405Z.txt
+2025-10-04 17:57:29 - root - INFO - ✅ Created: img-20251004T175729Z.txt
+2025-10-04 17:57:29 - root - INFO - ✅ Successfully processed file: img.png
+2025-10-04 17:57:47 - root - INFO - Log level changed to INFO (applied immediately)
+2025-10-04 17:57:47 - root - INFO - Configuration section 'logging' updated
+2025-10-04 17:57:56 - root - INFO - 📝 Received metadata for file: img.png (37.20KB) from watcher-service
+2025-10-04 17:57:56 - root - WARNING - Removed: Скачать_фавикон_с_любого_сайта_-_Shortcut-20251004T175446Z.txt
+2025-10-04 17:57:56 - root - INFO - ✅ Created: img-20251004T175756Z.txt
+2025-10-04 17:57:56 - root - INFO - ✅ Successfully processed file: img.png
+2025-10-04 17:58:02 - root - INFO - 📝 Received metadata for file: img.png (37.20KB) from watcher-service
+2025-10-04 17:58:02 - root - WARNING - Removed: новый_1-20251004T175718Z.txt
+2025-10-04 17:58:02 - root - INFO - ✅ Created: img-20251004T175802Z.txt
+2025-10-04 17:58:02 - root - INFO - ✅ Successfully processed file: img.png
+2025-10-04 17:58:24 - root - INFO - Log level changed to INFO (applied immediately)
+2025-10-04 17:58:24 - root - INFO - Configuration section 'logging' updated

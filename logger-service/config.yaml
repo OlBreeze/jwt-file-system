@@ -1,16 +1,16 @@
 jwt:
   algorithm: HS256
   expected_issuer: watcher-service
-  secret: '***hidden***'
+  secret: sasa-Software2015
 logging:
-  backup_count: 3
+  backup_count: 5
   file: logs/logger-service.log
-  level: DEBUG
+  level: INFO
   max_size_mb: 5
 notifications:
   email:
     enabled: true
-    password: '***hidden***'
+    password: xclqyrjarfzvaavi
     smtp_host: smtp.gmail.com
     smtp_port: 587
     to: default@example.com

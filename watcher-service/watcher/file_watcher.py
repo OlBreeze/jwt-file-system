@@ -133,7 +133,7 @@ class FileWatcherHandler(FileSystemEventHandler):
             stats.increment_processed()
             logger.info(f"✅ Successfully processed: {metadata['filename']}")
             logger.info(f"   Size: {metadata['file_size']} bytes")
-            logger.info(f"   Hash: {metadata['hash'][:16]}...")
+            logger.info(f"   Hash: {metadata['hash'][:10]}...")
             logger.info(f"   Moved to: {new_path}")
 
             send_success_notification(self.config, metadata['filename'], metadata)

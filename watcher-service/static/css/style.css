@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    background: linear-gradient(135deg, #fc466b 0%, #3f5efb 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     padding: 20px;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .header h1 {
-    color: #fc466b;
+    color: #667eea;
     margin-bottom: 10px;
     font-size: 2em;
 }
@@ -52,7 +52,7 @@ body {
     color: #333;
     margin-bottom: 20px;
     font-size: 1.5em;
-    border-bottom: 2px solid #fc466b;
+    border-bottom: 2px solid #667eea;
     padding-bottom: 10px;
 }
 
@@ -80,7 +80,7 @@ body {
 .form-group input:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #fc466b;
+    border-color: #667eea;
 }
 
 .form-group small {
@@ -108,7 +108,7 @@ body {
 }
 
 .toggle input[type="checkbox"]:checked {
-    background: #fc466b;
+    background: #667eea;
 }
 
 .toggle input[type="checkbox"]::before {
@@ -128,7 +128,7 @@ body {
 }
 
 .btn {
-    background: #fc466b;
+    background: #667eea;
     color: white;
     border: none;
     padding: 12px 30px;
@@ -141,15 +141,15 @@ body {
 }
 
 .btn:hover {
-    background: #e63958;
+    background: #5568d3;
 }
 
 .btn-secondary {
-    background: #3f5efb;
+    background: #764ba2;
 }
 
 .btn-secondary:hover {
-    background: #2f4ed7;
+    background: #5e3a82;
 }
 
 .status {
@@ -192,7 +192,7 @@ body {
 .stat-box .value {
     font-size: 2em;
     font-weight: bold;
-    color: #fc466b;
+    color: #667eea;
 }
 
 .stat-box .label {
@@ -318,7 +318,7 @@ body {
 .badge {
     display: inline-block;
     padding: 3px 8px;
-    background: #fc466b;
+    background: #667eea;
     color: white;
     border-radius: 12px;
     font-size: 11px;
@@ -380,8 +380,8 @@ body {
 
 .creator-signature:hover {
     transform: scale(1.1) translateY(-5px);
-    box-shadow: 0 12px 24px rgb(204, 229, 255);
-    background: linear-gradient(135deg, #683493 0%, #667eea 100%);
+    box-shadow: 0 12px 24px rgba(118, 75, 162, 0.4);
+    background: linear-gradient(135deg, #5568d3 0%, #667eea 100%);
 }
 
 .creator-signature:active {

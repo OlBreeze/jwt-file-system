@@ -1,4 +1,21 @@
-"""Middleware and decorators for APIs"""
+"""Middleware and decorators for APIs
+
+This code contains two decorators for the Flask API:
+
+1. @require_jwt - protect endpoints with JWT
+
+What it does:
+- Checks for the presence of a JWT token in the Authorization header
+- Validates the token
+- Adds the token payload to the request object for use in the route
+
+2. @validate_json - validates the JSON payload
+
+What it does:
+- Checks that the request contains JSON
+- Checks for required fields in the JSON
+"""
+
 from functools import wraps
 from flask import request, jsonify
 import logging

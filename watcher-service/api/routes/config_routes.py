@@ -1,7 +1,7 @@
 """
 API endpoints for managing configuration
 """
-
+import copy
 import logging
 from flask import Blueprint, request, jsonify, current_app
 from core.config import save_config
@@ -22,8 +22,8 @@ def get_config():
     try:
         config = current_app.config['WATCHER_CONFIG']
 
-        # Hide sensitive data
-        safe_config = config.copy()
+        # Hide sensitive data (deep copy to avoid modifying original)
+        safe_config = copy.deepcopy(config)
         if 'jwt' in safe_config and 'secret' in safe_config['jwt']:
             safe_config['jwt']['secret'] = '***hidden***'
         if 'notifications' in safe_config and 'email' in safe_config['notifications']:
@@ -58,11 +58,35 @@ def update_config(section):
         if section not in config:
             return jsonify({'error': f'Unknown section: {section}'}), 400
 
+        # PROTECTING SECRETS - we restore them if they are hidden
+        if section == 'jwt' and isinstance(data, dict):
+            if data.get('secret') == '***hidden***':
+                logger.debug("Preserving original JWT secret")
+                data['secret'] = config['jwt']['secret']
+
+        if section == 'notifications' and isinstance(data, dict):
+            if 'email' in data and isinstance(data['email'], dict):
+                if data['email'].get('password') == '***hidden***':
+                    logger.debug("Preserving original email password")
+                    data['email']['password'] = config['notifications']['email']['password']
+
         # Update section
         if isinstance(config[section], dict) and isinstance(data, dict):
             config[section].update(data)
         else:
             config[section] = data
+
+        # APPLY LOGGING CHANGES IMMEDIATELY
+        if section == 'logging' and 'level' in data:
+            new_level = getattr(logging, data['level'].upper(), logging.INFO)
+            root_logger = logging.getLogger()
+            root_logger.setLevel(new_level)
+
+            # Updating the level for all handlers
+            for handler in root_logger.handlers:
+                handler.setLevel(new_level)
+
+            logger.info(f"Log level changed to {data['level']} (applied immediately)")
 
         # Save to file
         save_config(config)
