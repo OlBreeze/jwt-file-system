@@ -1751,3 +1751,16 @@
 2025-10-04 21:10:06 - root - INFO - 📝 Received metadata for file: requirements.txt (78B) from watcher-service
 2025-10-04 21:10:06 - root - INFO - ✅ Created: requirements-20251004T211006Z.txt
 2025-10-04 21:10:06 - root - INFO - ✅ Successfully processed file: requirements.txt
+2025-10-05 00:24:37 - root - INFO - 📊 Logging configured: level=INFO
+2025-10-05 00:24:37 - root - INFO - Flask app created successfully
+2025-10-05 00:24:37 - root - INFO - ============================================================
+2025-10-05 00:24:37 - root - INFO - 🚀 Starting logger-service
+2025-10-05 00:24:37 - root - INFO - 📍 Host: 0.0.0.0
+2025-10-05 00:24:37 - root - INFO - 📍 Port: 5000
+2025-10-05 00:24:37 - root - INFO - 📁 Logs directory: ../logs
+2025-10-05 00:24:37 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-05 00:24:37 - root - INFO - 🌐 Web UI: http://0.0.0.0:5000/
+2025-10-05 00:24:37 - root - INFO - ============================================================
+2025-10-05 00:25:04 - root - INFO - 📝 Received metadata for file: Dockerfile (508B) from watcher-service
+2025-10-05 00:25:04 - root - INFO - ✅ Created: Dockerfile-20251004T212502Z.txt
+2025-10-05 00:25:04 - root - INFO - ✅ Successfully processed file: Dockerfile

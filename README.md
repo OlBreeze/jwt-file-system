@@ -295,3 +295,62 @@ Try clicking on the author's name multiple times in the footer... You might disc
 
 ![](https://github.com/user-attachments/assets/e23db10a-a340-40dd-8c30-a387cd07a98d)
 
+# Recent Projects & Achievements (10.10.2025 - 01.11.2025)
+
+*While anxiously awaiting the decision on my test assignment, I've kept myself productive... 😊*  
+😊😊😊😊😊
+
+## Python & Django Development
+Actively working with Python and the Django framework, expanding my full-stack expertise.
+
+**Current Focus:**
+**Current Focus:**
+- **Django Framework:** Web development, ORM, Forms & validation
+- **Django REST Framework (DRF):** RESTful API development
+- **Python & Databases:** 
+  - SQLite for development and prototyping
+  - PostgreSQL for production environments
+  - MongoDB for NoSQL solutions
+  - Database design, optimization, and migrations
+- **API Development:** RESTful design patterns and best practices
+- **Backend Architecture:** Scalable Python solutions
+
+## Video Communication PWA Solution
+Over the past month, I developed a Progressive Web Application (PWA) for video communication with family that works without traditional messengers and bypasses provider blocking.
+
+**Key Features:**
+- Installation-free deployment as PWA
+- Simple setup: grant microphone and camera permissions
+- Room-based connection system (enter room number to connect)
+- Not blocked by internet service providers
+- Enables seamless communication with relatives  
+
+https://mobnomax.onrender.com/
+
+![](https://github.com/user-attachments/assets/f5f11408-ca57-4128-b12e-249dceb9e0e9)
+
+## Gemini AI Chatbot with Personal Profile Integration
+I implemented an AI-powered chatbot using Google's Gemini API that serves as my professional representative.
+
+https://olbreeze.github.io/MyProfile/
+
+![](https://github.com/user-attachments/assets/4ec642de-987a-415e-820b-c6468bd28f7b)
+
+**Capabilities:**
+
+- Answers questions about my background, skills, and career history
+- Responds to general inquiries
+- Provides information about my technical expertise and work experience
+- Acts as an interactive resume/portfolio assistant
+
+**Technical Implementation:**
+- Frontend: React with custom chat interface
+- Backend: Node.js/Express with Gemini API integration
+- System prompt engineering for personalized responses
+- First-person perspective answering as myself
+```python
+
+```
+---
+
+

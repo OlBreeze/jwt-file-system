@@ -10025,3 +10025,36 @@ TypeError: The view function for 'stats.test_connection' did not return a valid 
 2025-10-04 21:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:10:28] "GET /api/stats HTTP/1.1" 200 -
 2025-10-04 21:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:10:28] "GET /api/test-connection HTTP/1.1" 200 -
 2025-10-04 21:10:28 - werkzeug - INFO - 172.19.0.1 - - [04/Oct/2025 21:10:28] "GET /api/logs/recent HTTP/1.1" 200 -
+2025-10-05 00:24:39 - root - INFO - ============================================================
+2025-10-05 00:24:39 - root - INFO - 🚀 Starting watcher-service
+2025-10-05 00:24:39 - root - INFO - 📁 Watching directory: ../watched
+2025-10-05 00:24:39 - root - INFO - 📦 Processed directory: ../processed
+2025-10-05 00:24:39 - root - INFO - 🌐 Logger Service URL: http://localhost:5000/log
+2025-10-05 00:24:39 - root - INFO - 🔐 JWT issuer: watcher-service
+2025-10-05 00:24:39 - root - INFO - ⏱️  JWT expiration: 5 minutes
+2025-10-05 00:24:39 - root - INFO - 📧 Email notifications: enabled
+2025-10-05 00:24:39 - root - INFO - 📡 Syslog notifications: disabled
+2025-10-05 00:24:39 - root - INFO - 🌐 Web UI: http://0.0.0.0:8080/
+2025-10-05 00:24:39 - root - INFO - ============================================================
+2025-10-05 00:24:39 - root - INFO - ✅ Directories ready
+2025-10-05 00:24:39 - root - INFO - 🔍 Checking Logger Service availability...
+2025-10-05 00:24:41 - root - INFO - ✅ Logger Service is available
+2025-10-05 00:24:41 - watcher.observer - INFO - Observer configured for: ..\watched
+2025-10-05 00:24:41 - root - INFO - 👀 Watching for new files... (Press Ctrl+C to stop)
+2025-10-05 00:24:41 - api.app - INFO - Flask app created successfully
+2025-10-05 00:24:41 - root - INFO - 🌐 Web UI started on http://0.0.0.0:8080
+2025-10-05 00:24:41 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.32.214.179:8080
+2025-10-05 00:24:41 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-05 00:25:02 - watcher.file_watcher - INFO - 📁 New file detected: ..\watched\Dockerfile
+2025-10-05 00:25:04 - integration.logger_client - INFO - ✅ Metadata sent successfully for: Dockerfile
+2025-10-05 00:25:04 - file_processing.file_mover - INFO - ✅ Moved file to: ..\processed\Dockerfile
+2025-10-05 00:25:04 - watcher.file_watcher - INFO - ✅ Successfully processed: Dockerfile
+2025-10-05 00:25:04 - watcher.file_watcher - INFO -    Size: 508 bytes
+2025-10-05 00:25:04 - watcher.file_watcher - INFO -    Hash: 6d179b3468...
+2025-10-05 00:25:04 - watcher.file_watcher - INFO -    Moved to: ..\processed\Dockerfile
+2025-10-05 00:25:06 - notifications.email_sender - INFO - 📧 Email notification sent: File Processed Successfully
+2025-10-05 00:25:24 - root - INFO - 🛑 Stopping watcher service...
+2025-10-05 00:25:24 - root - INFO - 👋 Watcher service stopped
