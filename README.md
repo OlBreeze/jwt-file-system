@@ -348,6 +348,32 @@ https://olbreeze.github.io/MyProfile/
 - Backend: Node.js/Express with Gemini API integration
 - System prompt engineering for personalized responses
 - First-person perspective answering as myself
+
+## Application for searching job vacancies in open sources (11-11-2025)
+
+https://github.com/OlBreeze/hr-bot
+
+**Capabilities:**
+- ### search parameters:
+
+![](https://github.com/user-attachments/assets/a647c505-d4da-4152-92d7-8f4c54d67f51)
+
+- ### Resume to generate a relevant cover letter with OpenRouter:
+
+![](https://github.com/user-attachments/assets/8d6b6b15-5621-497f-8db2-3b2a3021796e)
+
+- ### found vacancies with pagination:
+
+![](https://github.com/user-attachments/assets/25a7b2a5-759e-44a7-a650-fa17b85b579c)
+
+- ### selected vacancies:
+
+![](https://github.com/user-attachments/assets/185b3878-ee54-4b5a-baa9-81ad06896cff)
+
+- ### generated letter for selected vacancies:
+
+![](https://github.com/user-attachments/assets/5af33ace-c001-4b46-b091-24cd9a82a271)
+
 ```python
 
 ```
